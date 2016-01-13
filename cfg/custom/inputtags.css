@@ -1,0 +1,16 @@
+extension{
+	
+	launch:enabled;
+	core_client:any;
+	globallanguageload:enabled;
+	languageload:enabled;
+	languagereplace:enabled;
+	tmplload:enabled;
+	phplaunch:disabled;
+	phplaunch_output:disabled;
+	loop_srch_ext:enabled;
+	srch_ext:array2d_1; 
+	level:0;
+	ext_req_val:matchvar;
+	ext_req_val_Casesens:off;
+	}

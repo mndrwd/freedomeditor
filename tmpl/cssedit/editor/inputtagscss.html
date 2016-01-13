@@ -1,0 +1,114 @@
+<a class="highlight" title="LANGDetects_function_name_from_current _selection_within_editor_if_availableIANG" onclick="
+q=editAreaLoader.getSelectedText('editeleconti');if(!q)void(q=prompt('(x)CSS property::',''));
+if(q)z='http://www.w3.org/wiki/CSS/Properties/'+escape(q);window.open(z,q,'attribute1,attribute2');
+">CSS propertys</a>
+
+<form name="csstags" id="csstags">
+<select 
+ id="csstagss" name="csstagss" style="display:block;float:left" onblur="
+if (document.getElementById('csstagss').value.length > 0 ) {
+//sendwrap(document.getElementById('cmstags2').value);
+editAreaLoader.setSelectedText('editeleconti', document.getElementById('csstagss').value);
+}document.getElementById('editeleconti').blur();">
+<option value="">CSS tags</option>
+<optgroup label="CSS3 (incomplete)" id="inpcss3">
+
+
+<option title="background-image: url('http://');" value="" onclick="
+choosebg=prompt('URL to image','http://');
+if (choosebg!=null && choosebg!='')
+  {
+editAreaLoader.setSelectedText('editeleconti','background-image: url(\'' + choosebg + '\');');
+document.getElementById('editeleconti').blur();
+} 
+">Background image</option>
+
+
+
+
+<option title="-moz-border-radius: top right bottom left; border-radius: 5px 5px 5px 5px; -o-border-radius: 5px 5px 5px 5px; -webkit-border-radius: 5px 5px 5px 5px;" value="" onclick="
+choosepx=prompt('Enter border pixels (top, right, bottom, left)', '5px 5px 5px 5px');
+if (choosepx!=null && choosepx!='')
+  {
+
+editAreaLoader.setSelectedText('editeleconti', '-moz-border-radius: ' + choosepx + ';\nborder-radius: ' + choosepx + ';\n-o-border-radius: ' + choosepx + ';\n-webkit-border-radius: ' + choosepx + ';');
+document.getElementById('editeleconti').blur();
+} 
+
+">border radius (round borders)</option>
+
+
+<option title="@font-face {font-family:'name';src:url(http://name.ttf) format('truetype');}" value="" onclick="
+
+editAreaLoader.setSelectedText('editeleconti', 'opacity:0.5;filter:alpha(opacity=50);\n');
+opct=prompt('Enter opacity on scale of 0 to 10', 5);
+if (opct!=null && opct!='')
+  {
+editAreaLoader.setSelectedText('editeleconti', 'opacity:0.'+opct+'; filter:alpha(opacity='+opct+'0);');
+document.getElementById('editeleconti').blur();
+}
+">Embedded font</option>
+<option title="Google embedded web fonts (free)" value=""
+onclick=";window.open('http://www.google.com/webfonts','Google web fonts','attribute1,attribute2');" 
+>Google web fonts (free)</option>
+
+
+
+
+<option value="" onclick="
+mclay=prompt('Enter border pixels (top, right, bottom, left)', '5px 5px 5px 5px');
+if  (mclay!=null && mclay!='')
+  {
+
+editAreaLoader.setSelectedText('editeleconti', '-moz-border-radius: ' + choosepx + ';\nborder-radius: ' + choosepx + ';\n-o-border-radius: ' + choosepx + ';\n-webkit-border-radius: ' + mclay + ';');
+document.getElementById('editeleconti').blur();
+} 
+
+">multi column layouts</option>
+
+
+
+<option title="@media all, braille, embossed, handheld, print, projection, screen, speech, tty tv" value="" onclick="
+mqry=prompt('Enter targeted media type (all, braille, embossed, handheld, print, projection, screen, speech, tty tv) - CaSe sensitive', 'all, tv');
+if  (mqry!=null && mqry!='')
+  {
+
+editAreaLoader.setSelectedText('editeleconti', '@media ' + mqry + '{\n lorem{\nip:silum;}\n }');
+document.getElementById('editeleconti').blur();
+} 
+
+">media queries</option>
+
+<option title="opacity:0.5;filter:alpha(opacity=50);" value="" onclick="
+
+editAreaLoader.setSelectedText('editeleconti', 'opacity:0.5;filter:alpha(opacity=50);\n');
+document.getElementById('editeleconti').blur();
+opct=prompt('Enter opacity on scale of 0 to 10', 5);
+if (opct!=null && opct!='')
+  {
+editAreaLoader.setSelectedText('editeleconti', 'opacity:0.'+opct+'; filter:alpha(opacity='+opct+'0);');
+document.getElementById('editeleconti').blur();
+}
+">Transparency (opacity, applies to all children containers)</option>
+
+
+
+
+<option title="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform:rotate(-90deg); " value="" onclick="
+choosedeg=prompt('Enter degrees', '-90');
+if (choosedeg!=null && choosedeg!='')
+  {
+
+editAreaLoader.setSelectedText('editeleconti', '-moz-transform: rotate(' + choosedeg + 'deg);\nwebkit-transform: rotate(' + choosedeg + 'deg);\n-o-transform: rotate(' + choosedeg + 'deg);\n-ms-transform: rotate(' + choosedeg + 'deg);');
+document.getElementById('editeleconti').blur();
+} 
+
+">Transform:rotate</option>
+
+ transform: scale, skew and/or translate objects)
+border image
+<option value="">--------------</option>
+</optgroup>
+</select>
+</form>
+

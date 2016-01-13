@@ -1,0 +1,12 @@
+| <span title="antiword + ps2pdf" onclick="
+togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);
+cmdadd='';
+if ( document.getElementById('sudouser').value.length > 0 ){
+cmdadd='sudo -u ' + document.getElementById('sudouser') .value + ' ';
+}
+
+cmdadd= cmdadd + readCookie('antiwordbinary')+ ' -p a4 \'{ele}\' > \'{ele}.ps\' '+escape('&&')+' '+readCookie('ps2pdfbinary')+' \'{ele}.ps\' \'{ele}.pdf\''; 
+document.getElementById('toolboxif').src='./?cc=phpterm&fd=' + document.getElementById('folderinputter').value
++ '&command=' + cmdadd;
+">DOC 2 PDF</span>
+{load:link_livedocx:load}

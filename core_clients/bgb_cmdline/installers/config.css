@@ -1,0 +1,6 @@
+global{
+	make_object_on_strrm:off;
+	  default_gui:off;
+	guilang:on;  
+	 default_gui_lang: gui;
+	}

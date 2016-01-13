@@ -1,0 +1,135 @@
+/*cat=1_*/
+
+
+extension{
+	
+	launch:enabled;
+	core_client:any;
+	globallanguageload:enabled;
+	languageload:enabled;
+	languagereplace:enabled;
+	tmplload:enabled;
+	phplaunch:enabled;
+	phplaunch_output:disabled;
+	loop_srch_ext:enabled;
+	srch_ext:array2d_1; 
+	level:0;
+	ext_req_val:matchvar;
+	ext_req_val_Casesens:off;
+	string_open:_brace_ext:;
+	string_close::ension_bbrace_;
+	
+	}
+extension_req_val{
+	
+	}
+	
+
+global{
+/* NOTE: everything = CaSe sensitive;*/
+
+/* special var debug mode;*/
+var_dump:off;
+allow_vardump_request:off;
+ajax_urlvar:ajax;		
+		/*Core client ;*/
+current_client:bgb_mysqlibkup;
+current_client:editor;
+select_client_by_urlvar:cc;
+/*note that the editor works correctly when its assigned as current_client but probably not when requested via $_GET[urlvar] because i didn't yet made default htmlshifter function support this*/
+
+
+  /* language cookie name;*/ 
+lang_cookie: lang;
+  /* chmod;*/
+  /*en_wr: 0666;*/
+  /* chmod;*/
+  /*dis_wr: 0644 ;*/
+  
+  /* template file extension;*/
+  tmplext: html;
+  default_gui:off;  
+  default_input_handler:off;  
+  default_parser:off;
+default_gui_lang: gui;  
+default_lang: en;  
+  default_request_folder:css;
+/*mustb relative;*/
+  default_template: editor;  
+/*specifically for overriding with extensions cfg files.. ;*/
+  
+  /*ent_decode:before_make_object;*/
+  ent_decode:nope;
+/* use html_entity_decode..  (options: "on"/"after_htmlshifter"/"before_make_object"/"before_extension_load"/anything else to disable)
+can be after_htmlshifter (editor coreclient) and before_make_object (coreclient index.php) to support most other coreclients
+or on for perform at every recognized option
+any other value disables.;*/ 
+
+
+make_object_on_strrm:off;
+/* overrides (filled) content ($strraw[0]) with ($strrm)
+usefull for skipping edit_content function
+;*/
+
+guilang:off;
+/*Scan for LANG*IANG strings when not using default htmlshifter function, and replace with data from $__lang array which can be altered for the editor core_client by changing extlink_gui
+*/
+}
+
+sessions{
+	sess:off;	
+		/* Session Support [UNTESTED] 
+	Only >might< work when freedomeditor is within a subdirectory of the script that you authenticate with (or vice versa, i'm not sure), due to browser cookie architecture.
+	;*/
+sesvar:iam;
+/* which $_SESSION array value to check for existence (one could set it to $yourpreloadedarray['adminuserlevel'] ) 
+note that preloading a array needs to be done in core_clients/$%$%/vars.php;*/
+sesvar_val:loggedin;
+/* value it needs to be ;*/
+	}
+
+folders{
+  templates: tmpl/cssedit/;
+  language: lang/;
+ parser: fc/parser/;
+inputhandler: fc/inputhandler/;
+gui: fc/gui/;
+
+/*note that everything gets overriden first by core_client/%client%/config.css then
+when using the editor core client, by
+core_client/%client%/cfgs/%current_extlink.css*/
+
+  
+}
+
+/*overruled by cfgs/custom/*extension*.css, these are just defaults
+core_clients: any or comma seperated list
+srch_ext: array name or disabled serve arrays like $a["fnd"]="repl"
+ext_urlval: matchvar =required urlvals+vars | else = req. urlvals
+*/
+
+	
+	
+always_load_extension
+{
+
+	1:phpterm;
+
+
+	
+	}
+/* first above listed extensions are loaded, then the extension scan is performed on loaded template, then below extensions are performed on loaded template */
+
+
+always_load_extension_after_extscan
+{
+	1:;
+	
+	}
+	always_block_ext_scan_inside
+	{
+	/* not working (yet) left in for debugging purpose/*
+1:;
+	}
+
+

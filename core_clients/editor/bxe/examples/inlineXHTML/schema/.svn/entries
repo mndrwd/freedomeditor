@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="687"
+   name=""
+   committed-date="2004-04-29T08:32:39.760394Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/inlineXHTML/schema"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   name="xhtml"
+   kind="dir"/>
+</wc-entries>

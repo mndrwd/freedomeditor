@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>aateau: Any Archive Type Extract and/or Unpack</title>
+</head>
+<body>
+This page is all about... aateau..
+
+New version 1.1 at 4nov 2008 <br />
+bug fixes, accepts a new switch (-c, after the -rox switch) which allows operation without preset folders, within current folder.
+<h3>What's that?</h3>
+A linux/bsd (PC operating system)  shell script designed to run all kinds of different extracting commands for different filename extensions. In other words: Any Archive Type Extract and/or Unpack
+<h3>For who is it?</h3>
+Linux and BSD users who are fed up with having to remember alot of extracting commands for different filename extensions.
+
+<h3>What does it do?</h3>
+Called from command line, it extracts archives into a preset folder, for example ~/unpax/archivename.<br />
+It supports: ### zip, tar(.*), gz, tgz, arc, sit, arj, lzh, lha, rar, zoo
+<h3>When is it used?</h3> I have it preset for all archive types using the -rox switch, in  <a href="http://roscidus.com/desktop/">rox-filer</a> which is my default file system browser.
+
+<h3>How to install?</h3>
+ Put the aateau script somewhere in a registered environment path (i have it in  /bin)<br />
+ chmod 755 aateau.sh<br />
+<b>Rox-filer users only:</b><br />
+invoke like: aateau.sh install_ziprox to gain ability to create archives from folders in rox-filer.<br />
+invoke like aateau.sh install_roxmime to (re)link rar, zip, bzip, tar files in rox-filer to the aateau script for the invoking user AND/OR set archive files in rox-filer to perform command on opening:  aateau.sh "$@" -rox<br />
+
+<h3>How does it work?</h3>
+1: fix the settings.
+<ul><li>a: packed. Specify at which location archives are found when the -rox switch is not supplied (default ~/dl) also location of archives which are created from rox-filer by using  the -install_ziprox switch</li>
+<li>b: unpackto. Specify which location archives will be extracted or unpacked to. (default ~/unpax)</li>
+<li>c: sfolderz. Specify if name of new folder created in b. must contain archivename (default) or timestamp.</li>
+</ul>
+
+2: -rox switch allows one to supply the absolute location of the archive file. Without the switch, supplied archive name can only be extracted when the archive exists within  the "packed" (a setting) folder.<p />
+chmod the file<br />
+$ chmod 755 aateau.sh<br />
+<p />
+use with -rox -c to extract a file in the current folder to a new folder within the current.<br />
+
+3: Run aateau.sh for more help.
+<br />
+
+<p />
+<h3>Download</h3>
+<a href="aateau.sh">aateau v1.1 (English)</a>
+
+<h3>Future plans:</h3>
+none
+<h3>Contact author</h3>
+Contact Bart Bosma via <a href="http://www.freedomeditor.com/">freedomeditor.com
+</a>
+
+<p />
+Copyright (c) 2008, B.G. Bosma
+All rights reserved.
+</body></html>

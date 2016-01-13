@@ -1,0 +1,4 @@
+/*cat=1_*/
+global{
+	ent_decode:after_htmlshifter;
+	}

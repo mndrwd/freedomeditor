@@ -1,0 +1,16 @@
+<span class="highlight" onclick="
+togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);
+cmdadd='';
+if ( document.getElementById('sudouser').value.length > 0 ){
+cmdadd='sudo -u ' + document.getElementById('sudouser') .value + ' ';
+}
+if (server_os=='win'){
+// use 7zip
+cmdadd= cmdadd + readCookie('zipbinary')+'x \'{ele}\'';
+}else{
+// use aateau.sh
+cmdadd= cmdadd + readCookie('zipbinary')+' \'{ele}\' -rox -c'; 
+}
+document.getElementById('toolboxif').src='./?cc=phpterm&fd=' + document.getElementById('folderinputter').value
++ '&command=' + cmdadd;
+">LANGExtractIANG</span>

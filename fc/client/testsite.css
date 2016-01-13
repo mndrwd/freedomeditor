@@ -1,0 +1,7 @@
+/*cat=1_*/
+main{ 
+tmpl_inp:../cnt/tmpl/index.html;
+str:__ikown__ ;
+cachable:on;
+cnt_inp:../cnt/cache/;
+ }

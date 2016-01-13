@@ -1,0 +1,28 @@
+++ = new files
++ = file updated
++- = moved file
+- = removed file
+
+
+++ core_clients/editor/tinymce/plugins/codeprotect > added plugin v1.2 
+++ tmpl/cssedit/editor/js/php-content.js 
++ tmpl/js/bgb_funcs/global.js > added strstr for js from www.phpjs.org
++ tmpl/editor/cssedit/ele.html > add file download, add html2fpdf, TODO add phpexcel support, changed current_ext to current_extlink reference
++ tmpl/editor/cssedit/index.html > added settings grouping support, added tinyMCE CSS fileloading swapper, made tinymce reset button userfriendly, added fileuploader
++ core_clients/editor/index.php > added ajax getrawcontents +jsonextlink request support
++ tmpl/cssedit/editor/js/global.js > added bitfluxlocation variable, added jsonextlink request, changed file.*ext* references to extlink.
+++ core_clients/editor/bxe/* > added latest bitflux snapshot www.bitfluxeditor.org
++ tmpl/cssedit/editor/extlink_css.html > fixed previous loader.php reference for tinymce css loading
++ alot of tmpl/cssedit/editor/html + ./js files >  updated tinymce cookie reference
++ core_clients\editor\index.php > added support for new url variables
+++ tmpl/js/jquery/jquery.uploadify/* > fileuploader
+++ tmpl/editor/cssedit/extlink_doc.html > doc to pdf conversion support with antiword + ps2pdf
++ tmpl/editor/cssedit/extlink_archive.html > reads cookie with aateau.sh location data
+++ tmpl/editor/cssedit/extlink_livedocx.html > support for numerous conversion
+++ fc/core_clients/editor/fc/parser/phpexcel.php > support for numerous conversion
+++ core_clients/editor/fc/parser/phplivedocx.php > support for numerous conversion
+++ core_clients\editor\fc\parser\html2fpdf* > added html to pdf class + conversion
++ config.css > added extension searchstring settings
++ fc/global/findinside.php > now returns given string, when nothing was found. also added support for loop parameter.
++ core_clients/editor/fc/gui/css/getclixele.php > edit to allow 1 level nesting in tmpl/cssedit/editor/ext*.html files
+++ tmpl/editor/cssedit/extlink_xls.html > xls/xlsx to xls(x)/html/pdf/csv conversion

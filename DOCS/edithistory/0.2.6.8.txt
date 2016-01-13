@@ -1,0 +1,17 @@
+++ = new files
++ = file updated
++- = moved file
+- = removed file
+
+
++ core_clients/editor/fc/gui/css/getcathtml.php > added unique number in loop for updated str menu
++ core_clients/editor/fc/gui/css/getclixele.php > added unique number in loop for updated str menu
++ tmpl/editor/ele.html > updated structure menu
++ tmpl/editor/cat.html > updated structure menu
++ tmpl/editor/index.html > updated structure menu, fixed settings > cfg edit links
++ tmpl/editor/admin.css > updated structure menu
++ tmpl/editor/js/*html*.js > tinymce cookie call bug fixed in tinymce content_css setting
++ core_clients/editor/config.cfg > added css-leg(acy) extlink, put it below the css extlink to revert to old css structure browsing / css file editing 
++ tmpl/editor/js/global.js > added timeout for keyboard shortcuts.
++ tmpl//js/jquery/hotkeys/test-static-01.js > added timeout for keyboard shortcuts.
+

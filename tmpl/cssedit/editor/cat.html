@@ -1,0 +1,86 @@
+<hr />
+<div class="box_m_headero tinymcefix1">
+  <em class="box_m_header_top_texto"> <span onmouseover="
+  if (!pastefromlocation || pastefromlocation==''){
+$('.paste').hide();}
+  if (current_extlink=='css-leg'){
+$('#rmcat_{uniqnum}').show();
+}
+$('#maincat_{uniqnum}').show();
+$('#maincat_{uniqnum}').mouseleave(function() {
+$('#maincat_{uniqnum}').hide();
+});
+
+
+
+superstring= '{cat}{ext:urlstr:ension}';
+sstring=superstring.replace(/\\/, '/');
+if (readCookie('easynav')=='yes'){
+easynav='{uniqnum}';
+jQuery('#cat_{uniqnum}').load('./?{ext:ajaxurlvar:ension}=easynav{uniqnum}&cat=' + sstring);
+}
+
+
+
+"
+  onclick=" 
+superstring= '{cat}{ext:urlstr:ension}';
+sstring=superstring.replace(/\\/, '/');
+jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&cat=' + sstring);
+"
+
+
+ onmouseout="
+jQuery(document).ready(function(){ 
+if (typeof current_extlink == 'undefined'){
+jQuery('.css_legacy').hide();
+}else{
+	if (current_extlink=='css-leg'){
+	jQuery('.css_legacy').show();
+}else{
+jQuery('.css_legacy').hide();
+}
+}
+
+// apply hovers
+  $('.highlight').mouseover(function(){
+	      $(this).addClass('hover');
+	   });
+	         
+	   $('.highlight').mouseout(function(){
+	      $(this).removeClass('hover');
+	   });
+
+});
+
+">{rawcat}</span>
+</em>
+
+<div id="maincat_{uniqnum}" class="rndbrdr tinymcefix1" style="display:none;border-style:solid;border-width:1px;position:absolute;background-color:white;height:auto;width:auto;">
+<span id="rmcat_{uniqnum}" class="csslegacy" style="display:none;"><img onclick="var temp = confirm('LANGremoveIANG {rawcat}?');if (temp) {
+superstring= '{cat}&fd={ext:folder:ension}';
+sstring=superstring.replace(/\\/, '/');
+jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&rmcat' + sstring);}" class="remimgo" alt="LANGremoveIANG" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/remove2.gif" class="del2"  /><br /></span>
+<a class="highlight" target="_blank"  href="./?cat={cat}{ext:urlstr:ension}">LANGNew_browser_tabIANG</a><br />
+<a class="highlight" target="_blank"  href="./?inspenv=1&cat={cat}{ext:urlstr:ension}">LANGNew_browser_tab _with_memory_dumpIANG</a><br />
+<span class='paste' title="LANGpasteIANG" onmouseover="this.title='LANGpasteIANG ' + pastefromlocation"
+onclick="
+rusure=confirm('LANGoverwrites_existing_files_silentlyIANG');
+if (rusure){
+jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&cutcopy='+lastactionman+'&ccitemname='+ccitemname.replace(/ /g, '+')+'&pastefromlocation='+pastefromlocation.replace(/ /g, '+')+'&fd=' + document.getElementById('folderinputter').value.replace(/ /g, '+'));
+pastefromlocation='';
+lastactionman='';
+ccitemname='';
+}
+">paste</span>
+
+</div>   
+	</div>
+
+<div id="cat_{uniqnum}" class="tinymcefix1">
+	<!--ajax{easynav{uniqnum}}-->
+	
+{elements}
+<!--{easynav{uniqnum}}ajax-->
+
+</div>

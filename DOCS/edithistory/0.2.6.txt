@@ -1,0 +1,24 @@
+++ = new files
++ = file updated
++- = moved file
+
++ core_clients/editor/tiny_mce/* new version
++ core_clients/editor/edit_area/* new version
+
+++ fc/globals/findinside.php
++ fc/globals/scanajax.php: now using new "findinside" function instead of replbetween (fixes numerous bugs and odd behaviour due to the nature of replbetween (preg))
++ fc/extension/index.php bug with phplaunch include , bug with config file including
+
+index.php  extjs code updated
+
+tmpl/cssedit/editor/js/*ext*.js > tinymce wouldnt load issue [caused by removed tinymce zoom plugin]
+
+
+Sorry, no further detailed report for this release.
+
+
+
+
+
+
+

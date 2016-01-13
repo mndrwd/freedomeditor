@@ -1,0 +1,13 @@
+++ = new files
++ = file updated
++- = moved file
+
+
+
++ tmpl/cssedit/editor/index.html > add preview url setting, fixed structure upper buttons reload + go folder up
++ tmpl/cssedit/editor/editor.html > tabs > added close all tabs
++ tmpl/cssedit/editor/editor_preview.html > allow preview url setting
+
++ tmpl/cssedit/editor/js/global.js > changed togglem function to prevent duplicate tabs, added 'check for html tag' function call, altered ltabm function to only put ltabmfirsttime off when tabcookie data was found
++ tmpl/cssedit/editor/js/(x)html(*).js > added checkforhtmltag function
+++ tmpl/js/jquery/select/* > added a jquery.select plugin which was modified by Mathias Bank

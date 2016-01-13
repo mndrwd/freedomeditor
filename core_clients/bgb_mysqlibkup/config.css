@@ -1,0 +1,12 @@
+global{
+	make_object_on_strrm:on;
+	  default_gui:off;
+	
+	}
+
+folders{ 
+ parser: core_clients/editor/fc/parser/;
+inputhandler: core_clients/editor/fc/inputhandler/;
+gui: core_clients/editor/fc/gui/;
+
+ }

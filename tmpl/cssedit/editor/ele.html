@@ -1,0 +1,244 @@
+	<div class="ele_test" style="width:99%;">	
+
+			<div class="box_m_select" >
+<span class="eles" title="Open {rawele} in editor"><input 
+onmouseover="
+if (!pastefromlocation || pastefromlocation==''){
+$('.paste').hide();}
+
+
+
+$('.newtab').hide();
+$('.newtabmd').hide();
+$('.openfile').hide();
+$('.downloadfile').hide();
+jQuery(hidethatlastelemenu).hide();
+$('#mainele_{uniqnum}').show();
+hidethatlastelemenu='#mainele_{uniqnum}';
+stupidelevar='{rawele}';
+$('#mainele_{uniqnum}').mouseleave(function() {
+$('#mainele_{uniqnum}').hide();
+});
+
+clickable='no';
+if ( '{cat}' != 'LANGfoldersIANG' ){
+$('.newtab').hide();
+$('.newtabmd').hide();
+$('.downloadfile').show(); // always show for files
+if (extlists['{current_ext}']=='img'){
+$('a.img').lightBox();
+ if (readCookie('previewimg')=='yes'){
+
+document.getElementById('maineleimg_{uniqnum}').src='./?{ext:ajaxurlvar:ension}=getrawcontents&cat={cat}{ext:urlstr:ension}LANGeleIANG{ele}&ele={ele}';
+document.getElementById('maineleimg_{uniqnum}').style.maxWidth='41%';
+}}
+clickable=initifilemenu(extlists['{current_ext}']);
+}else{
+// always show these for folders
+$('.newtab').show();
+$('.newtabmd').show();
+clickable='yes';
+}
+
+
+"
+style="width:100%;" class="highlight" type="text" readonly value="{shortrawele}" onclick ="
+if (clickable=='yes'){
+jQuery.frameReady(function() {
+if (!document.getElementById('curr_folder').value){
+document.getElementById('curr_folder').value='';}
+latestfailtab=1;
+if ( '{cat}' == 'LANGfilesIANG' ){
+latestfailtab=0;
+
+if (readCookie(document.getElementById('tabcooked').value).search(escape(unescape(document.getElementById('curr_folder').value)) +' - : _ : - {rawele}')==-1){
+//alert(document.getElementById('curr_folder').value +' - : _ : - {rawele}');
+createCookie(document.getElementById('tabcooked').value, escape(unescape(document.getElementById('curr_folder').value)) +' - : _ : - {rawele}_AXC_nexttab_CXA_'+readCookie(document.getElementById('tabcooked').value).substr(0,cookielimit) , 365);
+}
+
+if (readCookie(document.getElementById('tabcooked').value).search(escape(unescape(document.getElementById('curr_folder').value)) +' - : _ : - '+ document.getElementById('current_ele_name').value)==-1)
+{
+tabray[escape(unescape(document.getElementById('curr_folder').value)) +' - : _ : - '+ jQuery.trim(document.getElementById('current_ele_name').value)]=jQuery('#formedit').html();
+tabtext[escape(unescape(document.getElementById('curr_folder').value)) +' - : _ : - '+ jQuery.trim(document.getElementById('current_ele_name').value)]=document.getElementById('editeleconti').value;
+if (document.getElementById('current_ele_name').value.length > 0 && document.getElementById('curr_folder').value.length > 0 ) {
+createCookie(document.getElementById('tabcooked').value, escape(unescape(document.getElementById('curr_folder').value)) +' - : _ : - '+ jQuery.trim(document.getElementById('current_ele_name').value) + '_AXC_nexttab_CXA_'+readCookie(document.getElementById('tabcooked').value).substr(0,cookielimit) , 365);
+}}
+}
+superstring= '{cat}{ext:urlstr:ension}LANGeleIANG{ele}&ele={ele}';
+sstring=superstring.replace(/\\/, '/');
+
+//if (readCookie('easynav')=='yes'){
+//jQuery('#cat_'+easynav).load('./?{ext:ajaxurlvar:ension}=easynav'+easynav+'&cat=' + sstring);
+//}else{
+jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&cat=' + sstring);
+//}
+
+jQuery(document).ready(function() {
+if ( '{cat}' != 'LANGfoldersIANG' ){
+
+
+//editarwrap();
+close_wysiwyg_markup();
+document.getElementById('inp1').checked=false;
+document.getElementById('inp2').checked=false;
+document.getElementById('inp3').checked=false;
+	removejscssfile('LANGtmpl_folderIANGLANGcurrent_templateIANG/js/' + current_ext + '.js', 'js');
+current_ext='{current_ext}';
+current_extlink=extlists['{current_ext}'];
+
+loadjscssfile('LANGtmpl_folderIANGLANGcurrent_templateIANG/js/' + current_extlink + '.js', 'js');
+document.getElementById('formedit').innerHTML = '';
+
+
+jQuery('#formedit').load('./?{ext:ajaxurlvar:ension}=editor&cat=' + sstring);
+
+superstring= '{cat}{ext:urlstr:ension}LANGeleIANG{ele}&ele={ele}';
+sstring=superstring.replace(/\\/, '/');
+
+document.getElementById('formedit').innerHTML = '';
+checktrlbtn= 'yes';
+jQuery('#formedit').load('./?{ext:ajaxurlvar:ension}=editor&cat=' + sstring);
+
+
+}
+
+
+});
+
+
+
+
+}, '_content');
+
+jQuery(document).ready(function() {
+inptagload(unescape(document.getElementById('folderinputter').value) +  '{ele}______inpdrupal', 'ch_d');
+inptagload(unescape(document.getElementById('folderinputter').value) +  '{ele}______inpjoomla', 'ch_j');
+inptagload(unescape(document.getElementById('folderinputter').value) +  '{ele}______inpxoops', 'ch_x');
+inptagload(unescape(document.getElementById('folderinputter').value) +  '{ele}______inpcss', 'ch_css');
+doform('#bogus3', '#formedit');
+ doform('#structfilter', '#mainmenu');
+
+$('#colorpicker').farbtastic('#inphex');			
+doform('#clrcknm', '#formcolor'); 
+
+
+
+});
+
+}
+
+"
+onmouseout="
+jQuery(document).ready(function(){ 
+if (typeof current_extlink == 'undefined'){
+jQuery('.css_legacy').hide();
+}else{
+	if (current_extlink=='css-leg'){
+	jQuery('.css_legacy').show();
+}else{
+jQuery('.css_legacy').hide();
+}
+}
+
+});
+
+"
+/>
+
+
+</span> 
+
+<div class="rndbrdr" id="mainele_{uniqnum}" 
+style="min-width:40%;max-width:60%;display:none;border-style:solid;border-width:1px;position:absolute;background-color:white;height:auto;left:30%;">
+<img class="highlight" style="position:absolute;right:0%" id='maineleimg_{uniqnum}' style="" onclick="
+imgname=document.getElementById('folderinputter').value+'/'+stupidelevar;
+imgname=imgname.replace(/\\/g, '\\\\');
+imgname=imgname.replace(/ /g, '+');
+imgname=encodeURIComponent(imgname);
+document.getElementById('imgeditor{uniqnum}').src='./core_clients/editor/imed/?imageName=' + imgname;
+jQuery(hidethatlastelemenu+' > iframe').show();
+jQuery(this).hide();
+
+" />
+<iframe name="imgeditor{uniqnum}" onmouseover="
+
+	widthedit=Number(this.contentWindow.document.getElementById('txt-width').value)+Number(50);
+
+document.getElementById('mainele_{uniqnum}').style.left='2%';
+	document.getElementById('mainele_{uniqnum}').style.maxWidth=widthedit+'px';
+	document.getElementById('mainele_{uniqnum}').style.width=widthedit+'px';
+	//document.getElementById('mainele_{uniqnum}').style.maxWidth='100%';
+	//document.getElementById('mainele_{uniqnum}').style.width='100%';
+
+document.getElementById('imgeditor{uniqnum}').style.height=Number(this.contentWindow.document.getElementById('txt-height').value)+Number(25)+'px';
+//document.getElementById('mainele_{uniqnum}').style.height='100%';
+	"
+   	src="" id="imgeditor{uniqnum}" style="display:none;"></iframe>
+<div class="openfile" style=""><a target="_blank" class="eles {thisextlink} highlight" style="margin-left:5px;max-width:100%;" href="./?{ext:ajaxurlvar:ension}=getrawcontents&cat={cat}{ext:urlstr:ension}LANGeleIANG{ele}&ele={ele}">LANGOpenIANG</a><br /></div>
+<div class="downloadfile"><a target="_blank" class="eles highlight" style="margin-left:5px;" href="./?{ext:ajaxurlvar:ension}=getrawcontentsdl&cat={cat}{ext:urlstr:ension}LANGeleIANG{ele}&ele={ele}">LANGDownloadIANG</a><br /></div>
+<span class="highlight" title="LANGrenameIANG" onclick="
+var newname=prompt('LANGnew_name_item_is_overwritten_silently_if_existsIANG', '{rawele}');
+if (newname){
+jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&fn='+rawurlencode('{rawele}')+'&newname='+rawurlencode(newname)+'&fd=' + document.getElementById('folderinputter').value.replace(/ /g, '+'));
+}">
+<img class="highlight" title="LANGrenameIANG" alt="LANGrenameIANG" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/rename.gif" style="height:30px;width:30px;"></img></span><br />
+
+
+<span class="highlight" title="LANGcutIANG" onclick="lastactionman='cut'; ccitemname='{rawele}';pastefromlocation=document.getElementById('folderinputter').value+'/{rawele}';$('.paste').show();">LANGcutIANG</span><br />
+<span class="highlight" title="LANGcutIANG" onclick="lastactionman='copy';ccitemname='{rawele}';pastefromlocation=document.getElementById('folderinputter').value+'/{rawele}';$('.paste').show();">LANGcopyIANG</span><br />
+<span class="highlight" class="paste" title="LANGpasteIANG" onmouseover="this.title='LANGpasteIANG ' + pastefromlocation"
+onclick="
+ rusure=confirm('LANGoverwrites_existing_files_silentlyIANG');
+ if (rusure){
+jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&cutcopy='+lastactionman+'&ccitemname='+ccitemname.replace(/ /g, '+')+'&pastefromlocation='+pastefromlocation.replace(/ /g, '+')+'&fd=' + document.getElementById('folderinputter').value.replace(/ /g, '+'));
+pastefromlocation='';
+lastactionman='';
+ccitemname='';}
+">paste</span>
+{xtc_dose}<br />
+{xtspeed_dose}<br />
+<span class="eleremoveimg" >
+<img alt="LANGremoveIANG {rawele}" title="LANGremoveIANG {rawele}" class="del highlight" 
+onclick="var temp = confirm('LANGremoveIANG {rawele}?');
+if (temp) {
+	if ('{current_ext}'.toLowerCase() == 'css' ) { // needs explicit js var to define css edit modes or normal
+superstring= '{cat}&rmele={ele}{ext:urlstr:ension}';
+sstring=superstring.replace(/\\/, '/');
+
+jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&cat=' + sstring);}
+else{
+	togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);
+	cmdadd='';
+if ( document.getElementById('sudouser').value.length > 0 ){
+cmdadd='sudo -u ' + document.getElementById('sudouser') .value + ' ';
+}
+
+
+if (server_os=='win'){
+	if ( '{cat}' == 'LANGfoldersIANG' ){
+	cmdadd= cmdadd + 'rd /s /q '+doublequote + '{rawele}' + doublequote;	
+	}else{
+	cmdadd= cmdadd + 'del '+ doublequote + '{rawele}' + doublequote;	
+	}
+}else{
+	if ( '{cat}' == 'LANGfoldersIANG' ){
+	cmdadd= cmdadd + 'rm -r \'{rawele}\'';		
+	}else{
+	cmdadd= cmdadd + 'rm  \'{rawele}\'';		
+	}
+}
+
+	document.getElementById('toolboxif').src='./?cc=phpterm&fd=' + document.getElementById('folderinputter').value
++ '&command=' + cmdadd;
+	}
+	}
+" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/remove.gif" />
+</span><br />
+
+<div class="newtab"><a target="_blank" class="eles highlight" style="margin-left:5px;" href="./?cat={cat}{ext:urlstr:ension}LANGeleIANG{ele}&ele={ele}">LANGNew_browser_tabIANG</a><br /></div>
+<div class="newtabmd"><a target="_blank" class="eles highlight" style="margin-left:5px;" href="./?inspenv=1&cat={cat}{ext:urlstr:ension}LANGeleIANG{ele}&ele={ele}">LANGNew_browser_tab_with_memory_dumpIANG</a><br /></div>
+<img src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/mime/{current_ext}.gif" alt="{current_ext}" title="LANGDetected_extensionIANG"></img>
+</div>
+  </div>
+</div>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="670"
+   name=""
+   committed-date="2004-04-27T09:17:17.914969Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/inlineXHTML/pictures"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="670"
+   name="goodgirl.jpg"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-04-27T09:17:17.914969Z"
+   checksum="f0954a128c41bacbdf8275a31f967bf1"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="670"
+   name="landessender.jpg"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-04-27T09:17:17.914969Z"
+   checksum="1df76d974ce0627a00aa42a28b452d46"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+</wc-entries>

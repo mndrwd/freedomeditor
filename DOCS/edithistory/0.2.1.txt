@@ -1,0 +1,3 @@
+++ core_clients/bgb_cmdline/installers/createjoomlapassword/*
++ tmpl/cssedit/editor/index.html  	## create zip javascript
+

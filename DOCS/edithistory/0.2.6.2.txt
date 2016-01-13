@@ -1,0 +1,17 @@
+++ = new files
++ = file updated
++- = moved file
+
+
+
++ tmpl/cssedit/editor/js/global.js added grippie detach line to fix edit_area resizing
++ tmpl/cssedit/editor/js/global.js changed function ltabm to skip bogus tabs
++ tmpl/cssedit/editor/js/global.js added cookielimit var
++ tmpl/cssedit/editor/js/global.js added tabcookie limits
++ tmpl/cssedit/editor/ele.html > added tabcookie limit
++ tmpl/cssedit/editor/editor.html > added current colorcookie (ckinm) limit
++ tmpl/cssedit/editor/editor.html > New file button does more
++ tmpl/cssedit/editor/editor.html > tabs now still work after save file
++ tmpl/cssedit/editor/editor.html > fixed problem with translate checkbox not reverting to default from settings menu
++ tmpl/cssedit/editor/js/*exts*.js editarea_wrap tinymce remove calls fixed
++ tmpl/cssedit/editor/js/(x)hmtl-block.js tinymce cleanup:false is now true

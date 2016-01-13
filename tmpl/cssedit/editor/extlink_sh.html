@@ -1,0 +1,10 @@
+ | <span class="highlight" onclick="
+togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);
+cmdadd='';
+if ( document.getElementById('sudouser').value.length > 0 ){
+cmdadd='sudo -u ' + document.getElementById('sudouser') .value + ' ';
+}
+cmdadd= cmdadd + '\'./{ele}\''; 
+document.getElementById('toolboxif').src='./?cc=phpterm&fd=' + document.getElementById('folderinputter').value
++ '&command=' + cmdadd;
+">LANGExecuteinphptermIANG</span>

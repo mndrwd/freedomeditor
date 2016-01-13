@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1336"
+   name=""
+   committed-date="2005-06-07T13:17:47.624083Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/firefox_extension"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="1335"
+   name="install.rdf"
+   text-time="2005-06-07T12:55:12.000000Z"
+   committed-date="2005-06-07T12:54:48.078823Z"
+   checksum="1bbfcc8419c356a2a0d7b939de1f76d6"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-06-07T12:55:12.000000Z"/>
+<entry
+   committed-rev="1333"
+   name="build.sh"
+   text-time="2005-06-07T12:47:49.000000Z"
+   committed-date="2005-06-07T12:43:07.304614Z"
+   checksum="fb59b6acad77013c17ad6ea361c333b0"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-06-07T12:47:49.000000Z"/>
+<entry
+   committed-rev="1336"
+   name="bxehelper-0.1.xpi"
+   text-time="2005-06-07T13:18:01.000000Z"
+   committed-date="2005-06-07T13:17:47.624083Z"
+   checksum="941ae6dc587325dc4ccb4b9653d2c8c3"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-06-07T13:18:01.000000Z"/>
+<entry
+   name="content"
+   kind="dir"/>
+<entry
+   committed-rev="1336"
+   name="bxehelper.xpi"
+   text-time="2005-06-07T13:18:01.000000Z"
+   committed-date="2005-06-07T13:17:47.624083Z"
+   checksum="941ae6dc587325dc4ccb4b9653d2c8c3"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-06-07T13:18:01.000000Z"/>
+<entry
+   committed-rev="1333"
+   name="config_build.sh"
+   text-time="2005-06-07T12:47:49.000000Z"
+   committed-date="2005-06-07T12:43:07.304614Z"
+   checksum="e6b1fabc2c33dd7ee97de0441adb13c9"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-06-07T12:47:49.000000Z"/>
+</wc-entries>

@@ -1,0 +1,37 @@
+<html><head></head><body>
+<h1 id="tocedit-css-file0">CSS file <b style="color:black;background-color:#99ff99">editing</b> instructions</h1>
+
+<br />
+<br />
+
+<strong> Information in this document only applies to the css-legacy extlink which was the default css extlink only in freedomeditor version 0.2.6.7 and previous.</strong><br />
+If you want to use the css-legacy extlink, goto settings > open editor core_client cfg, ext_links{, paste the css-legacy references below the css extlink references.<p />
+<strong>Relevant configuration options:</strong><br />
+Settings menu &gt; Editor core-client (or * handling) &gt; Structure menu &gt;<br />
+ext_links &gt; Editor menu &gt; &quot;desired_fileextension: css;&quot; (css = method of handling which spawns behaviour described in first 2 notes below)<br />
+
+extlink_parser to be precise.<br />
+<br />
+Relevant file for css extlink parser setting is fc/parser/css/prepare_write.php which gets called by core_client/editor/fc/parser/css/write/init.php<br />
+which is selected in the core_clients/editor/writebackmainediteddata.php after noting both the current_extlink and if at this point a php function named writefile2 exists, or only a function named writefile. By default, the css extlink it's parser enables a writefile2 function to kick in, while all other text file types use the &quot;regular&quot; writefile function.<br />
+This behaviour can be altered for each file type.<br />
+<br />
+<br />
+
+<ul>
+    <li><strong>Language packs <b style="color:black;background-color:#99ff99">editing</b> or using css files for database purposes</strong></li>
+
+</ul>
+
+If you ever need to use any of these characters: &quot;{&quot;, &quot;}&quot;, &quot;;&quot; <strong>in</strong> your css elements use them respectively like this: &quot;\{&quot;, &quot;\}&quot;, &quot;\;&quot;<br />
+<br />
+Editing freedomeditor configuration css files in other applications can be performed by respecting these transformations:<br />
+"_dotcm_", "_brace_", "_bbrace_", "_nwln_"),  = (";", "{", "}", '&lt;br /&gt;' 
+<ul>
+    <li><strong>/* CSS Comments */</strong><br />
+Simply said, when you see/type in the edit field &quot;*/;&quot;, it will be changed to &quot;;*/&quot; when the file is actually saved to disk</li>
+    <li><strong>Deprecated Browser CSS incompatibility solution</strong><br />
+By making use of the loader.php file as the default GUI template does, you can create seperate css elements for different user agent strings. The loader.php file ofcourse uses intelligent browser cache checking.</li>
+
+</ul>
+</body></html>

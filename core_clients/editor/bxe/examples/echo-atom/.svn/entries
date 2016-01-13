@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1039"
+   name=""
+   committed-date="2004-12-15T13:48:11.138235Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/echo-atom"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="687"
+   name="relaxng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="313a470d5d908a8cf0f7dd6b5a5b5616"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="entry.xml"
+   text-time="2004-04-29T08:47:16.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="a73eb796d7414527e7c4de77071df42c"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:16.000000Z"/>
+<entry
+   committed-rev="1039"
+   name="config.xml"
+   text-time="2004-12-16T02:30:14.000000Z"
+   committed-date="2004-12-15T13:48:11.138235Z"
+   checksum="ed7152c6944cf3708bc2e55137223d3a"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-12-16T02:30:14.000000Z"/>
+<entry
+   committed-rev="687"
+   name="entry.xsl"
+   text-time="2004-04-29T08:47:16.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="e782f0b81f4a148c7186a7bef18ce629"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:16.000000Z"/>
+<entry
+   committed-rev="638"
+   name="entry.css"
+   text-time="2004-04-27T09:22:47.000000Z"
+   committed-date="2004-03-31T06:12:57.000000Z"
+   checksum="5f3a5cfb68caa5654c82351c39aa0f56"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:47.000000Z"/>
+<entry
+   committed-rev="55"
+   name="index.html"
+   text-time="2004-04-27T09:22:47.000000Z"
+   committed-date="2003-08-18T22:35:40.000000Z"
+   checksum="a22982485aa83e3f6a45c2b317b31c2b"
+   last-author="michi"
+   kind="file"
+   prop-time="2004-04-27T09:22:47.000000Z"/>
+</wc-entries>

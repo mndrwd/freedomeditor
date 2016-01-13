@@ -1,0 +1,30 @@
+<form method="post" onsubmit="
+parent.sedfdreplfind=document.getElementById('find').value;
+parent.sedfdreplreplace=document.getElementById('replace').value;
+">
+
+LANGfilesIANG LANGfilterIANG (LANGexamplesIANG: *.php ---  *.html --- * ):
+<input type="text" name="filter" onfocus="this.value='*.' + parent.document.getElementById('structfltr').value;
+this.select();
+" /><br />
+LANGfind_word_stringIANG:
+<input id="find" type="text" name="find" onfocus=
+"
+if ( parent.sedfdreplfind != '' ){
+this.value=parent.sedfdreplfind;
+this.select();
+}" /><br />
+***LANGoptionally_replace_withIANG:
+<input id="replace" type="text" name="replace" onfocus="
+if ( parent.sedfdreplreplace != '' ) {
+this.value=parent.sedfdreplreplace;
+this.select();}" /><br />
+
+LANGreplace_as_different_user_with_sudo_(fill_in_username,_read_INSTALL_documentation)IANG:
+<input onfocus="this.value=parent.document.getElementById('sudouser').value;this.select();" type="text" name="sudouser" /><br />
+
+<input type="submit">
+</form>
+***(LANGreplwindowstipIANG)<p />
+version 0.0.5 of bgb sed php/html interface, a  <a href="http://www.freedomeditor.com" target="_blank">freedomeditor.com</a> core client which uses ms-dos find, sed, grep, phpterm, optionally sudo and a modification i made to phpterm to accepts commands from url.
+compatible with all releases of freedomeditor, however GUI  language support starts with freedomeditor 0.1.2.

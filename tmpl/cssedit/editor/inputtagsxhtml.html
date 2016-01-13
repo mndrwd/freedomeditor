@@ -1,0 +1,20 @@
+
+<a onmouseover="
+"
+ onclick="
+var q = editAreaLoader.getSelectedText('editeleconti');if(!q)void(q=prompt('(x)HTML tag name:',''));
+if (q) {
+avar = q.replace(/[</>]/g, '');
+bvar = avar.replace(/[0-9]/g, 'n');
+z='http://www.w3schools.com/tags/tag_' + escape(bvar)+'.asp';
+
+window.open(z,bvar,'attribute1,attribute2');
+}
+">(x)HTML tags</a>
+ <b>}}}{{{</b> 
+<a onclick="
+q = editAreaLoader.getSelectedText('editeleconti');
+q.replace(/:[0-9][a-z];/gi, '');
+if(!q)void(q=prompt('CSS property:',''));if(q)z='http://www.w3schools.com/css/pr_'+escape(q)+'.asp';window.open(z,q,'attribute1,attribute2');
+">CSS propertys</a>
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1836"
+   name=""
+   committed-date="2008-05-21T15:02:18.447196Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/relaxng"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="1836"
+   name="DocumentVDOM.js"
+   text-time="2008-05-22T01:30:08.000000Z"
+   committed-date="2008-05-21T15:02:18.447196Z"
+   checksum="b54f0d7c09defad258e79bd595f8dd96"
+   last-author="chregu"
+   kind="file"
+   prop-time="2008-05-22T01:30:08.000000Z"/>
+<entry
+   committed-rev="1411"
+   name="NodeVAL.js"
+   text-time="2005-10-07T01:30:09.000000Z"
+   committed-date="2005-10-06T18:52:18.830240Z"
+   checksum="708134a1fd80d9dcca3e3b1e0fe93a84"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-10-07T01:30:09.000000Z"/>
+<entry
+   committed-rev="938"
+   name="AttributeVDOM.js"
+   text-time="2004-11-25T02:30:15.000000Z"
+   committed-date="2004-11-24T21:17:32.684914Z"
+   checksum="6f29af2c19ee6a1819658c9c4652b162"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-25T02:30:15.000000Z"/>
+<entry
+   committed-rev="938"
+   name="NodeVDOM.js"
+   text-time="2004-11-25T02:30:16.000000Z"
+   committed-date="2004-11-24T21:17:32.684914Z"
+   checksum="8ee53ecdfcfcaaddc06c929674f0fdd0"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-25T02:30:16.000000Z"/>
+<entry
+   committed-rev="1410"
+   name="ElementVAL.js"
+   text-time="2005-10-07T01:30:09.000000Z"
+   committed-date="2005-10-06T18:13:19.236673Z"
+   checksum="c7fd007526f0851708caab91165148b0"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-10-07T01:30:09.000000Z"/>
+<entry
+   committed-rev="1413"
+   name="ElementVDOM.js"
+   text-time="2005-12-06T13:34:19.000000Z"
+   committed-date="2005-12-06T13:13:45.958486Z"
+   checksum="7da77802717ba5020c5dac934847629b"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-12-06T13:34:19.000000Z"/>
+<entry
+   committed-rev="1413"
+   name="RelaxNG.js"
+   text-time="2005-12-06T13:34:19.000000Z"
+   committed-date="2005-12-06T13:13:45.958486Z"
+   checksum="9194fca2b6df2ceabde682a4375fdfd2"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-12-06T13:34:19.000000Z"/>
+<entry
+   committed-rev="938"
+   name="DocumentVAL.js"
+   text-time="2004-11-25T02:30:16.000000Z"
+   committed-date="2004-11-24T21:17:32.684914Z"
+   checksum="8f88c50426a929e455ab68f6552a72b8"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-25T02:30:16.000000Z"/>
+</wc-entries>

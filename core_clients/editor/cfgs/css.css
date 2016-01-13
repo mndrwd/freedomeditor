@@ -1,0 +1,4 @@
+/*cat=1_*/
+global{
+ send_string:off; 
+}

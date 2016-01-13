@@ -1,0 +1,12 @@
+++ = new files
++ = file updated
+
+
++ core_clients/editor/tinymce # updated to 3.2.3
++ core_clients/editor/edit_area # updated to 0.8.1.1
++ fc/globals/repl_between.php # supports new parameter to return matches array
++ index.php # loading extension support (below)
+++ fc/extension/* # view changelog
+++ fc/globals/loadextcfg.php # function to load any css file to php array
+++ config.css # added "extension" settings
+++ lang/en/en.css # added 1 new entry

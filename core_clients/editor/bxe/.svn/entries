@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1849"
+   name=""
+   committed-date="2008-10-23T15:52:54.562537Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   prop-time="2004-09-01T01:30:15.000000Z"
+   revision="1850"/>
+<entry
+   committed-rev="1668"
+   name="bxeLoader.js"
+   text-time="2007-05-04T09:06:03.000000Z"
+   committed-date="2007-05-04T09:05:56.448309Z"
+   checksum="95286aab7d0a2a161c9381f6029fc900"
+   last-author="chregu"
+   kind="file"
+   prop-time="2007-05-04T09:06:03.000000Z"/>
+<entry
+   name="plugins"
+   kind="dir"/>
+<entry
+   committed-rev="938"
+   name="NOTICE"
+   text-time="2004-11-25T02:30:15.000000Z"
+   committed-date="2004-11-24T21:17:32.684914Z"
+   checksum="cbb74d977b625aa25036d6fbd8aedd8e"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-25T02:30:15.000000Z"/>
+<entry
+   committed-rev="1455"
+   name="LICENSE"
+   text-time="2006-02-16T02:30:08.000000Z"
+   committed-date="2006-02-15T08:00:29.657887Z"
+   checksum="153d2db1c329326a2d9f881317ea942e"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-02-16T02:30:08.000000Z"/>
+<entry
+   name="div"
+   kind="dir"/>
+<entry
+   name="kupu"
+   kind="dir"/>
+<entry
+   name="scripts"
+   kind="dir"/>
+<entry
+   name="css"
+   kind="dir"/>
+<entry
+   name="firefox_extension"
+   kind="dir"/>
+<entry
+   name="mozile"
+   kind="dir"/>
+<entry
+   name="relaxng"
+   kind="dir"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   committed-rev="677"
+   name="LICENSE.kupu"
+   text-time="2004-04-27T13:41:52.000000Z"
+   committed-date="2004-04-27T13:36:39.135189Z"
+   checksum="3b2b88565674b217fb8c3dd4c6c2af9a"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T13:41:52.000000Z"/>
+<entry
+   name="xsl"
+   kind="dir"/>
+<entry
+   name="td"
+   kind="dir"/>
+<entry
+   name="picturesExample"
+   kind="dir"/>
+<entry
+   committed-rev="986"
+   name="index.html"
+   text-time="2004-11-30T10:03:29.000000Z"
+   committed-date="2004-11-30T10:01:54.776772Z"
+   checksum="3db576b53e3733eb98b0af3ae3bdc521"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-30T10:03:29.000000Z"/>
+<entry
+   name="js"
+   kind="dir"/>
+<entry
+   committed-rev="1039"
+   name="NEWS"
+   text-time="2004-12-16T02:30:14.000000Z"
+   committed-date="2004-12-15T13:48:11.138235Z"
+   checksum="e761b749422444688c4664c0e3773b8a"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-12-16T02:30:14.000000Z"/>
+<entry
+   name="util"
+   kind="dir"/>
+<entry
+   name="examples"
+   kind="dir"/>
+</wc-entries>

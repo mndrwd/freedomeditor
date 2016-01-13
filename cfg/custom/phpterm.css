@@ -1,0 +1,20 @@
+/*cat=1_*/
+extension{
+	
+	launch:enabled;
+	core_client:any;
+	globallanguageload:enabled;
+	languageload:enabled;
+	languagereplace:disabled;
+	tmplload:enabled;
+	phplaunch:enabled;
+	phplaunch_output:enabled;
+	srch_ext:disabled; 
+	level:1;
+	ext_req_val:matchvar;
+	ext_req_val_Casesens:off;
+	}
+extension_req_val{
+	cc:phpterm;
+	}
+	

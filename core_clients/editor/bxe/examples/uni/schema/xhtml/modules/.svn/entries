@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="985"
+   name=""
+   committed-date="2004-11-30T08:24:08.468878Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/uni/schema/xhtml/modules"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="687"
+   name="hypertext.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="0324e92a38293a1edc80067eab83e900"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="datatypes.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="141855c8ec39c5fbffd960a3bb310d3c"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="param.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="0b5e47779f72893cfd5dd56940c26c59"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="form.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="e747912fbc8e9d3614ad9f7102b359c7"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="inlstyle.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="13cc9d54a46c9245dfdb9d72676c0865"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="nameident.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="036795d2b6746cc014af830add5c53bd"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="basic-table.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="9fc5f3764d6bad82db1daf5e9856cc90"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="object.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="86f73b42d19cfcbf29c43365a9a2c053"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="985"
+   name="attribs.rng.xml"
+   text-time="2004-11-30T08:25:10.000000Z"
+   committed-date="2004-11-30T08:24:08.468878Z"
+   checksum="2c66ea69cb34cfa0b6a74a5cbc33a1e8"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-30T08:25:10.000000Z"/>
+<entry
+   committed-rev="687"
+   name="pres.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="92ac5d93992ca66eb65a3ca173d1b93f"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="list.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="f33aed8fa5ef0408b176db65b8f633a8"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="basic-form.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="e3de86a60ddb24dc36036a29f6cf4048"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="struct.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="8f6f98a0987216de5562c41398721907"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="text.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="55955cbdea5b608bcd9182b200502f0d"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="target.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="1a2fade7bc3f1461422fa578c8fb654d"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+</wc-entries>

@@ -1,0 +1,15 @@
+ | <span class="highlight" title="Fonts: Convert TTF to EOT (requires ttf2eot binary)" onclick="
+togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);
+cmdadd='';
+if ( document.getElementById('sudouser').value.length > 0 ){
+cmdadd='sudo -u ' + document.getElementById('sudouser') .value + ' ';
+}
+thisele='{ele}';
+cmdadd= cmdadd + readCookie('ttf2eotbinary') + ' < \'{ele}\' > \'' + thisele.replace(/.ttf/i, '.eot') + '\'' ; 
+document.getElementById('toolboxif').src='./?cc=phpterm&fd=' + document.getElementById('folderinputter').value
++ '&amp;command=' + cmdadd;
+">TTF => EOT</span>
+
+
+
+ | {load:link_fonts:load}

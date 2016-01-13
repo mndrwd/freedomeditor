@@ -1,0 +1,207 @@
+
+<div id="cmstags">
+<form name="cmstags" id="cmsgoods">
+
+<span id="showinps" style="display:none;">
+<input id="ch_d" type="checkbox" onchange="inptags(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpdrupal');">Drupal</input> 
+<input id="ch_j" type="checkbox" onchange="inptags(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpjoomla');">Joomla!</input> 
+<input id="ch_x" type="checkbox" onchange="inptags(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpxoops');">Xoops</input> 
+<input id="ch_css" type="checkbox" onchange="inptags(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpcss');">CSS</input> 
+</span>
+<select onfocus="
+ inptagload(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpdrupal', 'ch_d');
+inptagload(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpjoomla', 'ch_j');
+inptagload(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpxoops', 'ch_x');
+inptagload(unescape(document.getElementById('curr_folder').value) + document.getElementById('current_ele_name').value + '______inpcss', 'ch_css');
+"
+ id="cmstags2" name="cmstags2" style="display:block;float:left" title="CTRL+space to activate"
+onblur="
+if (document.getElementById('cmstags2').value.length > 0 ) {
+//sendwrap(document.getElementById('cmstags2').value);
+editAreaLoader.setSelectedText('editeleconti', document.getElementById('cmstags2').value);
+}document.getElementById('editeleconti').blur();">
+<option value="">CTRL+space to activate</option>
+<optgroup label="Drupal" id="inpdrupal">
+<option value="<?php if ($title) {?>">
+&lt;?php if ($title) { ?&gt;
+</option>
+<option value="<?php print $title; ?>">
+&lt;?php print $title; ?&gt;
+</option>
+<option value="<?php print $content; ?>">
+&lt;?php print $content; ?&gt;
+</option>
+<option value="< ?php if ($links) { ?>">
+ &lt;?php if ($links) { ?&gt;
+</option>
+<option value="<?php print $links; ?>">
+&lt;?php print $links; ?&gt;
+</option>
+<option value="<?php } ?>">
+&lt;?php } ?&gt;
+</option>
+<option value="">---------</option>
+<option value="">block.tpl</option>
+<option value="<php print $block->module; ?>">
+&lt;php print $block->module; ?&gt;
+</option>
+<option value="<?php print $block->module; ?>">
+&lt;?php print $block->module; ?&gt;
+</option>
+<option value="<?php print $block->delta; ?>">
+&lt;?php print $block->delta; ?&gt;
+</option>
+<option value="<?php print $block->subject; ?>">
+&lt;?php print $block->subject; ?&gt;
+</option>
+<option value="<?php print $block->content; ?>">
+&lt;?php print $block->content; ?&gt;
+</option>
+<option value="">---------</option>
+<option value="">comment.tpl</option>
+<option value="<?php if ($comment->status == COMMENT_NOT_PUBLISHED) print ' comment-unpublished'; ?>">
+&lt;?php if ($comment->status == COMMENT_NOT_PUBLISHED) print ' comment-unpublished'; ?&gt;
+</option>
+<option value="<?php if ($picture){print $picture;}?>">
+&lt;?php if ($picture){print $picture;}?&gt;
+</option>
+<option value="<?php if ($new != '') { ?>">
+&lt;?php if ($new != '') { ?&gt;
+</option>
+<option value="<?php if ($new != '') { ?>">
+&lt;?php print $new; ?&gt;
+</option>
+<option value="<?php print $submitted; ?>">
+&lt;?php print $submitted; ?&gt;
+</option>
+
+</option>
+<option value="">---------</option>
+<option value="">node.tpl</option>
+<option value="<?php if ($sticky) { print ' sticky'; } ?>">
+&lt;?php if ($sticky) { print ' sticky'; } ?&gt;
+</option>
+<option value="<?php if (!$status) { print ' node-unpublished'; } ?>">
+&lt;?php if (!$status) { print ' node-unpublished'; } ?&gt;
+</option>
+<option value="<?php if ($page == 0) { ?>">
+&lt;?php if ($page == 0) { ?&gt;
+</option>
+<option value="<?php print $node_url?>">
+&lt;?php print $node_url?&gt;
+</option>
+<option value="<?php print $submitted?>">
+&lt;?php print $submitted?&gt;
+</option>
+<option value="<?php print $terms?>">
+&lt;?php print $terms?&gt;
+</option>
+</optgroup>
+</optgroup>
+<optgroup id="inpjoomla" label="Joomla!">
+<option label="head" value='<jdoc:include type="head">'>jdoc:include type="head"</option>
+<option label="module_user3" value='<jdoc:include type="modules" name="user3" style="xhtml">'>jdoc:include type="modules" name="user3" style="xhtml"</option>
+<option label="module_top" value='<jdoc:include type="modules" name="top" style="xhtml">'>
+jdoc:include type="modules" name="top" style="xhtml"</option>
+<option label="module_breadcrumb" value='<jdoc:include type="modules"  name="breadcrumb" style="xhtml">'>jdoc:include type="modules"  name="breadcrumb" style="xhtml"</option>
+<option label="module_right" value='<jdoc:include type="modules" name="right" style="xhtml">'>jdoc:include type="modules" name="right" style="xhtml"</option>
+<option label="module_left" value='<jdoc:include type="modules" name="left" style="xhtml">'>jdoc:include type="modules" name="left" style="xhtml"</option>
+<option label="content" value='<jdoc:include type="component" style="xhtml">'>
+jdoc:include type="component" style="xhtml" </option>
+<option label="footer" value='<jdoc:include type="modules" name="footer" style="xhtml">'>
+jdoc:include type="modules" name="footer" style="xhtml"</option>
+</optgroup>
+
+
+<optgroup id="inpxoops" label="XOOPS">
+
+<option value="{$xoops_charset}">{$xoops_charset}
+</option>
+
+<option value="{$xoops_langcode}">{$xoops_langcode}</option>
+
+<option value="{$xoops_meta_keywords}">{$xoops_meta_keywords}</option>
+
+<option value="{$xoops_meta_description}">{$xoops_meta_description}</option>
+
+<option value="{$meta_copyright}">{$meta_copyright}</option>
+
+<option value="{$meta_robots}">{$meta_robots}</option>
+
+<option value="{$meta_rating}">{$meta_rating}</option>
+
+<option value="{$xoops_sitename}">{$xoops_sitename}</option>
+
+<option value="{$xoops_pagetitle}">{$xoops_pagetitle}</option>
+
+<option value="{$xoops_theme}">{$xoops_theme}</option>
+
+<option value="{$xoops_themecss}">{$xoops_themecss}</option>
+
+<option value="{$xoops_url}">{$xoops_url}</option>
+
+<option value="{$xoops_js}">{$xoops_js}</option>
+
+<option value="{$xoops_banner}">{$xoops_banner}</option>
+
+<option value="{foreach item=block from=}">{foreach item=block from=}</option>
+
+<option value="{$block}">{$block}</option>
+
+<option value="{/foreach}">{/foreach}</option>
+
+<option value="$xoops_lblocks">$xoops_l-eft-blocks</option>
+
+<option value="{if $xoops_showlblock == 1}">{if $xoops_showlblock == 1}</option>
+
+<option value="$xoops_ccblocks">$xoops_ccblocks</option>
+
+<option value="$xoops_clblocks">$xoops_clblocks</option>
+
+<option value="$xoops_crblocks">$xoops_crblocks</option>
+
+<option value="{$xoops_contents}">{$xoops_contents}</option>
+
+<option value="{if $xoops_showcblock == 1}">{if $xoops_showcblock == 1}</option>
+
+<option value="{if $xoops_showrblock == 1}">{if $xoops_showrblock == 1}</option>
+
+<option value="$xoops_rblocks">$xoops_rblocks</option>
+
+<option value="{$xoops_footer}">{$xoops_footer}</option>
+
+<option value="{$xoops_isadmin}">{$xoops_isadmin}</option>
+
+<option value="{$xoops_isuser}">{$xoops_isuser}</option>
+
+<option value="{$xoops_userid}">{$xoops_userid}</option>
+
+<option value="{$xoops_uname}">{$xoops_uname}</option>
+
+
+</optgroup>
+
+<optgroup id="inpcss" label="CSS">
+<option value="
+font-family: 'yourfont';  
+	  src: url('.../yourfont.eot'); /* IE */ 
+src: local('real font name'), url('.../yourfont.ttf')  format('truetype'); 
+
+">fill @font-face element for custom fonts</option>
+</optgroup>
+
+
+</select>
+<input type="checkbox" onchange="switchMenu('showinps');switchMenu('cmstags2');">Choose CMS / tags</input> 
+
+<hr />
+<span>
+<b>[LANGdocumentationIANG}</b>  
+{ext:inputtagsext:ension} 
+<b>{/LANGdocumentationIANG]</b>
+</span>
+<hr />
+</form>
+
+</div>
+

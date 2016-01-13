@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1531"
+   name=""
+   committed-date="2006-10-04T09:58:46.331441Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/plugins"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="1343"
+   name="Drawer.js"
+   text-time="2005-06-17T01:30:07.000000Z"
+   committed-date="2005-06-16T09:58:30.088075Z"
+   checksum="8fb1aef4f37fea433d5b9bf8eec2d6d9"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-06-17T01:30:07.000000Z"/>
+<entry
+   committed-rev="905"
+   name="XMLSnippets.js"
+   text-time="2004-11-22T02:30:11.000000Z"
+   committed-date="2004-11-21T22:27:41.012083Z"
+   checksum="7f3350373169fff50b885a6bfa73c576"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-22T02:30:11.000000Z"/>
+<entry
+   committed-rev="1531"
+   name="FCKBrowser.js"
+   text-time="2006-10-05T01:30:07.000000Z"
+   committed-date="2006-10-04T09:58:46.331441Z"
+   checksum="85134f4429038ce6cf594faeb3bb130b"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-10-05T01:30:07.000000Z"/>
+<entry
+   name="Drawer"
+   kind="dir"/>
+<entry
+   committed-rev="1205"
+   name="ClipboardPasteDialog.js"
+   text-time="2005-04-12T01:30:08.000000Z"
+   committed-date="2005-04-11T15:09:18.633574Z"
+   checksum="5764ee0ce2af4fbae32553a209d1f361"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-04-12T01:30:08.000000Z"/>
+</wc-entries>

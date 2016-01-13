@@ -1,0 +1,241 @@
+<div id="box_content" style="display:none;">
+<form name="encoder" action="encode.html" method="get">
+
+<textarea class="resizable" id="source_of_js_stuff" onfocus="this.select()" name="src" cols="40" rows="1" style="height:25px;width:90%;"></textarea>
+
+<p />
+<select name="encoding" onChange="encode()">
+<option value="onlexp" selected>Nothing, just export</option>
+<option value="jsvar">JavaScript-safe variable</option>
+<option value="encodeURI">encodeURI</option>
+<option value="encodeURIComponent">encodeURIComponent</option>
+<option value="decodeURI">decodeURI</option>
+<option value="decodeURIComponent">decodeURIComponent</option>
+<option value="escape">escape</option>
+<option value="unescape">unescape</option>
+<option value="replace">replace</option>
+<option value="regexp">replace by regular expression</option>
+
+</select>
+<input type="button" value="LANGEncodeIANG" onClick="encode()">
+<input type="button" value="LANGImport_selectionIANG" onClick="document.getElementById('source_of_js_stuff').value = editAreaLoader.getSelectedText('editeleconti');document.getElementById('lookeitsdestiny').value = editAreaLoader.getSelectedText('editeleconti')">
+<input type="button" value="LANGImport_selected_tagIANG" onClick="document.getElementById('source_of_js_stuff').value = document.getElementById('cmsgoods').cmstags2.value;document.getElementById('lookeitsdestiny').value = document.getElementById('cmsgoods').cmstags2.value">
+<br />
+
+<textarea class="resizable" id="lookeitsdestiny" name="dest" cols="40" rows="2" title="click to paste entry into edit_area" style="height:25px;width:90%;" onclick="
+if (this.value !=''){
+
+editAreaLoader.setSelectedText('editeleconti', document.encoder.dest.value)
+//sendText2(area.textarea,document.encoder.dest.value);
+
+countclik(document.forms['bogus3'].editelecont);
+//sendText(
+//document.forms['bogus3'].editelecont
+//document.getElementById('editeleconti')
+//, document.encoder.dest.value);
+self.focus();document.getElementById('editeleconti').focus();
+}
+"></textarea>
+
+</form>
+
+<div id="wrapper">
+<div id="d5">
+
+<div class="shared form_edit" id="formedit">
+<!--ajax{editor}-->
+<div onmouseover="
+if (reinittabs =='yes'){
+	jQuery('#tabmenu').empty();
+	jQuery('#tabmenu').append(closealltabs);
+	
+jQuery('#tabmenu').mouseenter(function() {
+
+ltabm('#tabmenu', '#formedit');
+}).mouseleave(function(){
+ jQuery('#tabmenu').empty();
+ jQuery('#tabmenu').append(closealltabs);
+ });
+ }
+ reinittabs='off';
+ 
+" id="tabmenu" >
+<span title="LANGclose_allIANG?" onclick="
+var x=window.confirm('LANGclose_allIANG?');
+if (x){
+createCookie(readCookie('tabcooked'), '', 365);tabray=[];tabtext=[];
+}
+">Tabs</span> :
+</div>
+
+
+	{ext:inputtags:ension}
+
+
+<span class="headers">LANGeditIANG: [{ext:cat:ension}] :: <b>{ext:rawele_name:ension}</b></span>
+ <form id="bogus3" method="post" action="./?{ext:ajaxurlvar:ension}=editor&cat={ext:cat:ension}&fn={ext:ele_name:ension}&ele={ext:ele_name:ension}{ext:urlstr:ension}&fd={ext:folder:ension}" >
+  <label> <span class="textonbg">LANGelementIANG</span></label>
+        <input name="ele" id="current_ele_name" type="text" size="14" value="{ext:rawele_name:ension}" />
+  <select id="wysiwyg" title="" name="brw">{ext:browsers:ension}</select><input class="checkbox" name="attach" title="LANGsave_current_as_new_element_with_selected_suffixIANG" type="checkbox" /> 
+<br />
+<input id="inp0" name="inp0" type="radio" onclick="closeemall('editeleconti');" />none 
+<input id="inp1" name="inp1" type="radio" onclick="
+closeemall('editeleconti');
+try{
+editarea_wrap('editeleconti');
+}
+catch(e){}
+
+" />
+<a target="_blank" rel="external" href="http://www.cdolivet.com/index.php?page=editArea">LANGedit_areaIANG</a>
+<input id="inp2" name="inp2" type="radio" onclick="webcss_wrap('editelecont');"><a title="currently deprecated IE6 software" target="_blank" rel="external" href="http://home.kimo.com.tw/huchengtw/en/WebCSSEditor.html" />LANGwebcss_authorIANG</a>
+<input id="inp3" name="inp3" type="radio" onclick="closeemall('editeleconti');tinyMCE.execCommand('mceAddControl', true, 'editeleconti');" /><a target="_blank" rel="external" href="http://tinymce.moxiecode.com/">LANGtinyMCEIANG</a><br />
+<select id="cmmid" 
+
+name="editor_fileext_mode" onchange="
+close_wysiwyg_markup();
+removejscssfile('LANGtmpl_folderIANGLANGcurrent_templateIANG/js/' + current_extlink + '.js', 'js');
+current_extlink = this.options[this.selectedIndex].value;
+
+loadjscssfile('LANGtmpl_folderIANGLANGcurrent_templateIANG/js/' + this.options[this.selectedIndex].value + '.js', 'js');
+">
+<option  value="{ext:current_extlink:ension}">{ext:current_extlink:ension}</option>
+<option>----</option>
+{ext:mimemodesftlog:ension}
+</select>
+
+ <input type="hidden" id="curr_folder" value="{ext:folder:ension}" name="fd" id="fd" />
+  <input type="hidden" id="curr_filename" value="{ext:file:ension}" name="fn" id="fn" />
+            <textarea class="resizable" id="editeleconti" 
+			
+						
+						onmouseover="
+				jQuery(document).ready(function(){ 
+						jQuery('textarea.resizable:not(.processed)').TextAreaResizer();
+if (checktrlbtn2 =='yes'){
+						
+								  if ( readCookie('translate_editfield' ) == 'on' ) {
+document.getElementById('trlback').checked=true;
+createCookie('translate_editfield', 'on', 365);
+document.getElementById('translate_editfield').checked=true;
+document.getElementById('translation_icon').src=enable_translation_icon;
+
+	} else {
+document.getElementById('trlback').checked=false;	
+document.getElementById('translate_editfield').checked=false;
+createCookie('translate_editfield', 'off', 365);	
+document.getElementById('translation_icon').src=disable_translation_icon;
+}
+}										
+		
+						});
+						
+
+								
+
+						"  
+						name="editelecont" cols="120" rows="20" 
+						onclick="
+														  if ( readCookie('translate_editfield' ) == 'on' ) {
+document.getElementById('trlback').checked=true;
+createCookie('translate_editfield', 'on', 365);
+document.getElementById('translate_editfield').checked=true;
+document.getElementById('translation_icon').src=enable_translation_icon;
+
+	} else {
+document.getElementById('trlback').checked=false;	
+document.getElementById('translate_editfield').checked=false;
+createCookie('translate_editfield', 'off', 365);	
+document.getElementById('translation_icon').src=disable_translation_icon;
+}
+										
+						checktrlbtn2='no';" onfocus="
+														  if ( readCookie('translate_editfield' ) == 'on' ) {
+document.getElementById('trlback').checked=true;
+createCookie('translate_editfield', 'on', 365);
+document.getElementById('translate_editfield').checked=true;
+document.getElementById('translation_icon').src=enable_translation_icon;
+
+	} else {
+document.getElementById('trlback').checked=false;	
+document.getElementById('translate_editfield').checked=false;
+createCookie('translate_editfield', 'off', 365);	
+document.getElementById('translation_icon').src=disable_translation_icon;
+}
+
+						checktrlbtn2='no';" 
+						
+						onkeydown="countclik(document.forms['bogus3'].editelecont)" onKeyUp="">{once:ele_content:cc}</textarea>
+			
+                <br />
+                <input id="trlback" name="trlback" type="checkbox" title="LANGtranslate_back_to_english_before_savingIANG" checked />
+								
+								<input onmouseover="
+						checktrlbtn2= 'yes';
+								"	onclick="
+jQuery(document).ready(function(){ 								
+reinittabs='yes';									
+								checktrlbtn2='yes';
+					alert('LANGsavingIANG');
+			close_wysiwyg_markup();
+document.getElementById('inp1').checked=false;
+document.getElementById('inp2').checked=false;
+document.getElementById('inp3').checked=false;
+	removejscssfile('LANGtmpl_folderIANGLANGcurrent_templateIANG/js/' + document.getElementById('cmmid').options[document.getElementById('cmmid').selectedIndex].value + '.js', 'js');
+current_extlink='{ext:current_extlink:ension}';
+loadjscssfile('LANGtmpl_folderIANGLANGcurrent_templateIANG/js/' + current_extlink + '.js', 'js');
+			
+editarwrap();
+
+checktrlbtn2='yes';
+			reinittabs='yes';		
+});
+
+	
+				" type="submit"  name="pleaseacceptmyhumblerequest" value="LANGsendIANG" />
+  <input type="button"    value="LANGundoIANG" onmousedown="undo(document.forms['bogus3'].editelecontframes['bbtoolbox'].document.body.innerHTMLframes['bbtoolbox'].document.body.innerHTML);" onmouseup="self.focus();document.forms['bogus3'].editelecont.focus()" />
+ <input type="button"   value="LANGredoIANG" onmousedown="redo(document.forms['bogus3'].editelecont);" onmouseup="self.focus();document.forms['bogus3'].editelecont.focus()" />
+  </form>
+<!--{editor}ajax-->  
+</div>
+
+<div id="formcolwrap">
+<form id="hexor" onsubmit="editAreaLoader.setSelectedText('editeleconti', document.getElementById('inphex').value);return false" action="" method="post">
+<div id="hex">
+                      <input style="width:100px;height:30px;" id="inphex" name="clr_hex" onclick="javascript:this.form.clr_hex.focus();this.form.clr_hex.select()" type="text" value="{ext:clr_hex:ension}" title="LANGentrhexIANG" alt="LANGentrhexIANG" size="14" />
+					
+					<input id="submithex"  title="LANGsendclrtoeditIANG" type="submit"  name="sendhex" value="LANGsendIANG" /></div>
+</form>
+ <div class="shared form_color" id="formcolor">
+                 
+<img alt="LANGaddclrIANG" title="LANGaddclrIANG" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/addcolor.gif" onclick="
+if (lastcolor!=document.getElementById('inphex').value 
+&& readCookie(readCookie('ckinm')).search(document.getElementById('inphex').value)==-1)
+{
+var test=readCookie('ckinm');
+createCookie(test, document.getElementById('inphex').value+','+readCookie(test).substr(0,cookielimit), 365);
+timerr= new Date();
+timerz=timerr.getTime();
+idofeditor='editeleconti';
+inphex='inphex';
+jQuery('#colorsmemory').prepend('<div id=\''+timerz+'\' class=\'memboxes\' style=\'background-color:{ext:clr_hex:ension};color:#000000\' title=\'{ext:clr_hex:ension}\' onclick=\'editAreaLoader.setSelectedText(idofeditor, this.title);self.focus();document.getElementById(idofeditor).focus()\'></div>');
+jQuery(document).ready(function(){ 
+document.getElementById(timerz).style.backgroundColor=document.getElementById('inphex').value;
+document.getElementById(timerz).title=document.getElementById('inphex').value;
+lastcolor=document.getElementById('inphex').value;
+});
+}
+ " />
+<div id="colorsmemory" style="width:40%;">
+
+</div>
+                    
+	</div></div>
+<div id="colorpicker" style="margin-left:550px;margin-top:-200px;width:250px;min-width: 0px;" title="jQuery plugin Farbtastic by www.acko.net"></div>
+</div> 
+</div>
+
+{ext:editor_preview:ension}
+
+<div style="height:50px;"></div>
+</div>

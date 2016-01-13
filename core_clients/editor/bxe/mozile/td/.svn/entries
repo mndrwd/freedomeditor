@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1836"
+   name=""
+   committed-date="2008-05-21T15:02:18.447196Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/mozile/td"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="1506"
+   name="webdav.js"
+   text-time="2006-09-11T01:30:09.000000Z"
+   committed-date="2006-09-10T09:49:37.418343Z"
+   checksum="e278552b1b508dc8b7a96dd22acb835a"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-09-11T01:30:09.000000Z"/>
+<entry
+   committed-rev="687"
+   name="file.js"
+   text-time="2004-04-29T08:47:13.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="5a7beaa89ddce9c959d580fe70bd7fcc"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:13.000000Z"/>
+<entry
+   committed-rev="1836"
+   name="http.js"
+   text-time="2008-05-22T01:30:07.000000Z"
+   committed-date="2008-05-21T15:02:18.447196Z"
+   checksum="6a996208615c85694016d4d898c54f1d"
+   last-author="chregu"
+   kind="file"
+   prop-time="2008-05-22T01:30:07.000000Z"/>
+</wc-entries>

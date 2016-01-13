@@ -1,0 +1,209 @@
+<html><head>
+<title>Install freedomeditor</title>
+</head>
+<body>
+<br />
+<u>Prewords / -Introduction to setting up <b style="color:black;background-color:#ffff66">Freedomeditor</b></u><br />
+<br />
+<br />
+<u><em>Ch 1</em> - <b style="color:black;background-color:#a0ffff">Install</b> &quot;replace on files in a folder&quot; function</u><br />
+
+<em>a</em> on BSD/UNIX<br />
+<em>b</em> on Windows<br />
+<br />
+<u><em>Ch 2</em> -<br />
+<br />
+<em>1</em> <b style="color:black;background-color:#a0ffff">Install</b> archive extraction functionality for <b style="color:black;background-color:#ffff66">freedomeditor</b></u><br />
+
+<em>a</em> BSD/UNIX<br />
+<em>b</em> Windows<br />
+<br />
+<u><em>2</em> Archive extract/create compatibility notes</u><br />
+<em>a</em> Archive type compatibility list for extraction/unpacking<br />
+
+<em>b</em> About non freebsd systems<br />
+<br />
+<u>Ch 3 - Configure a webserver for <a class="wiki_link_ext" href="http://www.gratisoft.us/sudo/" rel="nofollow">sudo</a> usage (UNIX/BSD)</u><br />
+<br />
+<br />
+<h3 id="tocinstall0">=</h3>
+<h3 id="tocinstall1">=</h3>
+<h2 id="tocinstall2">=</h2>
+
+=<br />
+<hr />
+Prewords / - Introduction to setting up <b style="color:black;background-color:#ffff66">freedomeditor</b>:<br />
+<br />
+<br />
+
+<br />
+You should have received a copy of the GNU General Public License Version 3, 29 June 2007<br />
+along with this program. If not, see &lt;<a class="wiki_link_ext" href="http://www.gnu.org/licenses/%3E." rel="nofollow">http://www.gnu.org/licenses/&gt;.</a><br />
+<br />
+<h1 id="tocinstall3"><a name="SETUP"></a></h1>
+Unzip to your webserver in some folder. Make sure the permissions are correct (the files you want to edit need write access). Edit the config.css to suit your needs, or try the defaults which will work fine to begin with.<br />
+<br />
+<strong>Security message:<br />
+Do not put this whole script in a production environment without taking pre-cautions which were the direct result of extensive research. (at minimal effort, remove the editor&amp; core client since it most likely contains vulnerable code, and try the JOOMLA Security strike team website for some global pointers).</strong><br />
+
+<strong>Using <b style="color:black;background-color:#ffff66">freedomeditor</b> on any webserver might cause mayor security leaks, even without installing extra functionalities which are described in this document. Use only on localhost and prevent serving untrusted domains.<br />
+<br />
+If you are not sure what this means,<br />
+add<br />
+Listen:127.0.0.1:80 to your <a class="wiki_link_ext" href="http://httpd.apache.org/docs/" rel="nofollow">httpd.conf</a><br />
+and comment the<br />
+#Listen: 80</strong><br />
+
+<br />
+<h3 id="tocinstall4">=</h3>
+<h3 id="tocinstall5">=</h3>
+<h2 id="tocinstall6">=</h2>
+=<br />
+<br />
+<br />
+<hr />
+Chapter 1:<br />
+<b style="color:black;background-color:#a0ffff">Install</b> replace function:<br />
+
+<br />
+<hr />
+A - FREEBSD/UNIX:<br />
+<br />
+copy the <b style="color:black;background-color:#ffff66">freedomeditor</b>/core_clients/bgb_cmdline/sedfdrepl/sedfolder.sh to a registered path within your <a class="wiki_link_ext" href="http://www.gnu.org/software/bash/" rel="nofollow">bash</a> environment,<br />
+you can find them out by writing &quot;set |grep PATH&quot; in <a class="wiki_link_ext" href="http://phpterm.sourceforge.net/" rel="nofollow">phpterm</a> <em>(NOTE: do not ask original author of <a class="wiki_link_ext" href="http://phpterm.sourceforge.net/" rel="nofollow">phpterm</a> for technical support for <b style="color:black;background-color:#ffff66">freedomeditor</b> phpterm core_client.)</em><br />
+
+i use /bin..<br />
+<br />
+Example:<br />
+$ cp core_clients/bgb_cmdline/sedfdrepl/sedfolder.sh /bin<br />
+$ chmod 755 /bin/sedfolder.sh<br />
+<br />
+<hr />
+B - Windows (note: untested):<br />
+<br />
+step 1 method a:<br />
+<br />
+
+Download + <b style="color:black;background-color:#a0ffff">install</b> <a class="wiki_link_ext" href="http://cygwin.com/" rel="nofollow">cygwin</a><br />
+Make sure to <b style="color:black;background-color:#a0ffff">install</b> <a class="wiki_link_ext" href="http://www.gnu.org/software/bash/" rel="nofollow">bash</a> in <a class="wiki_link_ext" href="http://cygwin.com/" rel="nofollow">cygwin</a>.<br />
+Make sure to <b style="color:black;background-color:#a0ffff">install</b> sed also.<br />
+
+One must <b style="color:black;background-color:#a0ffff">install</b> apache+php on cygwin else it will not use the cygwin shell, but the windows shell.<br />
+<br />
+step 1 method b (might not work due to winbash limitations):<br />
+<br />
+Download <a class="wiki_link_ext" href="http://winbash.tigris.org/servlets/ProjectDocumentList" rel="nofollow">winbash</a><br />
+<br />
+Download<a class="wiki_link_ext" href="http://gnuwin32.sourceforge.net/packages/sed.htm" rel="nofollow"> &quot;sed&quot; (streameditor) for win32</a><br />
+
+Copy the executable to a PATH registered environment (write &quot;set&quot; in <a class="wiki_link_ext" href="http://phpterm.sourceforge.net/" rel="nofollow">phpterm</a> to see valid ones)<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h3 id="tocinstall7">=</h3>
+<h3 id="tocinstall8">=</h3>
+
+<h2 id="tocinstall9">=</h2>
+=<br />
+<br />
+<br />
+<br />
+<br />
+<hr />
+Chapter 2:<br />
+1 <b style="color:black;background-color:#a0ffff">Install</b> archive creation/extraction functionality<br />
+<br />
+
+step 1:<br />
+<b style="color:black;background-color:#a0ffff">install</b> the relevant packages.<br />
+Commands used are zip, unzip, tar, unstuff, unarj, lha, unrar and zoo on linux. (if you search the net you might find win32 cmd line versions). On windows, native support for <a target="_blank" href="http://www.7-zip.org/">7zip</a> archive extraction / creation can also be used. Goto settings menu, make sure the zip binary setting is a hard absolute reference to 7z.exe. Freedomeditor will detect windows, and will default 7zip to widely used zip extraction and creation settings.<br />
+<br />
+<hr />
+A - BSD/UNIX:<br />
+<br />
+(aateau= Any archive type extractor and/or unpacker)<br />
+<br />
+step 2:<br />
+
+$ cp core_clients/bgb_cmdline/installers/aateau/aateau.sh /bin<br />
+$ chmod 755 /bin/aateau.sh<br />
+<br />
+<hr />
+B - Windows:<br />
+step2:<br />
+apply chapter 1 B step 1<br />
+<br />
+<br />
+<br />
+<hr />
+2 Archive extract/create compatibility notes:<br />
+
+<br />
+a Archive type compatibility list for extraction/unpacking (linux):<br />
+<br />
+zip<br />
+rar<br />
+tar<br />
+gz<br />
+tbz<br />
+bz2<br />
+arj<br />
+
+arc<br />
+lzh<br />
+lha<br />
+zoo<br />
+sit<br />
+<br />
+<br />
+<br />
+b About non freebsd systems:<br />
+<br />
+Aateau uses hard references to /usr/local/bin/ for commands, which might need to be changed for other operating systems, unless you move all the extraction executables to /usr/local/bin, or create symlinks.<br />
+
+On windows, they might need to be installed into apache_hdd:\usr\local\bin.<br />
+<br />
+<h3 id="tocinstall10">=</h3>
+<h3 id="tocinstall11">=</h3>
+<h2 id="tocinstall12">=</h2>
+=<br />
+<br />
+<br />
+<br />
+<hr />
+Chapter 3:<br />
+
+<hr />
+Configure a webserver for <a class="wiki_link_ext" href="http://www.gratisoft.us/sudo/" rel="nofollow">sudo</a> usage (UNIX/BSD)<br />
+<br />
+To run the replace-on-folder command as a different user (not needed on windows) with <a class="wiki_link_ext" href="http://www.gratisoft.us/sudo/" rel="nofollow">sudo</a>, one should add something like:<br />
+<br />
+www ALL=(ALL) NOPASSWD: SETENV: ALL<br />
+<br />
+to the /usr/local/etc/<a class="wiki_link_ext" href="http://www.gratisoft.us/sudo/man/sudoers.html" rel="nofollow">sudoers</a> file (especially note the NOPASSWD).<br />
+
+One might want to replace that with something securitywise more sane, and could try the command<br />
+&quot;$ <a class="wiki_link_ext" href="http://www.gratisoft.us/sudo/man/sudoers.html" rel="nofollow">man sudoers</a>&quot;<br />
+to learn how to limit access to preset commands serverwise.<br />
+(read other chapters to learn where to find the relevant used commands)<br />
+<br />
+I haven't tested it but a nice solution might be limiting commands to:<br />
+sudo -u yourusername aateau.sh<br />
+and<br />
+sudo -u yourusername sedfolder.sh<br />
+
+<br />
+<br />
+Sedfolder.sh is a powerful and easy usable command so one might even want to:<br />
+<br />
+$ chown username sedfolder.sh<br />
+$ chmod 700 sedfolder.sh<br />
+<br />
+to limit it's access only to a development (sudo) system useraccount.
+
+</div> <!-- /wiki -->
+
+
+</body></html>

@@ -1,0 +1,47 @@
+Please note that this is Freedomeditorphpterm release 0.0.1.
+No CHANGELOG is provided for this current modified phpterm version.
+comments on this specific version of phpterm should be made to inf_AT_freedomeditor_dot_com
+
+#########
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!!!  0.3.0 RELEASE  !!!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+2004-11-24 bzrudi <phpterm_AT_tuxpower_DOT_de>
+	
+	* prepared 0.3.0
+	* fixed IE menu bug
+	* some IE layout improvements
+	
+2004-09-09 bzrudi <phpterm_AT_tuxpower_DOT_de>
+	
+	* New color black on green and some more design cleanups
+	* Added logout option
+
+2004-09-08 bzrudi <phpterm_AT_tuxpower_DOT_de>
+	
+	* Made menu work and added option to select terminal colors
+	* new option to set terminal size
+	* More layout cleanups
+
+2004-08-14 bzrudi <phpterm_AT_tuxpower_DOT_de>
+	
+	* Started integration of mygosumenu and fixed some layout
+	  quirks...
+ 
+2004-04-15 bzrudi <phpterm_AT_tuxpower_DOT_de>
+	 
+	* Added support for PHP <= 4.3.0
+	* Added "reset" href (start of menu...)
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!!!  0.2.0 RELEASE  !!!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+2004-04-04 bzrudi <phpterm_AT_tuxpower_DOT_de>
+	 
+	* Initial Import
+	* finished class based coding, login should work again....
+	* some minor design improvements and code cleanups...
+	* basics should work again, started class based coding

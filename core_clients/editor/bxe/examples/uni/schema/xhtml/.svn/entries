@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="985"
+   name=""
+   committed-date="2004-11-30T08:24:08.468878Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/uni/schema/xhtml"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="687"
+   name="xhtml.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="39b6a71360a17d159e10a2ed6bd41940"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="xhtml-strict.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="9d476fe16d526f0d629ee52e9124456e"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   name="modules"
+   kind="dir"/>
+</wc-entries>

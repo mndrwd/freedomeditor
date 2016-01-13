@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1843"
+   name=""
+   committed-date="2008-06-10T06:51:47.553924Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/scripts"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+</wc-entries>

@@ -1,0 +1,32 @@
+This is a fast&effective mysql database backup import/export solution.
+
+
+IMPORT:
+if you have a host on which you only want to do imports you only need
+dbtool_imp.php
+dbtool_conf.inc.php
+dbtool_preexec.php
+dbtool_fc.inc.php
+running on it
+
+CONFIG:
+just read dbtool_conf.inc.php
+if you dont understand it, you probably dont want to.
+
+comment #1:
+you may choose how to integrate this into your admin script
+
+either use iframe, include dbtool.php, or just link to dbtool.php
+
+if you 
+1- use iframe/ just link to vars.php:
+$db_tool['sess']="off";		 needs to be enabled for build in security
+
+if you
+2- include vars.php as a plugin for your script
+$db_passget_a[]=  can be used to pass $_GET array contents to the url.
+
+further it is advised to keep "ls-db tool" in its seperate directory.
+note that you manually need to create the folder that holds the database folder(s)
+which you also haveto create manually
+

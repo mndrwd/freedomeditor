@@ -1,0 +1,29 @@
+<div title="Hover mouse for live HTML preview (tip: use the Base href html tag)" id="previewer" 
+	onmouseover="
+	if (document.getElementById('previewurl').value.length > 7 && document.getElementById('previewurl').value!= 'http://') {
+	
+	document.getElementById('previewthatstuff').src=document.getElementById('previewurl').value;
+	stpd=1;
+	} else {
+if (stpd==1){
+	
+		document.getElementById('previewthatstuff').src = ''; 
+		stpd=0;}
+		
+	if (tinyMCE.get('editeleconti') && tinyMCE.get('editeleconti').getContent().length > 0 ){
+	var addthat= tinyMCE.get('editeleconti').getContent();
+	}else{
+var addthat=editAreaLoader.getValue('editeleconti');}
+	$('body', $('iframe#previewthatstuff').contents()).html(addthat);
+	}
+	"
+	style="min-height:200px;
+	min-width:50px;
+	width: 99%;
+	height: 500px;
+	border-style:solid;
+	border-width:5px;
+	
+">
+<iframe id="previewthatstuff" src="" style="height:90%;width:95%"></iframe>
+</div>

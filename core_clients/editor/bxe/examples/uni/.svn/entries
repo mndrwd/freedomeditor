@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1444"
+   name=""
+   committed-date="2006-01-11T08:13:24.666803Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/uni"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   name="schema"
+   kind="dir"/>
+<entry
+   committed-rev="687"
+   name="index.bxe.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="90fe0a86ea95af3f806c67a1c9bcc1b7"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="1444"
+   name="config.xml"
+   text-time="2006-01-17T02:30:16.000000Z"
+   committed-date="2006-01-11T08:13:24.666803Z"
+   checksum="4cab6eb8c1f97b1271c1a77112c8bb0f"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-01-17T02:30:16.000000Z"/>
+<entry
+   name="css"
+   kind="dir"/>
+<entry
+   committed-rev="1009"
+   name="content.xml"
+   text-time="2004-12-02T11:39:02.000000Z"
+   committed-date="2004-12-02T11:30:07.925604Z"
+   checksum="c0712ade65a19b16728c957a8381d9e2"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-12-02T11:39:02.000000Z"/>
+<entry
+   committed-rev="962"
+   name="index.html"
+   text-time="2004-11-29T17:17:21.000000Z"
+   committed-date="2004-11-29T08:42:18.261219Z"
+   checksum="920eb634e185b00bdb0419dda71d30c9"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-29T17:17:21.000000Z"/>
+</wc-entries>

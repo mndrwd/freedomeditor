@@ -1,0 +1,15 @@
+++ = new files
++ = file updated
++- = moved file
+- = removed file
+
++ fc/customcallback/server_os.php > better OS detection, now with uname('s')
++ tmpl/editor/js/global.js > added doublequote global variable
++ tmpl/editor/ele.html > using dbquote variable for better windows terminal support
++ fc/customcallback/phpterm.php > converted ereg calls to preg_match
++ tmpl/editor/extlink_archive.html > added windows archive extraction support using 7zip
++ tmpl/editor/ele.html >  fixed bogus extlinks array call to extlists, the actual array it was ment to call..
++ tmpl/editor/js/global.js > fixed fontforge + ttf2eot cookie mixup
++ DOCS/html/GETTINGSTARTED.HTML > more clarity added about livedocx
++ core_clients/editor/tinymce > updated
++ tmpl/editor/index.html >  updated bookmark structure functionality

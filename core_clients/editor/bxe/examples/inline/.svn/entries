@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1311"
+   name=""
+   committed-date="2005-05-25T08:44:10.581181Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/inline"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="687"
+   name="relaxng.xml"
+   text-time="2004-04-29T08:47:16.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="e6225ee24b27371aba6237d0c21e5a13"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:16.000000Z"/>
+<entry
+   committed-rev="1039"
+   name="config.xml"
+   text-time="2004-12-16T02:30:14.000000Z"
+   committed-date="2004-12-15T13:48:11.138235Z"
+   checksum="7277020e656bfa956cff104569ee70d8"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-12-16T02:30:14.000000Z"/>
+<entry
+   committed-rev="649"
+   name="inline.css"
+   text-time="2004-04-27T09:22:47.000000Z"
+   committed-date="2004-04-17T08:33:44.000000Z"
+   checksum="6a93c543b4372b56716c0ba9a576183b"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:47.000000Z"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   committed-rev="1311"
+   name="index.html"
+   text-time="2005-05-26T01:30:13.000000Z"
+   committed-date="2005-05-25T08:44:10.581181Z"
+   checksum="8cec1a9b90dc13bf63a4a7762728b2b0"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-05-26T01:30:13.000000Z"/>
+<entry
+   committed-rev="152"
+   name="main.css"
+   text-time="2004-04-27T09:22:47.000000Z"
+   committed-date="2003-08-28T10:23:49.000000Z"
+   checksum="c1adf97ce291fc05d4488503b52c407e"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:47.000000Z"/>
+<entry
+   committed-rev="1311"
+   name="inline.xml"
+   text-time="2005-05-26T01:30:13.000000Z"
+   committed-date="2005-05-25T08:44:10.581181Z"
+   checksum="5e7fa0128896b33b11dbf22c9b70eb52"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-05-26T01:30:13.000000Z"/>
+</wc-entries>

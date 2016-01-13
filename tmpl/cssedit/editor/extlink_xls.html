@@ -1,0 +1,26 @@
+| <span class="highlight" title="PHPExcel" onclick="
+var testext = 'Target fileextension, supported:\n\
+XLS \n\
+XLSX \n\
+HTML \n\
+PDF \n\
+CSV \n\
+BOMCSV \n\
+';
+var ext = prompt(testext, 'PDF');
+
+if (ext){
+var doxcl = prompt('[s]erver_or browser', 's');
+phpexclserv='';
+if (doxcl== 's'){
+phpexclserv='&phpexcel_server=s';
+}
+targeturl='./?xcloutput='+ext+phpexclserv+'&fd={ext:folder:ension}&fn={ele}&ele={ele}';
+document.getElementById('xlsconvert{ele}').href=targeturl;
+}
+
+">LANGSetupIANG</span>
+ 
+ <a class="highlight" id="xlsconvert{ele}" 
+target="_blank" >LANGconvertIANG</a>
+

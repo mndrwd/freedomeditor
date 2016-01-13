@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="985"
+   name=""
+   committed-date="2004-11-30T08:24:08.468878Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/uni/schema"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="687"
+   name="xhtml.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="853dee7e3d33e69405eabbab60bc8abf"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="unizh.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="378555af4ff5143047f59e0f5d07557a"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   name="dublincore"
+   kind="dir"/>
+<entry
+   committed-rev="687"
+   name="homepage.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="a7cfe4e6eba017f9f10422652e02eacf"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   name="xhtml"
+   kind="dir"/>
+<entry
+   committed-rev="687"
+   name="lenya.rng.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="7953371b1295b07f68e9fcb9af82bfc1"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+</wc-entries>

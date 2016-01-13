@@ -1,0 +1,500 @@
+??-8-2012 v0.3
+Structure > fixed bug where it was not possible to load lots of files in editor via structure menu
+Editor > fixed switching between tinymce and edit area 
+Editor > installed latest tinymce version
+Toolbox > Documentation > fixed dompdf link
+Toolbox > Documentation > Clearer explanation of template workflow.
+
+(]>--------------------------------------------------------<[)
+30-7-2011 v0.2.6.9
+--------
+Structure > Image > Set as background option introduced.
+Structure > Expanded merge css files option with a filename userinput method.
+Structure > html file > convert inline css to extern css file option introduced (option already existed but was hidden in backend configuration)
+Structure > added image prev-next gallery system (javascript jQuery lightbox)
+Structure > added image editor (click on preview image)
+Structure > added new/rename/cut/copy/paste file/folder (new = chmod 755)
+Structure > Can now view files and folders together, with easy-navigation setting.
+Structure > clean tinyMCE css file loading cookie button now works again (which it didnt since nearly forever)..
+Editor > CSS 3 tags added
+Editor > changed html tags css element documentation links from w3 school to w3c (as kindly suggested by http://w3fools.com/)
+Settings > repaired language editing links
+Settings > added easy-navigation setting for structure menu, = more server+bandwidth load 
+Toolbox > removed txt to img html converter as nowadays with embedded css fonts, this is a kinda (very) outdated technique.
+
+(]>--------------------------------------------------------<[)
+23-2-2011 v0.2.6.8.9
+--------
+Structure > repaired reload + go up button when browsing folders with space in its name.
+Structure > cleaned up file menu.
+Structure > added image preview in file menu.
+
+(]>--------------------------------------------------------<[)
+22-2-2011 v0.2.6.8
+editor > tinymce css loading fixed
+structure > looking good now, more intuitive to use.
+structure > default disable css structure browsing in structure view, most
+people will probably want to edit a full css file in one big screen. Changing configuration setting as described in toolbox > documentation will revert back to legacy mode.
+added timeout for keyboard shortcuts 
+
+
+(]>--------------------------------------------------------<[)
+7-2-2011 v0.2.6.7 
+--------
+fixed notices & warnings, some were messing up layout and html.
+structure > fixed remove files/folders OS detection for windows + filename quotes for newer windows then windows XP
+structure > fixed opening files for editing
+structure > added archive extraction in windows server environment with 7zip, be sure to set settings > zip binary to the right executable file.
+structure > added create zip in windows server environment with 7zip.
+toolbox > fixed vanished about button
+toolbox > Documentation > getting started > added more information about livedocx
+structure > enhanced folderbrowsing bookmarks button
+editor > installed latest tinymce
+installed latest jquery
+
+
+
+(]>--------------------------------------------------------<[)
+v0.2.6.6
+--------
+Structure > adding css files to tinymce was broken since 0.2.6 due to removal of deprecated loader.php.
+Structure > added a very basic implementation of the bitflux XML + XLST WYSIWYG editor. Browse to core_clients/editor/bxe/examples/uni folder. (note, one can move bxe folder anywhere for webDAV, see docs/edithistory/0.2.6.6)
+Structure > changed ctrl-f5 refresh shortcut to alt-f5, added alt-f6 shortcut for location bar, alt-f7 for search bar. this seems to work best for both left + right handed individuals.
+Structure > made tinyMCE CSS reset button userfriendly
+Structure > allow file uploads with jquery.uploadify & file downloads
+Structure > added .(x)html to .pdf  conversion support with html2fpdf class. Sends output to browser.
+Structure > added .doc to .pdf conversion support using antiword + ps2pdf binarys
+Structure > added .xls(x) to xls(x)/html/pdf/csv conversion support using phpexcel php class, send output to browser or store on server.
+Structure > DOC(X) to doc(x)/html/rtf/pdf/txd/txt/bmp/gif/jpg/png/tiff/wmf conversion with livedocx
+Structure > fixed support for removing folders and files now works on both windows + linux (windows = fully tested)
+Structure > fixed lame bug when extracing archives, it was reading fontforge binary location
+Structure > added support for nesting inside tmpl/ext*.html files with {load:file:load}
+Editor > Tinymce no longer messes with php code in html or php files  thx to relatively recent version of codeprotect plugin. Only 1 problem, within php tags, linebreaks vanish.
+Editor > Tinymce added codeprotect plugin for (x)html(-content) + php edit mode
+Editor > bug fixed when opening a tab after restarting browser, didnt switch immediately to correct extlink mode. 
+Editor > bugs fixed with certain references to file extension while it should reference to the extlink (which is defined in core_clients/editor/config.css)
+Settings > added grouping of certain settings, allowing to quickly swift between for example, editing different websites. added settings, for aateau.sh location reference, ps2pdf binary & antiword binary.
+
+
+
+(]>--------------------------------------------------------<[)
+
+v0.2.6.5
+--------
+Editor > bug fix: when opening any tab, tinymce + editarea were being put into html mode.
+Editor > bug fix: with item 4 of 0.2.6.4 CHANGELOG, xhtml-content was changing to html, html-content to xhtml.
+Structure > Added keyboard shortcut for viewing root folder
+(]>--------------------------------------------------------<[)
+
+
+v0.2.6.4
+Editor > fixed double tabs appearing after switching from editor to structure to editor menu
+Settings > added editor > preview iframe override url setting.
+Editor > opening .(x)html file without <html> tag automatically switches to (x)html-content mode
+Editor > in html-content mode, writing <html, switching upper menu (structure or settings and back to editor) will change to html (fullpage) mode
+Editor > added close-all-tabs option.
+Structure > Fixed refesh + go folder up buttons.
+
+
+(]>--------------------------------------------------------<[)
+
+
+v0.2.6.3
+Editor > enabled syntax selection plugin for edit_area
+Editor > improved tab-cookie handling , no more bogus data like folders 
+			or css elements or scrambled links, more open tabs can be remembered.
+Structure > fixed bug concerning location bar remaining empty
+	 		in certain circumstances.
+Settings > changed current file it's extension configuration link to a global
+			 extensions folder link.
+(]>--------------------------------------------------------<[)
+
+
+v0.2.6.2
+Fixed bug described in release notes after switching tabs, editor textarea was no longer resizable.
+Fixed more cosmetic bugs with editor > tabs causing undefined (bogus) tabs to appear.
+Fixed editor > preview iframe no more need to close tinymce to get preview.
+Fixed 400 bad request error, colors + tabs cookies grew too big, its limited now.
+Fixed javascript errors when enabling tinymce then clicking edit_area, without unchecking tinymce explicitely.
+Changed (x)html-block tinymce cleanup setting from false to true.
+*0.2.6+ bug from RELNOTES: Editor > leaving mouse pointer on editor textarea caused 
+on-the-fly-translate button revert to default failure upon saving a file.
+
+
+
+(]>--------------------------------------------------------<[)
+
+
+v0.2.6.1
+Fixed bug with editor > new file causing tabs to appear twice.
+Fixed bug with editor > tabs when opening css elements, bogus tabs also appeared.
+(]>--------------------------------------------------------<[)
+
+
+v0.2.6
+
+fixed alot of bugs with extensions.
+removed preg usage, no more "preg" serverlimit on content of edited file. 
+Added new function "functions/globals/findinside.php" to replace preg usage,
+ used in conjunction with scanajax.php function.
+
+
+
+
+ GUI updates:
+ Structure > Removed deprecated CSS loader.
+Toolbox -> Documentation was added.
+Structure > Added support for converting fonts with 
+third party fontforge and ttf2eot binarys.
+Editor > Added basic tab support (open multiple files). Tabs restore after browser close.
+Note: possible problem when opening CSS elements with identical name 
+(most likely when the containing file resides in the same folder, not tested).
+Fixed alot of bugs with everything. 
+Note: saving files wasnt tested recently (only htmlblocks was tested). 
+Watch out for screwing up your data. Always make backups. 
+Test everything before you make it routine.
+Fixed tiny bugs with ajax + edit_area + tinymce loading.
+Bookmarks now give human readable default names.
+Bug fixed: Editor > translate checkbox now always follows 
+settings > translate setting (view release_notes for more info).
+Editor > HTML preview button added, works in resizable iframe.
+
+Updated jquery.form, tinymce, edit_area.
+
+
+
+
+
+
+
+
+
+(]>--------------------------------------------------------<[)
+
+
+
+v0.2.5
+fixed bugs with extension system (extensions can now also be core clients)
+
+Toolbox > Installers > added aateau and mamcwes
+
+Successfully converted the phpterm core_client into a extension while remaining active as a core_client simultaneously for backwards compatibility of certain hard-links. 
+
+Updated tinymce to 3.2.5 jquery build, however simply skipped the jquery.tinymce.js file for now.
+
+(]>--------------------------------------------------------<[)
+
+
+
+v0.2.4
+1 Editarea updated to 0.8.1.1 (realtime syntax highlighting)
+2 Tinymce updated to 3.2.3
+3 Extension system introduction:
+
+basically extensions are just a cpl of files.
+
+file 1: cfgs/custom/*.css for individual configuration (defaults can be found in main (core) config.css)
+
+file 2: Optional fc/customcallback/*.php for custom callback , preparing 2d search-replace array (as named in config).
+
+file 3: Optional tmpl/*.html file (file 2 can also perform this)
+
+file 4: Optional tmpl/js/*.js file if found (check toolbox > generate extension js, note that output javascript onscreen should be manually inserted into a file and then manually loaded into a template)
+
+file 5: Optional lang/custom/*.css file, relevant section selected by global - default_guilang setting
+
+* = extension name, provided in index.html template with {ext:name:ension}
+
+Extension php code is not hard to extract from Freedomeditor for stand-alone functionality.
+
+Please note that there simply aren't any extensions yet nor has ever one been tested yet, it should simply work though.
+
+(]>--------------------------------------------------------<[)
+
+
+v0.2.3
+
+1  Structure > added quicklink for  .php and .sh files to execute in phpterm.
+2  Structure > Added Run file/folder in toolbox iframe option.
+3 Settings > New options to customize usage of above new features.
+4 Toolbox > Installers > Freebsd pkg-reinst. > Updated procedure documentation.
+5 Structure > Remove button was totally broke down, now works again, but not only for removing elements within css files as before, but also works for files with a .suffix (except .css, view Release notes).
+
+(]>--------------------------------------------------------<[)
+
+
+
+v0.2.2
+
+1 Toolbox > bgb Installers Added certain freebsd software administration functionalities / terminal shortcuts (for recompiling broken ports and for reinstalling all currently installed packages).
+
+2 Tinymce updated to 3.2.2
+   Jquery updated to 1.3.2, plugins updated.
+
+
+(]>--------------------------------------------------------<[)
+v0.2.1
+
+1 Structure > Altered create zip option, now supports quick custom arguments and defaults to better ones. Can create full file system backups (including current mounts). 
+
+2 Toolbox > Installers > Added a quick Joomla user password string creator for jos_users mysql table.
+
+
+-----------------------------------------------------------------------
+
+
+v0.2
+
+1  New feature: vm-cbsu (virtuemart category batch stock updater) with easy installer (check it out at the > Toolbox).
+
+2 	Tinymce update to 3.2.1.1.
+
+3  changed sedfolder.sh (toolbox > bgb_replace) script for improved sed syntax support.
+
+
+-----------------------------------------------------------------------
+
+v0.1.9
+a
+Bug fixed whereas everything that core_clients which are not using the core call to a htmlshifter function (most tools in the toolbox), outputted, had 
+LANG and IANG strings removed by freedomeditor (problem was introduced in v0.1.2 when toolbox -> bgb find/replace translation support was added). Changed it into a setting which should be enabled specifically whenever needed.
+
+b
+English language set completed (more or less, skipped the bgb_mysqlmanagers for now) for allowing easy translations, instead of having to fish through the HTML code.
+
+c
+Toolbox > bgb_mysql*bkup : Added error message when no php mysql*-client functions found.
+
+d
+GUI > Editor : All problems with edit_area/tinymce and changing syntax mode (mostly related to 0.1.7 - note 12) after opening some files, or after/with clicking "new file", or after/with saving current data should really be gone now.
+
+e
+GUI > Structure : Moved  editor recognized contents pre-translation enabling/disabling (previously broken) option to GUI > Settings (cookie)
+
+Note: One can still use the GUI > Editor checkbox left to the submit button, but that's for translation of contents upon saving to a file explicitely.)
+
+Removed globals usage within machine_lang function.
+
+f
+Structure > Every file opened got immediately saved, now limited to clicking send/submit button.
+
+g
+Structure > Create zip command now hugs spaces inside filename.
+
+h
+Toolbox > Find/Replace : Now remembers previously entered find + replace strings (untill page refresh or browser closes)
+
+i
+GUI > Settings: Changing active color collection cookie no longer triggers inconvenient full page refresh.
+
+j
+Toolbox > Added 'About' button
+
+i
+Bug fixed introduced by bug fix 'f' in 0.1.8 which wouldnt allow switching from browsing file system to browsing the structure of a css file unless opened in a new tab
+
+j
+GUI > Structure : Merge generated_*.css files button now actually merges css files.
+
+-----------------------------------------------------------------------
+
+
+v0.1.8
+
+GUI Structure >
+a 
+Last annoying bugs with folder browsing functionality, concerning unexpected results fixed, which seemed related to the (kind of wrong) way freedomeditor made use of the www.php.net/urldecode function combined with certain jQuery ajax aspects which were probably working exactly like they should.
+Also a bug with bad handling of backslashes in folder navigation requests was eliminated. 
+
+b
+Changed default configuration option regarding file-opening casesensitive_extension_handler to off 
+
+c
+Multiple bugs fixed with file extension detection, also now detects a "." before the actual extension, which fixes some problems like previously detecting for example xhtml files as .html files.
+However please note that, .php-dist files for example, are recognized as a php extlink unless you put a php-dist extlink first in the configuration file (or remove/name the php extlink).
+
+d
+The   'universal_unlinked_ext_files' configuration directive actually works again, filtering out any non-extlinked files when set to none.
+or by adding a preset configuration directive extlink to all unrecognized txt files (note: it's best to turn mime checking on for this).
+
+e
+Fixed annoyance where as going to a empty folder or trying to access a folder without proper rights, the whole structure view would dissapear showing only a error message in the editor view, requiring page refresh.
+
+f
+Fixed problem whereas going from folder to files view would mess up when browsing a folder with weird charnames.
+See also RELEASE_NOTES source bug 3.
+
+g
+
+Fixed a problem where browsing to different folders/css elements could clean the editor contents
+
+(introducing limitation to css category naming, please do not name them 'LANGfoldersIANG', nor 'folders' when in english mode. 
+Edit - 20nov 2008, i mistaked, you can name css markup categorys anyway you want.
+
+GUI Editor >
+h
+Allowed xhtml files to be treated like html but with tinymce "encoding:xml" configuration option added.
+
+i 
+GUI Structure>
+Added a proper registered .xml "extlink" which currently enables xml source code editing support only.
+You can add as many file extensions and/or parts of mime types as you want, however the mime detection part hasnt been tested for a while, and won't be either, since this program was designed to operate within a trusted environment.
+
+
+
+
+
+-----------------------------------------------------------------------
+v0.1.7
+
+--- 1
+core_clients/editor > 
+Readonly setting (settings > editor core_client config) only worked for writing inline style tags to extern css files (preserve_styletags setting), now works for main open file aswell.
+
+--- 2
+GUI Editor >
+Added "new file" button.
+
+--- 3
+GUI Toolbox > 
+bgb Find now also runs recursively on unix/bsd when file filter=*
+(note that replace never performs recursively.)
+
+--- 4
+Fixed bugs concerning mallfunction in some cases, of the fix in changelog note 2b from 0.1.5 release.
+
+--- 5
+Fixed bug with changing syntax highlight mode when tinymce was still open.
+
+--- 6
+PHPTerm wouldn't automatically open in a root folder when the location bar (in GUI Structure) was "/".
+
+--- 7
+Finished the GUI template for full translation.
+
+--- 8
+Readded tinymce dutch + german language packs which i somehow had forgotten about when releasing 0.1.5.
+
+--- 9
+Some source changes that allow better customizability concerning saving gui userinput to files, also changed script to be able to adapt to situations whereas the machinelang.php function file isn't initialised from the fc/global/init.php file.
+
+--- 10
+Changed default_gui back to css in editor coreclient configuration cause it breaks tinymce somehow.
+
+--- 11
+Don't like the translation of recognized system language? disable loading of machinelang.php file in fc/global/init.php .
+
+--- 12
+Fixed this GUI bug, which was in the RELEASE_NOTES since v0.1:
+ " One must make sure to uncheck TinyMCE or edit area before saving a file or they both will break until page refresh, which might require you to rebrowse to the folder you need, unless you use sidebar bookmarks."
+ 
+
+
+
+-----------------------------------------------------------------------
+v0.1.6
+
+Changes to GUI
+
+1: Editor >
+
+a:	Unable to remember colors in cookie bug found and fixed. The problem was caused by jQuery form plugin: It doesn't submit <input type="image" name="this">.
+	
+	b: No longer manually need to uncheck tinymce / edit_area at switching filetype mode (selectbox below the mentioned relevant checkboxes).
+
+
+-----------------------------------------------------------------------
+v0.1.5
+
+Changes to GUI
+
+1: Structure >
+	a:	Less chance of folder navigation system messing up now. 
+	b:	You can now type a foldername manually in the structure view (above search box), hit ENTER to process the query.
+
+2: Editor >
+	a:	Translation system now doesn't applies when no valid machine language set seems linked to the relevant extlink.
+	b:	Saving a new textfile now works without pressing save twice. (you can simply start writing a filename inside the Editor > Element inputfield)
+
+3: Toolbox > 
+
+	bgb find/replace >
+		a:	Now grabs filefilter from structure view as a default value.
+		b:	Now supports recursive find on windows.
+
+
+For viewing the changed source code try the find function by querying the freedomeditor source folder *.php files for the string "nov 9 2008" ;-)
+
+Changes to configuration files:
+moved global-send_string from global config.css to core_clients/editor/(cfgs/)config.css (where it should have been in the first place)
+
+changed core_clients/editor/config.css
+  default_gui:"css" to "folder" (i hope this gives no weird problems)
+
+
+
+
+
+-----------------------------------------------------------------------
+v0.1.4
+
+Feature enhancement: sed folder replacement interface (core_client/bgb_cmdline/sedfdrepl) now also uses the temporary setting "sudo username"
+
+Updated INSTALL documentation, it was incomplete and in some cases incorrect.
+
+
+-----------------------------------------------------------------------
+v0.1.3
+
+New Feature:
+	extract archives / create zip
+	read the INSTALL file first!
+
+****************************
+
+Bugs fixed: in 0.1.2, the replace-on-folder core client wasn't tested + debugged yet. 
+	Works now on atleast freebsd and most likely other operating systems aswell.
+Read the INSTALL file first!
+
+	
+**************
+	**** Removed the .htaccess because it contained a illegal command which i had found on the net earlier but only recently got to test on my freebsd system.
+Say goodbye to internal server errors on UNIX webservers after unpacking. 
+	
+**************
+
+***** New feature of v0.1.1 (scroll to end of page) revised, you can now add html code for both registered extlinks aswell as individual file extensions in the structure menu, allowing greater flexibility for maintaining custom file handling actions..
+
+***************
+
+"Bug" fix for {ele} tag unavailable in certain gui html templates
+(extlink_*.html, ext_*.html) 
+
+***************
+
+Changed the license from GPL version 2 to GPL version 3.
+
+-----------------------------------------------------------------------
+
+v0.1.2
+
+	* New Feature 1:
+	 Perform Find/replace on a folder/directory.
+
+	* New Feature 2:
+	 Support for language tags in core clients which do not use a htmlshifter command like the editor core client does.
+
+------------------------------------------------------------------------
+
+v0.1.1
+
+	* Fix 1	
+	  Automatic proper javascript syntax method selection when opening a file with a AJA(x) query.
+
+	* Fix 2
+	  PHPterm now starts in current open structure even after changed by AJA(x) querys.
+
+	
+	* New Feature:
+	  Possibility to inject text files with html blocks into the admin GUI foreach registered extlink which supports all current used replacement tags in templates.
+	  example: htdocs/freedomeditor/tmpl/*/ext_php.html 

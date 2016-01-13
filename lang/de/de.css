@@ -1,0 +1,6 @@
+/*cat=1_*/gui{title: CSS Verfasser;edit:Anderung;new:Neu;element:Element;send:Speicher;current:gegenwartig;mode:modus;private:rein;stdrd:standard;category:Kategorie;remove:Entfern;undo:Annulieren Sie;redo:machen Sie nochmals;addclr:Erinnern Sie sich Farbe im Browser mit einem Platzchen (cookie).;files:Akten;folders:Verzeichnisse;enercknm:Wahlen Sie Farbenplatzchennamen vor;entrhex:Fullen Sie HEX farbencode in.;sendclrtoedit:schiken Sie Farbencode zum Herausgebertextfeld.;cssmodehelp:<strong>[aus]</strong> Enter/Return zum _dotcm_ Umwandlung._nwln_<strong>[auf]</strong> leer raum entfernen von CSS Elementen (kleinere Akten, aber kon ihre css Elemente schadigen abhangig von wie Sie sie schrieben).</u>;clean_tinymce_css:TinyMCE CSS (stylesheet) Artblattzuruckstellen;add_to_tinymce_css:Zum TinyMCE CSS (stylesheet) Artblatt zu fugen;
+examples:vorbilde;
+find_word_string:Finden Sie ein Wort oder eine Buchstabenstrecke;
+optionally_replace_with:Ersetzen Sie beliebig durch;
+replwindowstip:Wenn Sie die ersetzenwahl in a verwenden mochten Windows Bednierumwelt, installier <a href="http://win-bash.sourceforge.net/">winbash</a> und <a href="http://gnuwin32.sourceforge.net" target="_blank">gnuwin32</a> oder <a href="http://www.openetwork.com/berk.html" target="_blank">Die berkeley Dienstprogramme</a> (mindestens sed).;
+}css{<\?=: <?php echo ;}

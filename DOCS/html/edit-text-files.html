@@ -1,0 +1,36 @@
+<html><head></head><body>
+<strong>Concerning language packs and the third party program Editarea</strong><br />
+
+In the js.js file, Editarea is sent the instruction to read a cookie from the CSS editor, containing the language initials, with javascript. The obvious downside of this, is that, when you add more languages in the CSS editor GUI template, the Editarea program also must contain language packs for those languages.<br />
+<br />
+<strong>Relevant configuration options:</strong><br />
+Settings menu > Core config > Structure menu > global > Editor menu > lang_cookie<br />
+
+Settings menu > Editor core-client (or * handling) > Structure menu ><br />
+extlink_gui_lang > Editor menu * defaults to gui which is a css class in the language database (css) file.<br />
+ext_links > Editor menu<br />
+<br />
+<strong>Edit relevant files:</strong><br />
+
+Settings menu > Edit button left to flag of the language set you're <b style="color:black;background-color:#99ff99">editing</b> > Structure menu > gui <strong>(or create a new)</strong><br />
+<br />
+<br />
+<hr />
+<br />
+<u><em>version 0.1.8 and earlier</em>:</u> Unless the file you edit was requested with a fd urlquery containing the string "lang", the current selected language it's cssfilter <strong>will</strong> be applied on the contents of the editarea provided that there has been a valid load of a set of translation instructions using the extlink_lang configuration directive, resulting in recognized foreign language conversion to english when the file is actually saved to disk.<br />
+
+<br />
+<strong>Relevant configuration options:</strong><br />
+<br />
+Settings menu > Editor core-client (or * handling) > Structure menu ><br />
+global > translate_editfield (option introduced in 0.1.9)<br />
+extlink_lang > Editor menu * defaults css files to "css" which is a css class in the language database (css) file.<br />
+
+ext_links > Editor menu<br />
+<br />
+<strong>Edit relevant files:</strong><br />
+<br />
+Settings menu > Edit button left to flag of the language set you're <b style="color:black;background-color:#99ff99">editing</b> > Structure menu > css <strong>- not available for default english pack (or create a new)</strong><!-- google_ad_section_end -->
+
+</body>
+</html>

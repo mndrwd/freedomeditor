@@ -1,0 +1,19 @@
+<?php
+
+  /*EXAMPLE USAGE:
+
+if (!isset($_SESSION)){session_start();$_SESSION['rdmstring']='ulvl';}
+$lang='en';
+$aa=initcfg($thecfg);
+$exacts=explode("-", $thiscfg[$aa]['exact_userlevels']);
+$strr=make_object("", $aa); or 
+$strr=make_object("", $aa, $content);
+
+  */
+
+see RELEASE_NOTES  bug #1
+
+
+
+
+?>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="711"
+   name=""
+   committed-date="2004-05-17T09:06:56.085361Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/MathML"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="711"
+   name="relaxng.xml"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-17T09:06:56.085361Z"
+   checksum="15e1258505bbfd8efd28a2a0231b29fd"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   committed-rev="711"
+   name="config.xml"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-17T09:06:56.085361Z"
+   checksum="8ae8df03df3eb4af81807bce2bbe2f07"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   committed-rev="711"
+   name="inline.css"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-17T09:06:56.085361Z"
+   checksum="9fc9e0ef44362aeb25f476881fe5f7ea"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   committed-rev="711"
+   name="mathml.rng.xml"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-17T09:06:56.085361Z"
+   checksum="09e35ef00a439185db165425fad5ba0b"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   committed-rev="711"
+   name="index.html"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-17T09:06:56.085361Z"
+   checksum="6de369995fb4ca73f82de1176711a939"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   committed-rev="711"
+   name="main.css"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-17T09:06:56.085361Z"
+   checksum="d9ba72c6460f8c2338fdd2bb7c1a4b84"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   committed-rev="711"
+   name="inline.xml"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-17T09:06:56.085361Z"
+   checksum="95415bdf58df38bea1815d35409d529d"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+</wc-entries>

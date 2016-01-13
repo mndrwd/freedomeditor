@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="628"
+   name=""
+   committed-date="2004-03-10T15:28:09.000000Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/div"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="628"
+   name="updateBuildDate.sh"
+   text-time="2004-04-27T09:22:42.000000Z"
+   committed-date="2004-03-10T15:28:09.000000Z"
+   checksum="0bfd659af5e0ff98f99e65dd9aa019d6"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:42.000000Z"/>
+</wc-entries>

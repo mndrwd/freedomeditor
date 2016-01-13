@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="938"
+   name=""
+   committed-date="2004-11-24T21:17:32.684914Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/td"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="938"
+   name="relaxngtest.js"
+   text-time="2004-11-25T02:30:16.000000Z"
+   committed-date="2004-11-24T21:17:32.684914Z"
+   checksum="dbf8cf032247340b80b39966fcf637ad"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-25T02:30:16.000000Z"/>
+</wc-entries>

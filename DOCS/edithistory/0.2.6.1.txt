@@ -1,0 +1,13 @@
+++ = new files
++ = file updated
++- = moved file
+
+
++ tmpl/cssedit/editor/ele.html added empty default value for #curr_folder which prevents bogus tabs appearing when opening css elements.
++ tmpl/cssedit/editor/editor.html commented out tabmenu div onmouseover javascript to fix double appearing tabs upon performing editor > new file
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+++ = new files
++ = file updated
+
+
++ core_clients/bgb_cmdline/backend/freebsd/package_reinst/index.php
++ tmpl/cssedit/editor/index.html  
++ tmpl/cssedit/editor/ele.html
++ tmp/cssedit/editor/js/global.js 
++ tmpl/js/bgb_funcs/global.js  # added _____escregexp function for futuresake
++ lang/en/en.css
+++ tmpl/cssedit/editor/extlink_php.html
+++ tmpl/cssedit/editor/extlink_sh.html

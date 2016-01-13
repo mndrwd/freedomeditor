@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>MAMCWES, the Mysql and Mysqli class with extended security for PHP 4 and PHP 5</title>
+</head>
+<body>
+This page is all about...... mamcwes
+<h3>What's that?</h3>
+Fine working php class for mysql connectivity, with back and forward compatbility support concerning API calls, for php 4, php 5, mysql, mysqli client librarys.
+
+<h3>For who is it?</h3>
+PHP writers / developers / coders generally.
+<h3>What does it do?</h3>
+Besides the basic functionality one would expect from a mysql(i) class one could send a userlevel variable to it, for example from a logged in user, to select a specific mysql connection.<br />
+Also the content from the config file will only be loaded to the php memory when nessecary and immediately unloaded afterwards.
+<h3>How does it work?</h3>
+$this->gl_conf_ulvl in the mysqlcfgdata.inc.php is the userlevel setting. Default it loads from $_SESSION['rdmstring'].<br />
+One should use the escstr function to parse any kind of user input. <br />
+Looking at the class (functions) name(s), it won't be too hard figuring out how to make the DB connection / calls.<br />
+It supports php4 with mysql client library<br />
+It supports php5 with both mysql and mysqli client library<br />
+<p />
+<h3>Download</h3>
+<a href="mamcwes-0.1.zip">mamcwes 0.1 (English)</a>
+
+<h3>Future plans:</h3>
+(currently) none
+
+<h3>Contact author</h3>
+Contact Bart Bosma via <a href="http://www.freedomeditor.com/">freedomeditor.com
+</a>
+
+<p />
+
+Copyright (c) 2008, B.G. Bosma
+All rights reserved.
+
+</body></html>

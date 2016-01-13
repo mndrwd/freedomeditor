@@ -1,0 +1,11 @@
+++ = new files
++ = file updated
++- = moved file
+
+
+
++ tmpl/cssedit/editor/editor.html > fixed stpd syntax errors
++ tmpl/cssedit/editor/js/*ext*.js > editarea syntax_selection 
++ tmpl/cssedit/editor/js/global.js > added tab-cookie cleaning + emptycheck
++ tmpl/cssedit/editor/ele.html > tab-cookie emptycheck
+++ customcallback/currentwd.php > fixes empty location bar in certain circumstances

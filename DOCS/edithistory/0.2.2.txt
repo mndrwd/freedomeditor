@@ -1,0 +1,14 @@
+++ = new files
++ = file update
+
+
+++ core_clients/bgb_cmdline/backend/freebsd/package_reinst/*
++ core_clients/bgb_cmdline/backend/freebsd/bpvotss/index.html > index.php
++ core_clients/bgb_cmdline/backend/installers/vars.php
++ tmpl/cssedit/editor/index.html  	##  documentation link in "about" tab.. ## jquery hotkeys link from test-static.html to test-static-01.html
++  core_clients/editor/tiny_mce  #update to 3.2.2
++ tmpl/js/jquery/jquery.js #update to 1.3.2
++ tmpl/js/jquery/form/jquery.form.js update to 2.24
++ tmpl/js/jquery/hotkeys/jquery.hotkeys.js
+++ tmpl/js/jquery/hotkeys/test-static-01.html (note: uses older jquery, 1.2.6)
++ tmp/cssedit/editor/js/global.js # converted hotkeys.add to new (document).bind

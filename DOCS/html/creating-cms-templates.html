@@ -1,0 +1,33 @@
+<html><head></head><body>
+<br />
+
+* Create a new html file<br />
+
+* Switch the the Editor view, write a filename in the &quot;element&quot; field.<br />
+* Click the selectbox and change the option to &quot;html&quot;. Using html-content option disallows usage of any &lt;head&gt;, &lt;body&gt; and &lt;html&gt; tags.<br />
+* Activate tinyMCE.<br />
+* Create any layout.<br />
+<br />
+
+* Click edit-area,  choose CMS tags, add tags as desired.
+
+<br />
+* In editarea, you can see how Tinymce created style tags in the html.<br />
+* If we like, we can automatically convert these style tags to class tags with an external css file.<br />
+Be sure to save the HTML file.<br />
+Go to the Structure menu, hover over the saved HTML file, click  "convert inline css to CSS stylesheet"<br />
+<br />
+
+TinyMCE will automatically load the new css file in the editor,  but there will not be any new-link rel stylesheet- added to the html file. Instead, this must be added manually.
+<br />
+<br />
+<br />
+Now if using certain CMSes to include certain CMS tags in templates, it may be possible that TINYMCE bails out and messes the tags (which could be caused by wrong <b style="color:black;background-color:#ffff66">freedomeditor</b> tinyMCE settings aswell as lack of a good working tinyMCE codeprotector plugin.)<br />
+
+Therefore _always_ keep backup copies of HTML documents without the CMS template tags.<br />
+<br />
+<br />
+To manually load css files into tinyMCE, simply click the square with &quot;css&quot; in it, to the right of a file in the structure menu.<br />
+To reset the list of css files tinyMCE currently loads, click the CSS square in the bottom of the structure view, above the Merge option.
+</body>
+</html>

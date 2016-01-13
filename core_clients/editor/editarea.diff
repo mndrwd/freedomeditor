@@ -1,0 +1,35 @@
+diff -r -B -t edit_area.css
+0a1,2
+> /*cat=1_*/
+> 
+111c113
+< /* area popup */
+---
+> /*cat= area popup _*/
+152c154
+< /* Area_search */
+---
+> /*cat= Area_search _*/
+199c201
+< /* area help */
+---
+> /*cat= area help _*/
+208c210
+< /* area_toolbar */
+---
+> /*cat= area_toolbar _*/
+276c278
+< /* toolbar buttons */
+---
+> /*cat= toolbar buttons _*/
+322c324
+< /* waiting screen */
+---
+> /*cat= waiting screen _*/
+
+edit_area_loader.js
+322c322
+<                         this.iframe_css="<link href='"+ this.baseURL +"edit_area.css' rel='stylesheet' type='text/css' />";
+---
+>                         this.iframe_css="<link href='"+ this.baseURL +"../loader.php?fd=edit_area&amp;fn=edit_area.css' rel='stylesheet' type='text/css' />";
+

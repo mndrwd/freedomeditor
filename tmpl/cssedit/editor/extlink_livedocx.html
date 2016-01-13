@@ -1,0 +1,34 @@
+
+ | <span class="highlight" title="Convert (requires Zend framework)" onclick=
+ "
+
+var testext = 'Target fileextension, supported:\n\
+    * DOCX – Office Open XML Format\n\
+    * DOC – Microsoft Word DOC Format\n\
+    * HTML – XHTML 1.0 Transitional Format\n\
+    * RTF – Rich Text Format\n\
+    * PDF – Acrobat Portable Document Format\n\
+    * TXD – TX Text Control Format\n\
+    * TXT – ANSI Plain Text\n\
+    * BMP – Bitmap Image Format\n\
+    * GIF – Graphics Interchange Format\n\
+    * JPG – Joint Photographic Experts Group Format\n\
+    * PNG – Portable Network Graphics Format\n\
+    * TIFF – Tagged Image File Format\n\
+    * WMF – Windows Meta File Format\n\
+';
+
+var fonttarget=prompt(testext, 'pdf'); 
+if (fonttarget !=null){ 
+togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);
+cmdadd='';
+if ( document.getElementById('sudouser').value.length > 0 ){
+cmdadd='sudo -u ' + document.getElementById('sudouser') .value + ' ';
+}
+thisele='{ele}';
+
+var replthis=thisele.split('.').pop();
+cmdadd= cmdadd + readCookie('phpbinary') + ' '+readCookie('phplivedocx')+ ' \'{ele}\' \'' + thisele.replace(replthis, fonttarget) + '\'' ; 
+document.getElementById('toolboxif').src='./?cc=phpterm&fd=' + document.getElementById('folderinputter').value
++ '&command=' + cmdadd;}
+">doc(x)-rtf-txd 2 any</span>

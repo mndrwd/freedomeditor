@@ -1,0 +1,252 @@
+/*cat=1_*/
+global{
+	/* added this directive also here incase you use a non-default core_client in main configuration */
+	current_client:editor;
+allow_vardump_request:on;
+	/* produces 10x10 remembered colors;*/
+  memorize: 10;
+/*colorcookiename: name = fixed, false= current opened filename;*/
+  clrck_def: rainbow;
+ translate_editfield: off; 
+detect_mime:none;
+  /* exact, partial (is not case sensitive) or none;*/
+  autodetect_ext:on;
+  casesensitive_extension_handler:off;
+/* for extlinks;*/
+  universal_unlinked_ext_files:txt;
+/* extlink fallback setting for unrecognized files: uneed extlink named like this, or disable this with 'none';*/ 
+
+current_client:editor;
+
+
+preserve_styletag:off;
+/* off allows structure > html > convert inline css to stylesheet css file
+on: never touch tinymce output
+feature is part of the css file loader for tinymce style editing (got nothing to do with deprecated loader.php);
+uses $_GET['get_css_from_html'] 
+;*/
+
+increment_new_css_class_tags:off;
+/*feature "on" code not written yet, edit_content.php #36
+this feature is part of preserve_styletag:off setting
+off = writes fetched style tags to identical classnames (works)
+on = writes fetched style tags to new class names and alters relevant html tags to hold multiple class references(not coded yet)
+
+;*/
+
+  send_string:on; 
+/* sends complete editfield string to writefile2 or writefile function, sends $klikit array if off.. overridable;, used for css-legacy extlink;*/ 
+
+readonly:off;
+/* allow writing back files ;*/
+
+ent_decode:after_htmlshifter;
+/* see global config.css ;*/
+  
+
+/* template file extension;*/
+  tmplext: html;
+  default_gui:css;  
+  default_gui_lang: gui;
+  default_input_handler:folder;  
+  default_lang: en;
+  default_parser:folder;
+  default_request_folder:css;
+  default_template: editor;  
+/*specifically for overriding with extensions cfg files.. ;*/
+
+	}
+	
+	ext_links{/* link extensions to extlinks;*/
+zip:archive;
+rar:archive;
+tar:archive;
+gz:archive;
+tbz:archive;
+bz2:archive;
+arj:archive;
+arc:archive;
+lzh:archive;
+lha:archive;
+zoo:archive;
+sit:archive;
+
+pdf:livedocx;
+docx:livedocx;
+rtf:livedocx;
+txd:livedocx;
+
+css:css-leg;
+CSS:css-leg;
+Css:css-leg;
+CSs:css-leg;
+cSs:css-leg;
+csS:css-leg;
+cSS:css-leg;
+
+css:css;
+CSS:css;
+Css:css;
+CSs:css;
+cSs:css;
+csS:css;
+cSS:css;
+
+AFM:fonts;
+OFM:fonts;
+PFA:fonts;
+PFB:fonts;
+PFM:fonts;
+SFD:fonts;
+TEX:fonts;
+OTB:fonts;
+FON:fonts;
+FNT:fonts;
+BDF:fonts;
+OTF:fonts;
+SVG:fonts;
+TTC:fonts;
+
+no_ext:txt; 
+noext1:html-content;
+folder:html;
+html:html;
+html~:html;
+htm:html;
+
+js:js;
+php:php;
+noext3:php-content;
+ttf:ttf;
+xhtml:xhtml;
+noext2:xhtml-content;
+xls:xls;
+xlsx:xls;
+xml:xml;
+
+jpg:img;
+jpeg:img;
+png:img;
+gif:img;
+bmp:img;
+ico:img;
+
+
+/* add all flat text files here which you wish to edit */
+txt:txt;
+inf:txt;
+info:txt;
+log:txt;
+
+bat:batch;
+cmd:batch;
+
+}
+
+extlink_template{
+/*link extlink to template set;*/
+xml: editor;
+css-leg:editor;
+css:editor;
+no_ext:editor;
+html:editor;
+js:editor;
+php:editor;
+xml:editor;
+xhtml:editor;
+img:editor;
+txt:editor;
+}
+extlink_gui{/* link extlink to gui parser function file;*/
+html:css;
+html-content:css;
+xhtml-content:css;
+css:css;
+css-leg:css;
+no_ext:css;
+php:css;
+js:css;
+xml:css;
+xhtml:css;
+img:css;
+txt:css;
+  }
+extlink_mime{ /* add any text file here which you wish to be able to open in te editor, only when using partial detection setting*/
+css-leg:text;
+css:text;
+no_ext:text;
+html:text;	
+html-content:text;
+xhtml-content:text;
+php:text;
+js:text;
+xml:text;
+xhtml:text;
+img:image;
+txt:text; /* very important as this detects automatically whether any non linked file is a text file and thus sets if it can be clicked to edit in the editor ;*/
+}	
+extlink_parser{/* link extlink to file parser function file;*/
+css-leg:css;
+css:folder;
+no_ext:folder;
+html:folder;
+xhtml-content:folder;
+html-content:folder;
+php:folder;
+js:folder;
+xml:folder;
+xhtml:folder;
+img:folder;
+txt:folder;
+  }
+extlink_input_handler{ /* link extlink to userinput handler;*/
+no_ext:folder;
+css-leg:css;
+css:folder;
+html:folder;
+html-content:folder;
+xhtml-content:folder;
+js:folder;
+php:folder;
+xml:folder;
+xhtml:folder;
+img:folder;
+txt:folder;
+}
+extlink_lang{/* link extlink to language filter;*/
+no_ext:css;
+css-leg:css;
+css:css;
+xml:xml;
+html:xml;
+html-content:xml;
+xhtml-content:xml;
+xhtml:xml;
+php:css;
+js:css;
+img:css;
+txt:css;
+}
+extlink_gui_lang{  /* link extlink to gui lang element;*/
+no_ext:gui;
+css-leg:gui;
+css:gui;
+html:gui;
+html-content:gui;
+xhtml-content:gui;
+php:gui;
+js:gui;
+xml:gui;
+xhtml:gui;
+img:gui;
+txt:gui;
+}	
+
+folders{ 
+ parser: core_clients/editor/fc/parser/;
+inputhandler: core_clients/editor/fc/inputhandler/;
+gui: core_clients/editor/fc/gui/;
+
+ }
+
+

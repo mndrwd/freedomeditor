@@ -1,0 +1,45 @@
+====================================
+End user GUI issues:
+------------------------------------
+
+*0.2.6+: Current basic tabbed browsing has limits, 
+limited amount of tabs can be opened. 
+
+Also currently there is a issue which sometimes causes double tabs to appear,
+due to the folder reference being wrong. Current solution is to just close the tab, untill i notice, or someone reports me when exactly this happens.
+
+toolbox > bgb - find failure @ unix
+
+
+
+    * [low priority] 
+Executing a command in phpterm that does not return prompt will 
+probably cause your
+windows webserver process to hang, forcing you to perform a 
+webserver software reboot. This does not seem to occur on freebsd.
+
+
+		* [low priority]
+		aateau.sh (archive extraction) fails in certain circumstances
+
+====================================
+Source issues:
+------------------------------------
+BUG 1: -v low priority
+fc/client/make_object.php:
+wrong -userinput- written to cache ; 
+workaround cache loading disabled, realtime retrieving
+line 18 : #skipthiscacheload=true
+
+
+2: -low priority
+javascript check for sidebar _contents frame when file is loaded with ajax, atm when not using the firefox sidebar, contents get loaded twice upon file opening.
+
+3: -v low priority
+The {urlstr} template directive may not always behave correctly with jquery ajax, use {folder}, {rawele} and/or {ele} instead.
+
+4: -v low priority
+Changing optional default_gui setting breaks tinymce. 
+
+NOTE: There may be more bugs out there...
+

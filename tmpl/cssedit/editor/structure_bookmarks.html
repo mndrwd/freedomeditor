@@ -1,0 +1,33 @@
+ - <span class="highlight" style="display:inline;" title="LANGbookmarksIANG" id="struct_bookmarks" onclick="createCookie('bookmarkz', readCookie('bookmarkz') + '+_+' + document.getElementById('folderinputter').value, 365);createCookie('mainmenu', 'ta', 365);window.sidebar.addPanel('{ext:wwwroot:ension} ::: {ext:folder:ension}'.replace('%3A', ':').replace(/%5C/g, '/'), '{ext:wwwroot:ension}/?&cat={ext:cat:ension}&fn={ext:file:ension}&ele={ext:ele_name:ension}{ext:urlstr:ension}', '');"
+	onmouseover="
+	$('#beatmarkz').empty();ShowContent('bookmarkz');
+	document.getElementById('bookmarkz').style.display='inline';
+
+	
+	arr_bmz = readCookie('bookmarkz').split('+_+');itemhtml='';for (i=0;i<arr_bmz.length;i++){ 
+
+	if (arr_bmz[i]!=''){
+	$('#beatmarkz').append('<option value=\''+ arr_bmz[i]+'\'>' + arr_bmz[i] + '</option>');
+}
+}
+
+
+	$('#bookmarkz').mouseleave(function(){
+HideContent('bookmarkz');$('#beatmarkz').empty();
+
+});
+
+
+
+	"
+	>LANGbookmark_open_structureIANG</span>
+<div 
+  id="bookmarkz" 
+   style="display:none;
+	  padding: 5px;
+	  width:100%;
+	  z-index:10000;
+      ">
+	  <select onchange="document.getElementById('folderinputter').value=this.value;" id="beatmarkz"></select><span class="highlight" onclick="if(confirm('LANGresetIANG LANGbookmarksIANG?')){createCookie('bookmarkz', '', 365);}">LANGresetIANG</span>
+</div>
+

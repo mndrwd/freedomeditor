@@ -1,0 +1,889 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Web CSS Editor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Author" content="Hsun-Cheng Hu (胡訓誠)">
+<meta name="Email" content="huchengtw@gmail.com">
+<link href="CSSEditor.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body bgcolor="#CCCCCC">
+
+<script type="text/javascript" language="JScript" src="Control.js"></script>
+
+<script type="text/javascript" language="JScript" for="FontFamilySelect" event="onchange">
+PreviewBox.style.fontFamily="";
+FontFamily.value=FontFamilySelect.value;
+if(FontFamily.value=="")
+{
+	FontFamily.value="(Default Font)"
+}
+PreviewBox.style.fontFamily=FontFamilySelect.value;
+</script>
+
+<script type="text/javascript" language="JScript" for="FontStyleSelect" event="onchange">
+var sValue=FontStyleSelect.value
+PreviewBox.style.fontStyle="";
+PreviewBox.style.fontWeight="";
+FontStyle.value=FontStyleSelect.options.item(FontStyleSelect.selectedIndex).innerText;
+if(sValue.indexOf("+") > -1)
+{
+	var aValue=sValue.split("+");
+	PreviewBox.style.fontStyle=aValue[0];
+	PreviewBox.style.fontWeight=aValue[1];
+}
+else
+{
+	if(sValue=="bold")
+	{
+		PreviewBox.style.fontWeight=FontStyleSelect.value;
+	}
+	else
+	{
+		PreviewBox.style.fontStyle=FontStyleSelect.value;
+	}
+}
+
+</script>
+
+<script type="text/javascript" language="JScript" for="FontSizeSelect" event="onchange">
+PreviewBox.style.fontSize="";
+FontSize.value=FontSizeSelect.value;
+PreviewBox.style.fontSize=FontSizeSelect.value;
+</script>
+
+<script type="text/javascript" language="JScript" for="color" event="onclick">
+var sResult=showModalDialog("select_color.html", color.value, "dialogWidth:220px;dialogHeight:200px;scroll:no;status:off;help:no");
+if(sResult)
+{
+	color.value=sResult;
+	color.style.backgroundColor=sResult;
+	PreviewBox.style.color=sResult;
+}
+</script>
+
+<script type="text/javascript" language="JScript" for="BorderColor" event="onclick">
+var sResult=showModalDialog("select_color.html", BorderColor.value, "dialogWidth:220px;dialogHeight:200px;scroll:no;status:off;help:no");
+if(sResult)
+{
+	BorderColor.value=sResult;
+	BorderColor.style.backgroundColor=sResult;
+	BorderColorChange();
+//	PreviewBox.style.color=sResult;
+}
+</script>
+
+<script type="text/javascript" language="JScript" for="BackgroundColor" event="onclick">
+var sResult=showModalDialog("select_color.html", BackgroundColor.value, "dialogWidth:220px;dialogHeight:200px;scroll:no;status:off;help:no");
+if(sResult)
+{
+	BackgroundColor.value=sResult;
+	BackgroundColor.style.backgroundColor=sResult;
+	BackgroundPreviewBox.style.backgroundColor=sResult;
+	//BorderColorChange();
+//	PreviewBox.style.color=sResult;
+}
+</script>
+
+<script type="text/javascript" language="JScript" for="ForegroundColor" event="onclick">
+var sResult=showModalDialog("select_color.html", ForegroundColor.value, "dialogWidth:220px;dialogHeight:200px;scroll:no;status:off;help:no");
+if(sResult)
+{
+	ForegroundColor.value=sResult;
+	ForegroundColor.style.backgroundColor=sResult;
+	BackgroundPreviewBox.style.color=sResult;
+	//BorderColorChange();
+//	PreviewBox.style.color=sResult;
+}
+</script>
+
+<script type="text/javascript" language="JScript" for="TextPosition" event="onchange">
+PreviewBox.style.verticalAlign =TextPosition.value;
+</script>
+
+<script type="text/javascript" language="JScript" for="SpanSize" event="onchange">
+ApplySpanPoint();
+if(SpanSize.value=="Normal")
+{
+	EnableUpDownControl(false,"SpanPoint");
+	//SpanPoint.value="";
+}
+else
+{
+	EnableUpDownControl(true,"SpanPoint");
+	if(SpanPoint.value||SpanPoint.value=="")
+	{
+		SpanPoint.value=0;
+	}
+}
+</script>
+<script type="text/javascript" language="JScript" for="textAlign" event="onchange">
+
+if(textAlign.value.indexOf("+") < 0)
+{
+	ParaPreviewBox.style.textAlign=textAlign.value;
+}
+else
+{
+	ParaPreviewBox.style.textAlign=textAlign.value.split("+")[0];	
+	ParaPreviewBox.style.textJustify=textAlign.value.split("+")[1];		
+}
+</script>
+
+<script type="text/javascript" language="JScript" for="LineHeight" event="onchange">
+
+ParaPreviewBox.style.lineHeight=LineHeight.value;
+</script>
+
+<script type="text/javascript" language="JScript" for="window" event="onload">
+
+EnablePaddingControl(false);
+EnableUpDownControl(false,"PositionLeft");
+EnableUpDownControl(false,"PositionTop");
+EnableUpDownControl(false,"LayerSequence");
+EnableUpDownControl(false,"SpanPoint");
+BorderColor.style.backgroundColor=BorderColor.value;
+BackgroundColor.value="";
+ForegroundColor.value="";
+ParseCSS(window.dialogArguments);
+</script>
+<div id="ParseCSSContainer">
+</div>
+<table bgcolor="#CCCCCC" >
+<tr>
+<td width="16" valign="top">
+<table width="100%" height="480">
+	<tr><td align="center" valign="middle" style="layout-flow: vertical-ideographic;"><div id="FontItem" onClick="ItemChange()" class="tabSelected">Font</div></td></tr>
+	<tr><td align="center" valign="middle" style="layout-flow: vertical-ideographic;"><div onClick="ItemChange()" id="ParaItem" class="tabNonSelected">Paragraph</div></td></tr>
+	<tr><td align="center" valign="middle" style="layout-flow: vertical-ideographic;"><div onClick="ItemChange()" id="BorderItem" class="tabNonSelected">Border</div></td></tr>
+	<tr><td align="center" valign="middle" style="layout-flow: vertical-ideographic;"><div onClick="ItemChange()" id="ListItem" class="tabNonSelected">Numbering</div></td></tr>
+	<tr><td align="center" valign="middle" style="layout-flow: vertical-ideographic;"><div onClick="ItemChange()" id="PositionItem" class="tabNonSelected">Position</div></td></tr>				
+</table></td>
+<td height="540" width="430">
+
+<!--   Font Tab   -->
+<table width="100%" height="100%" id="FontTab">
+  <tr style="height:20px"> 
+    <td width="65"><div  id="FontTabFont" onClick="TabChange(tfFont)" class="tabSelected"><font size="-1">Font</font></div></td>
+    <td width="105"><div  id="FontTabSpan" onClick="TabChange(tfSpan)" class="tabNonSelected"><font size="-1">Character Spacing</font></div></td>
+    <td width="260"></td>
+  </tr> 
+  <tr  style="height:420px">
+    <td colspan="3" valign="top" width="430"><div  id="FontTable" class="FontTab"><table border="0">
+        <tr> 
+          <td width="150"><font size="-1">Font:</font></td>
+          <td><font size="-1">Font style:</font></td>
+          <td><font size="-1">Size:</font></td>
+        </tr>
+        <tr> 
+          <td><input type="text" name="textfield" id="FontFamily" readonly="true" style="width=100%"><br><select name="select" size="5" id="FontFamilySelect"  style="width=100%">
+              <option value="">(Default Font)</option>
+              <option value="Arial">Arial</option>
+              <option value="Arial (fantasy)">Arial (fantasy)</option>
+              <option value="Arial Black">Arial Black</option>			  
+              <option value="Blackadder ITC">Blackadder ITC</option>
+              <option value="Times New Roman">Times New Roman</option>
+            </select></td>
+          <td><input type="text" name="textfield" id="FontStyle" readonly="true" style="width=100%"><br><select name="select" size="5" id="FontStyleSelect"  style="width=100%">
+              <option value="">Normal</option>
+              <option value="italic">Italic</option>
+              <option value="oblique">Oblique</option>
+              <option value="bold">Bold</option>
+              <option value="italic+bold">Bold Italic</option>
+              <option value="oblique+bold">Bold Oblique</option>
+            </select></td>
+          <td><input type="text" name="textfield" id="FontSize" readonly="true" style="width=100%"><br><select name="select" size="5" id="FontSizeSelect"  style="width=100%">
+              <option value="10px">10px</option>
+              <option value=".5in">.5in</option>
+              <option value="2mm">2mm</option>
+              <option value="1em">1em</option>
+              <option value="8pt">8pt</option>
+              <option value="12pt">12pt</option>
+              <option value="14pt">14pt</option>
+              <option value="18pt">18pt</option>
+            </select></td>
+        </tr>
+        <tr> 
+          <td colspan="3"><hr> <font size="-1">Color:</font> <input name="color" type="text" id="color" readonly="true"> 
+            <input name="noColor" id="noColor" type="checkbox" value="" onClick="onClick(mNoColor)"> 
+            <font size="-1">Disable Color</font></td>
+        </tr>
+        <tr> 
+          <td colspan="3"><hr> <font size="-1">Effects</font> <div class="effectArea"> 
+              <table width="372">
+                <tr> 
+                  <td width="171"> <font size="-1"> 
+                    <input name="td_Under" id="td_Under" type="checkbox" value="underline" onClick="onClick(mUnderLine)">
+                    Underline </font></td>
+                  <td width="189"> <font size="-1"> 
+                    <input name="font_variant_small" id="font_variant_small" type="checkbox" value="small-caps" onClick="onClick(mSmallCaps)" >
+                    Small Caps </font></td>
+                </tr>
+                <tr> 
+                  <td><font size="-1"> 
+                    <input name="td_LineThrough" id="td_LineThrough" type="checkbox" value="line-through" onClick="onClick(mLineThrough)">
+                    Strikethrough</font></td>
+                  <td><font size="-1"> 
+                    <input name="tt_uppercase" id="tt_uppercase" type="checkbox" value="uppercase" onClick="onClick(mUpperCase)">
+                    All Caps</font></td>
+                </tr>
+                <tr> 
+                  <td><font size="-1"> 
+                    <input name="td_Over" id="td_Over" type="checkbox" value="overline" onClick="onClick(mOverLine)">
+                    Overline </font></td>
+                  <td><font size="-1"> 
+                    <input name="tt_capitalize" id="tt_capitalize" type="checkbox" value="capitalize" onClick="onClick(mCapitalize)">
+                    Capitalize</font></td>
+                </tr>
+                <tr> 
+                  <td><font size="-1"> 
+                    <input name="td_Blink" id="td_Blink" type="checkbox" value="blink" onClick="onClick(mBlink)">
+                    Blink </font></td>
+                  <td><font size="-1"> 
+                    <input name="visibility_hidden" id="visibility_hidden" type="checkbox" value="hidden" onClick="onClick(mHidden)">
+                    Hidden</font></td>
+                </tr>
+                <tr> 
+                  <td><font size="-1"> 
+                    <input name="td_None" id="td_None" type="checkbox" value="none" onClick="onClick(mNone)">
+                    No text decoration</font></td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </div>
+			</td>
+        </tr>
+      </table></div>
+		 <div id="FontSpan" class="FontTab" style="display:none;">
+		 
+        <table width="90%">
+          <tr> 
+            <td width="18%"><font size="-1">Spacing: </font></td>
+            <td width="30%"><font size="-1">
+              <select name="SpanSize">
+                <option value="Normal" selected>Normal</option>
+                <option value="Loose">Expanded</option>
+                <option value="Tie">Condensed</option>
+              </select>
+              </font></td>
+            <td width="21%"><font size="-1">By:</font></td>
+            <td width="31%"><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="SpanPoint" size="5" onchange="alterSpanPoint(0);"></td><td><input id="SpanPointDown" style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterSpanPoint(1);" ondblclick="alterSpanPoint(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8"  id="SpanPointUp" type="button" value="▼" onclick="alterSpanPoint(-1);" ondblclick="alterSpanPoint(-1);"></td></tr>
+	</table></font></td>
+          </tr>
+          <tr> 
+            <td><font size="-1">Position:</font></td>
+            <td><font size="-1">
+              <select name="TextPosition">
+                <option value="baseline" selected>baseline</option>
+                <option value="sub">sub</option>
+                <option value="super">super</option>
+                <option value="top">top</option>
+                <option value="text-top">text-top</option>
+                <option value="middle">middle</option>
+                <option value="bottom">bottom</option>
+                <option value="text-bottom">text-bottom</option>
+              </select>
+              </font></td>
+            <td>&nbsp;</td>
+            <td><font size="-1">&nbsp;</font></td>
+          </tr>
+        </table>
+		</div>
+	</td>
+  </tr>
+        <tr> 
+          <td colspan="3"><hr> <font size="-1">Preview</font> 
+		  </td>
+        </tr>
+		<tr>
+		<td colspan="3" id="PreviewBox" class="PreviewBox">
+		AaBbYyGgLlJj
+		</td>
+		</tr>
+
+</table>
+
+<!--   Paragraph   -->
+<table width="100%" height="100%" id="ParaTab" style="display:none;">
+  <tr style="height:20px"> 
+    <td width="120" id="TabParaTab"class="tabSelected"><font size="-1">Indents and Spacing</font></td>
+    <td width="310" colspan="2"></td>
+  </tr> 
+  <tr  style="height:328px">
+    <td colspan="3" valign="top" width="430"><div  id="ParagraphTable"  class="FontTab">
+	<table border="0" width="100%">
+        <tr> 
+          <td><font size="-1">Alignment:</font></td>
+          <td><font size="-1"><select id="textAlign">
+                      <option value="left">Left</option>
+                      <option value="right">Right</option>
+                      <option value="center">Center</option>
+                      <option value="justify">Justify</option>
+                      <option value="justify+inter-ideograph">Inter-ideograph</option>
+                    </select></font></td>
+          <td><font size="-1">&nbsp;</font></td>
+
+        </tr>
+		<tr><td colspan="3"><hr></td></tr>
+        <tr> 
+          <td><font size="-1">Indentation</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+	  
+        </tr>
+        <tr> 
+          <td><font size="-1">Before text:</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="LeftIdent" size="5" onchange="alertLeftIdent(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterLeftIdent(1);" ondblclick="alterLeftIdent(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterLeftIdent(-1);" ondblclick="alterLeftIdent(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1">Indent first line:</font></td>
+		  
+        </tr>
+        <tr> 
+          <td><font size="-1">After text:</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="RightIdent" size="5" onchange="alterRightIdent(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterRightIdent(1);" ondblclick="alterRightIdent(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterRightIdent(-1);" ondblclick="alterRightIdent(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="FirstLineIdent" size="5" onchange="alterFirstLineIdent(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterFirstLineIdent(1);" ondblclick="alterFirstLineIdent(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterFirstLineIdent(-1);" ondblclick="alterFirstLineIdent(-1);"></td></tr>
+	</table></font></td>
+
+        </tr>
+				<tr><td colspan="3"><hr></td></tr>
+        <tr> 
+          <td><font size="-1">Spacing</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+
+        </tr>
+        <tr> 
+          <td><font size="-1">Before</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="BeforeSpan" size="5" onchange="alterBeforeSpan(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterBeforeSpan(1);" ondblclick="alterBeforeSpan(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterBeforeSpan(-1);" ondblclick="alterBeforeSpan(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1">Line spacing:</font></td>
+
+        </tr>
+        <tr> 
+          <td><font size="-1">After:</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="AfterSpan" size="5" onchange="alterAfterSpan(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterAfterSpan(1);" ondblclick="alterAfterSpan(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterAfterSpan(-1);" ondblclick="alterAfterSpan(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1"><select id="LineHeight">
+                      <option value="100%">Single</option>
+                      <option value="150%">1.5 lines</option>
+                      <option value="200%">Double</option>
+                    </select></font></td>
+
+        </tr>
+        <tr> 
+          <td><font size="-1">Word:</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="WordSpace" size="5" onchange="alterWordSpace(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterWordSpace(1);" ondblclick="alterWordSpace(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterWordSpace(-1);" ondblclick="alterWordSpace(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1">&nbsp;</font></td>		  
+        </tr>
+		
+        </table>
+		</div>
+	</td>
+  </tr>
+  <tr> 
+          <td colspan="3"><hr> <font size="-1">Preview</font> 
+		  </td>
+  </tr>
+   <tr>
+		<td colspan="3" class="PreviewBox" align="left">
+		<div align="left"><font color="#999999"  align="left" size="-2">Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph Previous Paragraph</font></div>
+		    <div  id="ParaPreviewBox" align="left"><font size="-2">Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified Paragraph being modified</font></div>
+		    <div  align="left"><font color="#999999"  size="-2"> Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph Following Paragraph</font></div>
+ 		</td>
+   </tr>
+
+</table>
+
+<!--  Border -->
+<table width="100%" height="100%" id="BorderTab" style="display:none;">
+  <tr style="height:20px"> 
+    <td width="40" id="TabBorderTab"class="tabSelected" onClick="BorderTabChange(tbBorder)"><font size="-1">Borders</font></td>
+	<td width="40" id="TabBackgroundTab"class="tabNonSelected" onClick="BorderTabChange(tbBackground)"><font size="-1">Shading</font></td>
+    <td width="350"></td>
+  </tr> 
+  <tr  style="height:480px">
+    <td colspan="3" valign="top" width="430">
+	<div  id="BorderTable"  class="FontTab"  style="display:inline">
+		<table width="100%">
+			<tr>
+				<td width="120" valign="top">
+					<table width="100%">
+                      <tr> 
+                        <td><font size="-1">Setting:</font></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1"><img src="borderdefault.jpg" id="BorderDefault" onClick="BorderSettingChange()" class="RedBorder" width="31" height="36">Default</font></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1"><img src="bordersquare.jpg" id="BorderSquare" onClick="BorderSettingChange()"  class="NonRedBorder" width="32" height="35">Box</font></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1"><img src="borderuserdefine.jpg" id="BorderUserDefined" onClick="BorderSettingChange()"  class="NonRedBorder" width="31" height="35">Custom</font></td>
+                      </tr>
+                    </table>
+				</td>
+				  <td  width="100"  valign="top"> <font size="-1">Style:<br>
+                    <select size="9" id="BorderStyle" onChange="BorderStyleChange()">
+                      <option value="solid">solid</option>
+                      <option value="dotted">dotted</option>
+                      <option value="dashed">dashed</option>
+                      <option value="double">double</option>
+                      <option value="groove">groove</option>
+                      <option value="ridge">ridge</option>
+                      <option value="inset">inset</option>
+                      <option value="outset">outset</option>
+                      <option value="none">none</option>
+                    </select>
+                    <br>
+                    Color:<br>
+                    <input type="text" style="width:100%;" id="BorderColor" readonly="true" value="#000000">
+                    <br>
+                    Width: </font>
+                    <table rows="2" cols="2" cellspacing="0" cellpadding="0" width="100%">
+                      <tr>
+                        <td rowspan="2" width="90%"><font size="-1">
+                          <input type="text" id="BorderSize" style="width:100%" onchange="alterBorderSize(0);">
+                          </font></td>
+                        <td  width="10%"><font size="-1">
+                          <input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterBorderSize(1);" ondblclick="alterBorderSize(1);">
+                          </font></td>
+                      </tr>
+                      <tr>
+                        <td><font size="-1">
+                          <input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterBorderSize(-1);" ondblclick="alterBorderSize(-1);">
+                          </font></td>
+                      </tr>
+                    </table>					
+				</td>
+				  <td  width="250"  valign="top"> <font size="-1"><p>Preview </p>
+                    <p style="text-indent: 12">Click on checkBoxs to apply borders </p>
+                    </font> <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="3%">&nbsp;<!-- style="border-bottom-width:1;border-bottom-style:solid;border-right-width:1;border-right-style:solid;"--></td>
+                        <td width="10%" bgcolor="#FFFFFF" style="border-bottom:1 solid #000000;border-right:1 solid #000000;">&nbsp;</td>
+                        <td width="74%" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="10%" bgcolor="#FFFFFF" style="border-bottom:1 solid #000000;border-left:1 solid #000000;" >&nbsp; <!--  --></td>
+                        <td width="3%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="95">&nbsp;</td>
+                        <td bgcolor="#FFFFFF">&nbsp;</td>
+                        <td bgcolor="#FFFFFF" id="BorderPreviewBox"><font color="#999999" size="-2">Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word v</font></td>
+                        <td bgcolor="#FFFFFF">&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td bgcolor="#FFFFFF"  style="border-top:1 solid #000000;border-right:1 solid #000000;">&nbsp; <!--  style="border-top-width:1;border-top-style:solid;border-right-width:1;border-right-style:solid;" --></td>
+                        <td bgcolor="#FFFFFF">&nbsp;</td>
+                        <td bgcolor="#FFFFFF"  style="border-top:1 solid #000000;border-left:1 solid #000000;">&nbsp; <!--  style="border-top-width:1;border-top-style:solid;border-left-width:1;border-left-style:solid;"--></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td> <font size="-1"><input id="BorderUp" type="checkbox" onClick="BorderSideChange()">Top<input  id="BorderDown" type="checkbox"  onClick="BorderSideChange()">Bottom<input  id="BorderLeft" type="checkbox"  onClick="BorderSideChange()">Left<input  onClick="BorderSideChange()" id="BorderRight" type="checkbox">Right</font></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table></td> 
+			</tr> 
+			<tr> 
+				<td colspan="3"><hr>
+					<table width="100%">
+                      <tr> 
+                        <td><font size="-1">Padding</font></td>
+                        <td><font size="-1">&nbsp;</font></td>
+                        <td><font size="-1">&nbsp;</font></td>
+                        <td><font size="-1">&nbsp;</font></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1">Top:</font></td>
+                        <td><table rows="2" cols="2" cellspacing="0" cellpadding="0" width="100%">
+                            <tr> 
+                              <td rowspan="2" width="90%"><font size="-1"> 
+                                <input type="text" id="PendingTop" style="width:100%" onchange="alterPendingTop(0);">
+                                </font></td>
+                              <td  width="10%"><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingTopUp" type="button" value="▲" onclick="alterPendingTop(1);" ondblclick="alterPendingTop(1);">
+                                </font></td>
+                            </tr>
+                            <tr> 
+                              <td><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingTopDown" type="button" value="▼" onclick="alterPendingTop(-1);" ondblclick="alterPendingTop(-1);">
+                                </font></td>
+                            </tr>
+                          </table></td>
+                        <td><font size="-1">Left:</font></td>
+                        <td><table rows="2" cols="2" cellspacing="0" cellpadding="0" width="100%">
+                            <tr> 
+                              <td rowspan="2" width="90%"><font size="-1"> 
+                                <input type="text" id="PendingLeft" style="width:100%" onchange="alterPendingLeft(0);">
+                                </font></td>
+                              <td  width="10%"><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingLeftUp" type="button" value="▲" onclick="alterPendingLeft(1);" ondblclick="alterPendingLeft(1);">
+                                </font></td>
+                            </tr>
+                            <tr> 
+                              <td><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingLeftDown" type="button" value="▼" onclick="alterPendingLeft(-1);" ondblclick="alterPendingLeft(-1);">
+                                </font></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1">Bottom:</font></td>
+                        <td><table rows="2" cols="2" cellspacing="0" cellpadding="0" width="100%">
+                            <tr> 
+                              <td rowspan="2" width="90%"><font size="-1"> 
+                                <input type="text" id="PendingBottom" style="width:100%" onchange="alterPendingBottom(0);">
+                                </font></td>
+                              <td  width="10%"><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingBottomUp" type="button" value="▲" onclick="alterPendingBottom(1);" ondblclick="alterPendingBottom(1);">
+                                </font></td>
+                            </tr>
+                            <tr> 
+                              <td><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingBottomDown" type="button" value="▼" onclick="alterPendingBottom(-1);" ondblclick="alterPendingBottom(-1);">
+                                </font></td>
+                            </tr>
+                          </table></td>
+                        <td><font size="-1">Right:</font></td>
+                        <td><table rows="2" cols="2" cellspacing="0" cellpadding="0" width="100%">
+                            <tr> 
+                              <td rowspan="2" width="90%"><font size="-1"> 
+                                <input type="text" id="PendingRight" style="width:100%" onchange="alterPendingRight(0);">
+                                </font></td>
+                              <td  width="10%"><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingRightUp" type="button" value="▲" onclick="alterPendingRight(1);" ondblclick="alterPendingRight(1);">
+                                </font></td>
+                            </tr>
+                            <tr> 
+                              <td><font size="-1"> 
+                                <input style="height:13;width:16;font-size:8" id="PendingRightDown" type="button" value="▼" onclick="alterPendingRight(-1);" ondblclick="alterPendingRight(-1);">
+                                </font></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div  id="BackgroundTable"  class="FontTab" style="display:none">
+		<table width="100%">
+			<tr>
+				<td width="50%" valign="top">
+				<div><font size="-1">Fill</font></div>
+                    <p></p>
+                    <div><font size="-1">Background color:<br>
+                      <input type="text" style="width:80%;" id="BackgroundColor" readonly="true">
+                      </font></div>
+                    <p></p>
+                    <div><font size="-1">Foreground color:<br>
+                      <input type="text" style="width:80%;" id="ForegroundColor" readonly="true">
+                      </font></div>
+				</td>
+				  <td  width="50%"><font size="-1">Preview </font> 
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="3%">&nbsp;<!-- style="border-bottom-width:1;border-bottom-style:solid;border-right-width:1;border-right-style:solid;"--></td>
+                        <td width="10%" bgcolor="#FFFFFF" style="border-bottom:1 solid #000000;border-right:1 solid #000000;">&nbsp;</td>
+                        <td width="74%" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="10%" bgcolor="#FFFFFF" style="border-bottom:1 solid #000000;border-left:1 solid #000000;" >&nbsp; <!--  --></td>
+                        <td width="3%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="95">&nbsp;</td>
+                        <td bgcolor="#FFFFFF">&nbsp;</td>
+                        <td bgcolor="#FFFFFF" id="BackgroundPreviewBox"><font size="-2">Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word </font></td>
+                        <td bgcolor="#FFFFFF">&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td bgcolor="#FFFFFF"  style="border-top:1 solid #000000;border-right:1 solid #000000;">&nbsp; <!--  style="border-top-width:1;border-top-style:solid;border-right-width:1;border-right-style:solid;" --></td>
+                        <td bgcolor="#FFFFFF">&nbsp;</td>
+                        <td bgcolor="#FFFFFF"  style="border-top:1 solid #000000;border-left:1 solid #000000;">&nbsp; <!--  style="border-top-width:1;border-top-style:solid;border-left-width:1;border-left-style:solid;"--></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td> </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>				
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table  width="100%">
+                      <tr> 
+                        <td><font size="-1">Patterns</font></td>
+                        <td><font size="-1">&nbsp;</font></td>
+                        <td><font size="-1">&nbsp;</font></td>
+                        <td><font size="-1">&nbsp;</font></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1">Background picture:</font></td>
+                        <td colspan="3"><font size="-1">
+							Original Image:<span id="ArgumentBGImageFile"></span><br> 
+                          <input type="file" style="width:100%" id="BackgroundImage" onChange="BackgroundImageChange()">
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1">Vertical:</font></td>
+                        <td><font size="-1"> 
+                          <select disabled id="BackgroundPositionY" onChange="ApplyBackgroundImageProperty()">
+                            <option value="top">top</option>
+                            <option value="center">center</option>
+                            <option value="bottom">bottom</option>
+                          </select>
+                          </font></td>
+                        <td><font size="-1">Repeat:</font></td>
+                        <td><font size="-1"> 
+                          <select disabled id="BackgroundRepeat" onChange="ApplyBackgroundImageProperty()">
+                            <option value="repeat">repeat</option>
+                            <option value="repeat-x">repeat-x</option>
+                            <option value="repeat-y">repeat-y</option>
+                            <option value="no-repeat">no-repeat</option>
+                          </select>
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="-1">Horizontal position:</font></td>
+                        <td><font size="-1"> 
+                          <select disabled  id="BackgroundPositionX" onChange="ApplyBackgroundImageProperty()">
+                            <option value="left">left</option>
+                            <option value="center">center</option>
+                            <option value="right">right</option>
+                          </select>
+                          </font></td>
+                        <td><font size="-1">Attachment:</font></td>
+                        <td><font size="-1"> 
+                          <select disabled id="BackgroundAttachment" onChange="ApplyBackgroundImageProperty()">
+                            <option value="scroll">scroll</option>
+                            <option>fixed</option>
+                          </select>
+                          </font></td>
+                      </tr>
+                    </table>
+				</td>
+			</tr>
+		</table>
+	</div>	
+	</td>
+  </tr>
+</table>
+
+<!-- Numbering -->
+
+<table width="100%" height="100%" id="ListTab" style="display:none;">
+  <tr style="height:20px"> 
+    <td width="100" id="TabIconTab"class="tabNonSelected" onClick="ListTabChange(tlIcon)"><font size="-1">Picture Bullets</font></td>
+	<td width="100" id="TabCommonTab"class="tabSelected" onClick="ListTabChange(tlCommon)"><font size="-1">Plain Bullets</font></td>
+	<td width="40" id="TabNumericTab"class="tabNonSelected" onClick="ListTabChange(tlNumeric)"><font size="-1">Numbers</font></td>	
+    <td width="190">&nbsp;</td>
+  </tr> 
+  <tr  style="height:480px">
+    <td colspan="4" valign="top" width="100%">
+	<div  id="IconItemTable"  class="FontTab"  style="display:none">
+		<table width="100%">
+			<tr>
+				<td width="40%" valign="center" align="center">
+<img src="IconItem.jpg"  class="NonRedBorder">
+				</td>
+				  <td width="60%" valign="top"> <font size="-1">Picture</font> 
+                    <br>Original Image:<span id="ArgumentListImageFile"></span><br>
+                    <input type="file" id="ListStyleImage" onChange="ListSettingChange()">
+				</td>				
+			</tr>
+		</table>
+	</div>
+	<div  id="CommonItemTable"  class="FontTab" style="display:inline">
+		<table width="100%">
+			<tr>
+				<td width="50%" valign="center" align="center">
+<img src="CommonItemNone.jpg" id="CommonNone" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>
+				<td width="50%" valign="center" align="center">
+<img src="CommonItemDisc.jpg" id="CommonDisc" class="RedBorder" onClick="ListSettingChange()">
+				</td>				
+			</tr>
+			<tr>
+				<td width="50%" valign="center" align="center">
+<img src="CommonItemCircle.jpg" id="CommonCircle" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>
+				<td width="50%" valign="center" align="center">
+<img src="CommonItemSquare.jpg" id="CommonSquare" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>				
+			</tr>			
+		</table>
+	</div>
+	<div  id="NumericItemTable"  class="FontTab" style="display:none">
+		<table width="100%">
+			<tr>
+				<td width="50%" valign="center" align="center">
+<img src="CommonItemNone.jpg" id="NumericNone" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>
+				<td width="50%" valign="center" align="center">
+<img src="NumericItemDecimal.jpg" id="NumericDecimal" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>				
+			</tr>
+			<tr>
+				<td width="50%" valign="center" align="center">
+<img src="NumericItemLowerAlpha.jpg" id="NumericLowerAlpha" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>
+				<td width="50%" valign="center" align="center">
+<img src="NumericItemLowerRoman.jpg" id="NumericLowerRoman" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>				
+			</tr>
+			<tr>
+				<td width="50%" valign="center" align="center">
+<img src="NumericItemUpperAlpha.jpg" id="NumericUpperAlpha" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>
+				<td width="50%" valign="center" align="center">
+<img src="NumericItemUpperRoman.jpg" id="NumericUpperRoman" class="NonRedBorder" onClick="ListSettingChange()">
+				</td>				
+			</tr>						
+		</table>
+	</div>
+	<input type="checkbox" id="ListStylePosition" checked onClick="ListStylePositionChange()"> <font size="-1"> Ident second line: </font>
+	<div class="PreviewBox" align="left" style="text-align: left"><font size="-1">
+		<ul  id="ListItemPreviewBox">
+			<li>Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 </li>
+			<li>Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 </li>
+			<li>Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</li>						
+		</ul></font>
+	</div>
+			
+	</td>
+  </tr>
+</table>
+
+
+<!-- Position -->
+<table width="100%" height="100%" id="PositionTab" style="display:none;">
+  <tr style="height:20px"> 
+    <td width="80" id="TabPositionTab"class="tabSelected"><font size="-1">Position</font></td>
+    <td width="320" colspan="2"></td>
+  </tr> 
+  <tr  style="height:328px">
+    <td colspan="3" valign="top" width="430"><div  id="PositionTable"  class="FontTab">
+	<table border="0" width="100%">
+        <tr> 
+          <td><font size="-1">Wrapping style</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+		  <td><font size="-1">&nbsp;</font></td>
+        </tr>
+        <tr> 
+                  <td align="center"><font size="-1"><img id="StyleNone" onClick="StyleChange()" src="none.jpg" width="45" height="48" class="RedBorder"><br>
+                      None</font> 
+                    
+                    </td>        
+					<td align="center"><font size="-1"><img id="StyleLeft" onClick="StyleChange()" src="left.jpg" width="44" height="48" class="NonRedBorder"><br>Left</font></td>
+                  <td align="center"><font size="-1">&nbsp;<img id="StyleRight" onClick="StyleChange()" src="right.jpg" width="44" height="48" class="NonRedBorder"><br>Right</font></td>
+		  <td><font size="-1">&nbsp;</font></td>
+        </tr>		
+		<tr><td colspan="4"><hr></td></tr>
+        <tr> 
+          <td><font size="-1">Position style</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+		  <td><font size="-1">&nbsp;</font></td>
+        </tr>
+        <tr> 
+                  <td align="center"><font size="-1"><img  id="PositionNone" onClick="PositionChange()" src="none.jpg" width="45" height="48" class="RedBorder"><br>None</font></td>
+                  <td align="center"><font size="-1"><img id="PositionAbsolute" onClick="PositionChange()" src="absolute.jpg" width="44" height="48" class="NonRedBorder"><br>Absolute</font></td>
+                  <td align="center"><font size="-1">&nbsp;<img id="PositionRelative" onClick="PositionChange()" src="relative.jpg" width="44" height="48" class="NonRedBorder"><br>Relative</font></td>
+		  <td><font size="-1">&nbsp;</font></td>
+        </tr>
+		<tr><td colspan="4"><hr></td></tr>		
+        <tr> 
+          <td><font size="-1">Location and size</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+          <td><font size="-1">&nbsp;</font></td>
+		  <td><font size="-1">&nbsp;</font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1">Left:</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="PositionLeft" size="5" onchange="alterPositionLeft(0);"></td><td><input style="height:13;width:16;font-size:8"  id="PositionLeftUp" type="button" value="▲" onclick="alterPositionLeft(1);" ondblclick="alterPositionLeft(1);"></td></tr>
+		<tr><td><input id="PositionLeftDown" style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterPositionLeft(-1);" ondblclick="alterPositionLeft(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1">Height:</font></td>
+		  <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="PositionHeight" size="5" onchange="alterPositionHeight(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterPositionHeight(1);" ondblclick="alterPositionHeight(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterPositionHeight(-1);" ondblclick="alterPositionHeight(-1);"></td></tr>
+	</table></font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1">Top:</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="PositionTop" size="5" onchange="alterPositionTop(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲"  id="PositionTopUp" onclick="alterPositionTop(1);" ondblclick="alterPositionTop(1);"></td></tr>
+		<tr><td><input id="PositionTopDown" style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterPositionTop(-1);" ondblclick="alterPositionTop(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1">Width:</font></td>
+		  <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input type="text" id="PositionWidth" size="5" onchange="alterPositionWidth(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" value="▲" onclick="alterPositionWidth(1);" ondblclick="alterPositionWidth(1);"></td></tr>
+		<tr><td><input style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterPositionWidth(-1);" ondblclick="alterPositionWidth(-1);"></td></tr>
+	</table></font></td>
+        </tr>		
+        <tr> 
+          <td><font size="-1">Z-Order</font></td>
+          <td><font size="-1"><table rows="2" cols="2" cellspacing="0" cellpadding="0">
+		<tr><td rowspan="2"><input  type="text" id="LayerSequence" size="5" onchange="alterLayerSequence(0);"></td><td><input style="height:13;width:16;font-size:8" type="button" id="LayerSequenceUp" value="▲" onclick="alterLayerSequence(1);" ondblclick="alterLayerSequence(1);"></td></tr>
+		<tr><td><input id="LayerSequenceDown" style="height:13;width:16;font-size:8" type="button" value="▼" onclick="alterLayerSequence(-1);" ondblclick="alterLayerSequence(-1);"></td></tr>
+	</table></font></td>
+          <td><font size="-1">&nbsp;</font></td>
+		  <td><font size="-1">&nbsp;</font></td>
+        </tr>						
+        </table>
+		</div>
+	</td>
+  </tr>
+  <tr> 
+          <td colspan="3"><hr> <font size="-1">Preview</font> 
+		  </td>
+  </tr>
+   <tr>
+		<td colspan="3" class="PreviewBox" align="left">
+		    <div  id="PositionPreviewBox" align="left"><font size="-2"> Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</font></div>
+ 		</td>
+   </tr>
+
+</table>
+<!-- Bottom -->
+
+</td>
+</tr>
+  <tr  style="height:20px"> 
+    <td colspan="2"><div align="right"> 
+        <input name="OkBtn" type="button" id="OkBtn" value="   Ok   " onClick="RenderCSS()">
+        <input name="CancelBtn" type="button" id="CancelBtn" value="Cancel" onClick="window.close();">
+      </div></td>
+  </tr>
+</table>
+</body>
+</html>

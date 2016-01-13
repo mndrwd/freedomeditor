@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1836"
+   name=""
+   committed-date="2008-05-21T15:02:18.447196Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/mozile"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="1027"
+   name="eDOM.js"
+   text-time="2004-12-06T02:30:13.000000Z"
+   committed-date="2004-12-05T20:57:20.970491Z"
+   checksum="496111935a6abc2f6db50896e8140eb1"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-12-06T02:30:13.000000Z"/>
+<entry
+   committed-rev="205"
+   name="README.html"
+   text-time="2004-04-27T09:22:44.000000Z"
+   committed-date="2003-09-08T05:51:25.000000Z"
+   checksum="722b80a83b0a7f43169c04f2ff42bcf6"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:44.000000Z"/>
+<entry
+   committed-rev="27"
+   name="buttons.png"
+   text-time="2004-04-27T09:22:44.000000Z"
+   committed-date="2003-08-06T14:09:39.000000Z"
+   checksum="ea4f309c5895840420059d137184cc1f"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:44.000000Z"/>
+<entry
+   committed-rev="1373"
+   name="jsdav.js"
+   text-time="2005-09-03T11:31:13.000000Z"
+   committed-date="2005-09-03T11:07:10.860379Z"
+   checksum="5c4939bb9b0e5cff3864b9c40710779c"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-09-03T11:31:13.000000Z"/>
+<entry
+   committed-rev="1050"
+   name="mozileTransportDriver.js"
+   text-time="2005-01-21T02:30:15.000000Z"
+   committed-date="2005-01-20T17:02:49.186810Z"
+   checksum="3a5c55f11ee3408568516f5a6f30cc15"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-01-21T02:30:15.000000Z"/>
+<entry
+   committed-rev="1504"
+   name="mozWrappers.js"
+   text-time="2006-09-08T01:30:09.000000Z"
+   committed-date="2006-09-07T13:49:51.101412Z"
+   checksum="e768fd72666e9b16ed23932b713777b7"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-09-08T01:30:09.000000Z"/>
+<entry
+   committed-rev="1373"
+   name="domlevel3.js"
+   text-time="2005-09-03T11:31:13.000000Z"
+   committed-date="2005-09-03T11:07:10.860379Z"
+   checksum="fee60c287059044029fc396d1a915a53"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-09-03T11:31:13.000000Z"/>
+<entry
+   committed-rev="687"
+   name="mozIECE.js"
+   text-time="2004-04-29T08:47:13.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="01c18e880168226fa2a2ac2fef962d82"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:13.000000Z"/>
+<entry
+   name="td"
+   kind="dir"/>
+<entry
+   committed-rev="1377"
+   name="mozilekb.js"
+   text-time="2005-09-04T01:30:10.000000Z"
+   committed-date="2005-09-03T12:11:03.293742Z"
+   checksum="abf057595f7e22ecdb165c58f866b4c3"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-09-04T01:30:10.000000Z"/>
+<entry
+   committed-rev="1374"
+   name="mozCE.js"
+   text-time="2005-09-03T11:31:13.000000Z"
+   committed-date="2005-09-03T11:29:39.356958Z"
+   checksum="5796f9aef657428e71ad66b4532eed7f"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-09-03T11:31:13.000000Z"/>
+<entry
+   committed-rev="1373"
+   name="mozileSave.js"
+   text-time="2005-09-03T11:31:13.000000Z"
+   committed-date="2005-09-03T11:07:10.860379Z"
+   checksum="fcad28a9878604902c8441ba29d2d5d0"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-09-03T11:31:13.000000Z"/>
+<entry
+   committed-rev="1374"
+   name="eDOMXHTML.js"
+   text-time="2005-09-03T11:31:13.000000Z"
+   committed-date="2005-09-03T11:29:39.356958Z"
+   checksum="ad9da15708db4c4a240caf0e716a32bd"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-09-03T11:31:13.000000Z"/>
+</wc-entries>

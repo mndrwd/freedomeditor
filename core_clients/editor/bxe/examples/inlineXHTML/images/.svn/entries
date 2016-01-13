@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="707"
+   name=""
+   committed-date="2004-05-13T08:04:44.019968Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/inlineXHTML/images"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="608"
+   name="spacer.gif"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-02-24T17:01:34.000000Z"
+   checksum="5938b67fb107470119ff15b710a9b079"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="670"
+   name="bxelogo.png"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-04-27T09:17:17.914969Z"
+   checksum="92d5325a871deae695d54f4ad86c082e"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="707"
+   name="footer.gif"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-13T08:04:44.019968Z"
+   checksum="ffb39ee5d599b1253ff1e71170780a71"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   committed-rev="608"
+   name="280line.gif"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-02-24T17:01:34.000000Z"
+   checksum="99216eb22195e65c5b8a925359eb4e6d"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="608"
+   name="nav_randblack.gif"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-02-24T17:01:34.000000Z"
+   checksum="274451f95b8a80274a90e5f99d213259"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="608"
+   name="nav_rand1black.gif"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-02-24T17:01:34.000000Z"
+   checksum="fae576a5f8259f0ec935515027ffd29b"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="707"
+   name="bitfluxeditor_logo2.gif"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-13T08:04:44.019968Z"
+   checksum="e382d93284a01e7a687d292ac271d71b"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+</wc-entries>

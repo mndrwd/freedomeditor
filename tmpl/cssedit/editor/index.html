@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<!--ajax{head}-->
+<title>{ext:rawfile:ension} ::: www.FreeDOMeditor.com by Bart Bosma</title>
+<link rel="stylesheet" href="LANGtmpl_folderIANG../js/jquery/farbtastic/farbtastic/farbtastic.css" type="text/css" >
+<link rel="stylesheet" href="LANGtmpl_folderIANGLANGcurrent_templateIANG/admin.css" type="text/css" >
+<link rel="stylesheet" href="LANGtmpl_folderIANG../js/jquery/jquery-ui-1.7.2.custom/development-bundle/themes/base/ui.resizable.css" type="text/css" >
+<link rel="stylesheet" type="text/css" href="LANGtmpl_folderIANG../js/jquery/lightbox0.5/css/jquery.lightbox-0.5.css" media="screen" />
+
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/jquery.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/form/jquery.form.js"></script>
+<script type="text/javascript" src="core_clients/editor/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="core_clients/editor/edit_area/edit_area_full.js"></script>
+
+
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/jquery-ui-1.7.2.custom/js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/jquery-ui-1.7.2.custom/development-bundle/ui/ui.core.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/jquery-ui-1.7.2.custom/development-bundle/ui/ui.resizable.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/TextArea_Resizer_1.0.4/jquery.textarearesizer.compressed.js"></script>
+<!-- file upload plugin 
+-->
+	<link href="LANGtmpl_folderIANG../js/jquery/jquery.uploadify/example/css/default.css" rel="stylesheet" type="text/css" />
+<link href="LANGtmpl_folderIANG../js/jquery/jquery.uploadify/example/css/uploadify.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/jquery.uploadify/swfobject.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/jquery.uploadify/jquery.uploadify.v2.1.0.min.js"></script>
+<!-- end file upload plugin -->
+
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/select/jquery.select.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/livequery/jquery.livequery.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/hotkeys/jquery.hotkeys.js"></script>
+
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/farbtastic/farbtastic/farbtastic.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/frameready/jquery.frameReady.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/bgb_funcs/global.js"></script>
+<script type="text/javascript" src="./?extjs=1"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/js/global.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/js/{ext:current_extlink:ension}.js"></script>
+<script type="text/javascript" src="LANGtmpl_folderIANG../js/jquery/lightbox0.5/js/jquery.lightbox-0.5.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--{head}ajax-->
+</head>
+
+<body onload="
+// confirm exit current page
+window.onbeforeunload =function() {
+return '';
+};
+enable_translation_icon='LANGtmpl_folderIANGLANGcurrent_templateIANG/img/home_tr.gif';
+disable_translation_icon= 'LANGtmpl_folderIANGLANGcurrent_templateIANG/img/home.gif';
+
+ajaxurlvar= '{ext:ajaxurlvar:ension}';
+tmplfolder='LANGtmpl_folderIANGLANGcurrent_templateIANG';
+tmplfolderori='LANGtmpl_folderIANG';
+close_all_tabs='LANGclose_allIANG';
+current_ext = '{ext:current_ext:ension}';
+current_extlink = '{ext:current_extlink:ension}';
+server_os= '{ext:server_os:ension}';
+readck();initvars();initmenu();
+
+">
+<div id="bgimage">
+</div>
+
+	<div id="Candy">
+<!--ajax{bodyworks}-->
+<div id="togglemenu" title="LANGCTRLIANG + <-  #####   LANGCTRLIANG + -> ">
+<span id="ta" onclick="togglem('mainmenu');togglemi('ta');createCookie('mainmenu', 'ta', 365);" class="toggleitem" style="background-color:#CCCCCC">LANGStructureIANG</span>
+<span id="tb" onclick="togglem('box_content');togglemi('tb');createCookie('mainmenu', 'tb', 365);" class="toggleitem" style="background-color:#CCCCCC">LANGEditorIANG</span>
+<span id="tc" onclick="togglem('box_right');togglemi('tc');createCookie('mainmenu', 'tc', 365);" class="toggleitem" style="background-color:#CCCCCC">LANGSettingsIANG</span>
+<span id="td" onclick="togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);" class="toggleitem" style="background-color:#CCCCCC">LANGToolboxIANG</span>
+</div>
+
+
+
+
+	<div id="mainmenu" style="display:none;">
+	<!--ajax{mainmenu}-->
+<div class="shared shortcuts">
+	<div class="box_m_select2">
+		
+		<span title="LANGexploreIANG" onclick="jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&fd=/../&cat=LANGfoldersIANG');"><img class="highlight" title="LANGRootIANG CTRL + HOME, CTRL + END" alt="LANGRootIANG" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/root.gif" style="width:50px;height:30px;"></img></span> 
+<!--<div class="box_m_select2">-->
+<span title="LANGexploreIANG" onclick="jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&cat=LANGfoldersIANG&fd=' + document.getElementById('folderinputter').value.replace(/ /g, '+');"><img title="LANGreload_treeIANG ALT + F5" alt="LANGreload_treeIANG" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/reload.gif" style="height:30px;width:30px;" class="highlight"></img></span>
+<span title="LANGexploreIANG" onclick="jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&cat={ext:cat:ension}&fd=' + document.getElementById('folderinputter').value.replace(/ /g, '+') + '&go=..');"><img title="LANGupIANG LANGCTRLIANG + LANGbackspaceIANG" alt="LANGupIANG" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/folder_up.gif" style="height:30px;width:30px;" class="highlight"></img></span>
+ - <span class="highlight" onclick="
+	newname=prompt('LANGNew_folderIANG', 'name');
+	if (newname){
+	jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&newfoldername='+newname+'&cat=LANGfoldersIANG&fd=' + document.getElementById('folderinputter').value.replace(/ /g, '+'));
+}
+	">
+	LANGNew_folderIANG</span>
+ - <span class="highlight" onclick="
+	newname=prompt('LANGNew_fileIANG', 'name');
+	if (newname){
+	jQuery('#mainmenu').load('./?{ext:ajaxurlvar:ension}=mainmenu&newfilename='+newname+'&cat=LANGfoldersIANG&fd=' + document.getElementById('folderinputter').value.replace(/ /g, '+'));
+}
+	">
+	LANGNew_fileIANG</span>
+ - 
+<span class="highlight" onclick="
+currentTime = new Date();
+time = currentTime.getTime() + 1;
+filename= prompt('LANGfilenameIANG', time);
+if (filename != '' && filename != null) {
+togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);
+cmdadd='';
+if ( document.getElementById('sudouser').value.length > 0 ){
+cmdadd='sudo -u ' + document.getElementById('sudouser') .value + ' ';
+}
+if (server_os=='win'){
+zipflags=prompt('LANGzipflagsIANG', '-a -r');
+}else{
+zipflags=prompt('LANGzipflagsIANG', '-r -y');
+}
+if (zipflags != '' && zipflags != null) {
+	becalm=false;
+	dest=prompt('LANGdestinationIANG', './');
+	if (dest == '' || dest == null) {
+		becalm=true; 
+		}
+cmdadd= cmdadd + doublequote + readCookie('zipbinary') + doublequote + ' ' + zipflags + ' \'' +  dest  + filename + doublequote + ' .'; 
+} else {
+	viewziphelp=confirm('LANGView_Zip_Manual?IANG');
+	if ( viewziphelp == true ) {
+		cmdadd=  readCookie('zipbinary') +' -?';
+		becalm=false;
+	}
+	else {
+		becalm=true;
+	}
+	}
+
+	if ( becalm == false ) {
+	document.getElementById('toolboxif').src='./?cc=phpterm&fd=' + document.getElementById('folderinputter').value
++ '&command=' + cmdadd;
+}
+}
+">LANGcreate_zipIANG</span>
+{ext:structure_bookmarks:ension}
+
+
+
+</div>
+
+<hr />
+<form id="structfilter" method="get" action="./">
+<input type="hidden" name="{ext:ajaxurlvar:ension}" value="mainmenu" />
+<input type="hidden" name="cat" value="{ext:cat:ension}" />
+<input type="hidden" id="folderinputter_d" name="fd_disabled" value="{ext:folder:ension}" />
+<input type="hidden" name="fn" value="{ext:file:ension}" />
+<input type="hidden" name="ele" id="currentfilename" value="{ext:rawele_name:ension}" />
+
+
+		<input onfocus="this.select();" title="LANGLocation_barIANG ALT + F6" type="text" id="folderinputter" name="fd" value="{ext:currentwd:ension}" style="width:79%;" />
+		
+<input type="hidden" name="enablefilter" />
+
+<input type="hidden" id="urlke" name="urlke" value="./?{ext:ajaxurlvar:ension}=mainmenu&cat={ext:cat:ension}&fd={ext:folder:ension}" />
+
+<input value="   LANGSearchIANG" onchange="oldsrch=this.value;" type="text" id="structfltr" name="structfltr" onfocus="
+if (oldsrch!=''){
+this.value=oldsrch;
+}else{
+if (this.value=='   LANGSearchIANG'){
+	this.value='';}
+this.value=document.getElementById('currentfilename').value.split('.').pop();
+}
+this.select();
+"
+title="LANGSearchIANG ALT + F7" />
+<input type="submit" style="display:none" value="LANGsendIANG" />
+</div>
+</form><hr />
+	<div class="shared cat_ele">
+<!--ajax{sidebar}-->
+{ext:cat_loop:ension}
+<!--{sidebar}ajax-->
+</div>
+
+<hr />
+<div class="box_m_header_top">
+CSS<p />
+<img class="highlight" onclick="var erasetinycookie = confirm ('LANGclean_tinymce_cssIANG \''+readCookie(readCookie('tinymcecooker'))+'\'?');
+if (erasetinycookie){
+eraseCookie(readCookie(readCookie('tinymcecooker')));
+}
+" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/mime/css.gif" title="LANGclean_tinymce_cssIANG " alt="LANGclean_tinymce_cssIANG" />
+</div>
+
+
+<div class="box_m_select2" ><span class="highlight" title="LANGmerge_'generated_*.css'_files_in_current_folderIANG" onclick="
+		alert ('Note that files named input1.css to input100000.css will be merged whereas highest value will overwrite css from lower ones. Output can be found in freedomeditor/css folder as a file named merged*.css');
+		mergefn=prompt('Enter filename (\'input\'numeric.css)', 'cssfile');
+if (mergefn!=null && mergefn!='')
+{
+
+  togglem('toolbox');togglemi('td');createCookie('mainmenu', 'td', 365);document.getElementById('toolboxif').src='./core_clients/editor/mergefoldercss.php?filename='+mergefn+'&amp;fd={ext:folder:ension}';
+  }
+  
+  
+  ">LANGmerge_'generated_*.css'_files_in_current_folderIANG</span>
+<p /></div>
+
+<div class="shared form_new css_legacy">
+<div class="box_m_header_top"><em class="box_m_header2_top_text"> LANGnewIANG :</em></div>
+
+  <div id="d2" class="box_m_search">LANGcategoryIANG
+  <form id="bogus4" method="post" action="./?cat={ext:cat:ension}&ele={ext:ele_name:ension}{ext:urlstr:ension}" >
+<input type="hidden" value="{ext:folder:ension}" name="fd" id="fd" />
+<input type="hidden" value="{ext:file:ension}" name="fn" id="fn" />
+            <input name="addcat" type="text" size="14" />
+
+          
+            
+            <input type="submit"   value="LANGsendIANG" /><br />
+</form></div>
+<div id="d4" class="box_m_search">
+
+LANGelementIANG
+<form id="bogus5" method="post" action="./?cat={ext:cat:ension}{ext:urlstr:ension}" >
+<input type="hidden" value="{ext:folder:ension}" name="fd" id="fd" />
+<input type="hidden" value="{ext:file:ension}" name="fn" id="fn" />
+              <input name="addele" id="addele" type="text" size="14" />         
+              <br />
+              <select name="cat">
+<option value="{ext:cat:ension}">LANGcurrentIANG: {ext:cat:ension}</option>
+{cat_loop_sel}
+              </select>
+            
+<input type="submit"   value="LANGsendIANG" /></form></div>
+
+</div>
+<hr />
+<div id="fileQueue"></div>
+<input type="file" onfocus="initupload();" name="uploadify" id="uploadify" />
+<p><a href="javascript:jQuery('#uploadify').uploadifyClearQueue()">Cancel All Uploads</a></p>
+<!--{mainmenu}ajax-->
+
+
+
+</div>
+{ext:editor:ension}         
+
+
+	
+<div id ="box_right" style="display:none;">
+
+<form method="post" id="clrcknm" action="./?{ext:ajaxurlvar:ension}=color&cat={ext:cat:ension}&ele={ele_name}">
+
+<input id="groupsofcookies" onblur="
+if (this.value ==''){
+document.getElementById('clrcknmi').style.color='black';
+document.getElementById('tabcooked').style.color='black';
+document.getElementById('tinymcecooker').style.color='black';
+document.getElementById('previewurl').style.color='black';
+}else{
+document.getElementById('clrcknmi').style.color='red';
+document.getElementById('tabcooked').style.color='red';
+document.getElementById('tinymcecooker').style.color='red';
+document.getElementById('previewurl').style.color='red';
+
+document.getElementById('clrcknmi').value='colors'+this.value;
+document.getElementById('tabcooked').value='tabs'+this.value;
+document.getElementById('tinymcecooker').value='tinymce'+this.value;
+}
+
+
+createCookie('groupsofcookies', this.value, 365); // always rewrite primary cookie
+
+if (this.value!=''){
+//detect secundary cookie
+if (readCookie('groupck__' + readCookie('groupsofcookies'))){
+
+//populate previewurl from cookie
+document.getElementById('previewurl').value=readCookie('groupck__' + readCookie('groupsofcookies'));
+
+}
+//refresh cookie or create cookie
+createCookie('groupck__' + readCookie('groupsofcookies'), document.getElementById('previewurl').value, 365);
+
+
+
+document.getElementById('clrcknmi').focus();
+document.getElementById('tabcooked').focus();
+document.getElementById('tinymcecooker').focus();
+}
+" type="text" name="LANGprojectIANG" title="LANGprojectIANG" />LANGprojectIANG<br />
+
+<input type="hidden" name="clrcknm" value="" />
+<input onblur="
+createCookie('ckinm', this.value, 365);
+createCookie(readCookie('ckinm'), readCookie(readCookie('ckinm')), 365);
+if (readCookie(this.value)){
+lastcolr=readCookie(this.value).split(',');
+lastcolor=lastcolr[0];
+jQuery('#colorsmemory').html(' ');
+for (clr in lastcolr) {
+if (lastcolr[clr]!=''){
+jQuery('#colorsmemory').prepend('<div class=\'memboxes\' style=\'background-color:'+lastcolr[clr]+';color:#000000\' title=\''+lastcolr[clr]+'\' onclick=\'editAreaLoader.setSelectedText(idofeditor, this.title);self.focus();document.getElementById(idofeditor).focus()\'></div>');
+}}
+}
+" type="text" id="clrcknmi" name="ckinm" title="LANGenercknmIANG" /> 
+<input type="hidden" name="tabcook" value="" />
+<input onblur="
+createCookie('tabcooked', this.value, 365);
+if (!readCookie(readCookie('tabcooked'))){
+createCookie(readCookie('tabcooked'), '', 365);
+}else{
+createCookie(readCookie('tabcooked'), readCookie(readCookie('tabcooked')), 365);
+}
+tabtext=[];
+tabray = [];
+ltabmfirsttime='on';
+" type="text" id="tabcooked" name="tabcki" title="LANGTabs_cookieIANG" /> 
+<input id="tinymcecooker" onblur="
+createCookie('tinymcecooker', this.value, 365);
+if (!readCookie(readCookie('tinymcecooker'))){
+createCookie(readCookie('tinymcecooker'), '', 365);
+}else{
+createCookie(readCookie('tinymcecooker'), readCookie(readCookie('tinymcecooker')), 365);
+}"
+ type="text" name="LANGtinymce_css_groupIANG" title="LANGtinymce_css_groupIANG" /> tinymce css group<br />
+<input id="previewurl" onchange="createCookie('previewurl', this.value, 365);
+if (document.getElementById('groupsofcookies').value!=''){
+createCookie('groupck__' + readCookie('groupsofcookies'), this.value, 365);
+}
+" type="text" name="LANGpreview_urlIANG" title="LANGpreview_urlIANG" /> leave empty for preview html contents of editor
+<hr />
+
+<span class="highlight" id="wwwroot" onclick="
+createCookie('wwwroot', document.getElementById('folderinputter').value, 365);
+" onmouseover="this.title=readCookie('wwwroot');" title="<script>document.write(readCookie('wwwroot'));</script>">LANGwwwrootIANG</span>  
+<input id="httproot" onchange="createCookie('httproot', this.value, 365);" type="text" name="LANGhttprootIANG" title="LANGhttprootIANG" />
+<input id="previewimg" onchange="createCookie('previewimg', this.value, 365);" value="yes" type="radio" name="LANGPreview_imagesIANG" title="LANGPreview_imagesIANG - LANGYesIANG" checked />
+<input id="previewimg" onchange="createCookie('previewimg', this.value, 365);" value="no" type="radio" name="LANGPreview_imagesIANG" title="LANGPreview_imagesIANG - LANGNoIANG" />
+ |||| 
+<input id="easynav" onchange="createCookie('easynav', this.value, 365);" value="yes" type="radio" name="LANGEasy_navigationIANG" title="LANGEasy_navigationIANG - LANGYesIANG" checked />
+<input id="easynav" onchange="createCookie('easynav', this.value, 365);" value="no" type="radio" name="LANGEasy_navigationIANG" title="LANGEasy_navigationIANG - LANGNoIANG" />
+
+<br />
+<input id="phpbinary" onchange="createCookie('phpbinary', this.value, 365);" type="text" name="LANGphpbinaryIANG" title="LANGphpbinaryIANG" /> 
+<input id="fontforgebinary" onchange="createCookie('fontforgebinary', this.value, 365);" type="text" name="LANGfontforgebinaryIANG" title="LANGfontforgebinaryIANG" /> 
+<input id="ttf2eotbinary" onchange="createCookie('ttf2eotbinary', this.value, 365);" type="text" name="LANGttf2eotbinaryIANG" title="LANGttf2eotbinaryIANG" /> 
+<input id="zipbinary" onchange="createCookie('zipbinary', this.value, 365);" type="text" name="LANGzipbinaryIANG" title="LANGzipbinaryIANG" />
+<input id="antiwordbinary" onchange="createCookie('antiwordbinary', this.value, 365);" type="text" name="LANGantiwordbinaryIANG" title="LANGantiwordbinaryIANG" />
+<input id="ps2pdfbinary" onchange="createCookie('ps2pdfbinary', this.value, 365);" type="text" name="LANGps2pdfbinaryIANG" title="LANGps2pdfbinaryIANG" />
+<input id="aateau" onchange="createCookie('aateau', this.value, 365);" type="text" name="LANGaateauIANG" title="LANGaateauIANG" />
+<input id="phplivedocx" onchange="createCookie('phplivedocx', this.value, 365);" type="text" name="LANGphplivedocxIANG" title="LANGphplivedocxIANG" />
+
+<hr /> 
+LANGTemporary_settings_(last_until_page_refresh)IANG<br />
+<input type="text" name="sudouser" id="sudouser" title="LANGsudo_user_for_extracting_and_creating archivesIANG" />
+</form>
+<hr />
+<div class="shared form_lang">
+<input title="LANGpre-translateIANG" type="checkbox" name="translate_editfield" 
+id="translate_editfield" onchange="
+if (this.checked) {
+	document.getElementById('trlback').checked=true;
+			createCookie('translate_editfield', 'on', 365);
+document.getElementById('translation_icon').src=enable_translation_icon;
+	}else{
+		document.getElementById('trlback').checked=false;
+		createCookie('translate_editfield', 'off', 365);
+		document.getElementById('translation_icon').src=disable_translation_icon;
+		}
+
+" /><img id="translation_icon" alt="" src="LANGtmpl_folderIANGLANGcurrent_templateIANG/img/home_tr.gif"></img>
+<form id="foolang" method="post" action="./?cat={ext:cat:ension}&amp;ele={ele_name}{ext:urlstr:ension}"> {ext:language:ension}&nbsp;
+</form>
+</div>
+
+<hr />
+<div id="cfgdit">
+<a target="_blank" onclick="createCookie('mainmenu', 'tb', 365);" href="./?fd=../&fn=config.css&ele=config.css">
+LANGCoreIANG LANGConfigurationIANG</a><br />
+<a target="_blank" onclick="createCookie('mainmenu', 'tb', 365);" href="./?fd=../core_clients/editor&fn=config.css&ele=config.css">
+LANGEditor_core_clientIANG LANGconfigurationIANG</a> LANGoverrides_above_cfgIANG<br />
+<a target="_blank" onclick="createCookie('mainmenu', 'ta', 365);" href="./?fd=../core_clients/editor/cfgs/">
+LANGEditor_core_clientIANG LANGextensionsIANG LANGhandlingIANG LANGconfigurationIANG</a> LANGoverrides_above_cfgIANG<br />
+</div>
+<hr />
+<div class="shared change_modus css_legacy">
+	<div class="box_m_header2"><em class="box_m_header2_top_text">CSS LANGeditIANG LANGmodeIANG: (default unused, only used for css-legacy extlink)</em>
+</div>
+	<div class="box_m_search" id="d3">
+<a href="./?mode=1&cat={ext:cat:ension}&ele={ext:ele_name:ension}{ext:urlstr:ension}">LANGprivateIANG (LANGstdrdIANG)</a><br />
+<a href="./?mode=0&cat={ext:cat:ension}&ele={ext:ele_name:ension}{ext:urlstr:ension}">CSS</a><br />
+CSS LANGmodeIANG:<br />
+LANGcssmodehelpIANG
+</div>
+</div>
+<hr />
+
+<span class="highlight" onclick="var answer=confirm('Clear background image?');
+	if(answer){document.getElementById('bgimage').style.backgroundImage='url()';
+var answer=confirm('Persistent?');
+if(answer){createCookie('bgimage', '', 365);}
+	}">Clear background image</span>
+
+</div>
+<div id="toolbox" style="display:none">
+{ext:toolbox:ension}
+</div>
+
+<!--{bodyworks}ajax-->
+</div>
+<div title="by Bart Bosma, Oudehorne. www.freedomeditor.com/" id="footer"><em class="foot_txt">template &#169; Bart Bosma, <a span="highlight" target="_blank" href="http://www.freedomeditor.com">freedomeditor.com</a></span></div>
+
+</body>
+</html>

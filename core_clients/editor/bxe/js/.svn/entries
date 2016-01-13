@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1835"
+   name=""
+   committed-date="2008-04-25T11:50:39.347261Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/js"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="1440"
+   name="bxeConfig.js"
+   text-time="2006-01-04T02:30:09.000000Z"
+   committed-date="2006-01-03T16:40:18.904679Z"
+   checksum="4081054502869ee6df9da37fbd5bc059"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-01-04T02:30:09.000000Z"/>
+<entry
+   committed-rev="1411"
+   name="bxeXMLNode.js"
+   text-time="2005-10-07T01:30:09.000000Z"
+   committed-date="2005-10-06T18:52:18.830240Z"
+   checksum="5d5d617c1c9ac873b167f3c430cdb4bf"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-10-07T01:30:09.000000Z"/>
+<entry
+   committed-rev="1369"
+   name="table.js"
+   text-time="2005-09-03T01:30:07.000000Z"
+   committed-date="2005-09-02T14:53:45.208173Z"
+   checksum="71a0bfe621afbe82526e7c52047356d0"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-09-03T01:30:07.000000Z"/>
+<entry
+   committed-rev="1835"
+   name="bxeFunctions.js"
+   text-time="2008-04-26T01:30:11.000000Z"
+   committed-date="2008-04-25T11:50:39.347261Z"
+   checksum="0c40be7e977d22a052c9e5475b73af2f"
+   last-author="chregu"
+   kind="file"
+   prop-time="2008-04-26T01:30:11.000000Z"/>
+<entry
+   committed-rev="938"
+   name="eDOMEvents.js"
+   text-time="2004-11-25T02:30:16.000000Z"
+   committed-date="2004-11-24T21:17:32.684914Z"
+   checksum="a08aa18aaa3f5fba6d6c0a6b460b618a"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-25T02:30:16.000000Z"/>
+<entry
+   committed-rev="879"
+   name="bxehtmltb.js"
+   text-time="2004-11-19T10:36:20.000000Z"
+   committed-date="2004-11-19T10:01:00.735891Z"
+   checksum="79fccb963d97eaa9629cf8e182ac6ca4"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-19T10:36:20.000000Z"/>
+<entry
+   committed-rev="938"
+   name="bxeXMLDocument.js"
+   text-time="2004-11-25T02:30:16.000000Z"
+   committed-date="2004-11-24T21:17:32.684914Z"
+   checksum="3fdd56cb9f8711ecac4f6a8716075845"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-11-25T02:30:16.000000Z"/>
+<entry
+   committed-rev="1414"
+   name="bxeNodeElements.js"
+   text-time="2005-12-06T13:34:19.000000Z"
+   committed-date="2005-12-06T13:34:00.192487Z"
+   checksum="b23d608566a27e26c48c3d2b146d8188"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-12-06T13:34:19.000000Z"/>
+<entry
+   committed-rev="1514"
+   name="widget.js"
+   text-time="2006-09-28T01:30:23.000000Z"
+   committed-date="2006-09-27T13:04:35.136783Z"
+   checksum="66b452d88d7f917e20dd801aa707334e"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-09-28T01:30:23.000000Z"/>
+</wc-entries>

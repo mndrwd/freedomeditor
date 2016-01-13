@@ -1,0 +1,28 @@
+++ = new files
++ = file updated
++- = moved file
+
+++ fc/extension/index.php # 
+1: bug fixed with global settings overwritten by first loaded extension settings.  Simple sanity check added for dealing with {ext:*:ension} scan result.
+2: globallanguageload setting code added
+3: removed die() function calls
+4: added option to loop scan.
+++ index.php added support for always_load_extension* config settings and changed extension call to die() for javascript generation request.
+
++ core_clients/editor/fc/gui/css/htmlshifter.php  line 31 added support for executing htmlshifter more then once
+
+++ config.css added always_load_extension* setting s
+
+++ fc/vars.php tiny bug fixed: recreate $langcss array
+removed error code when requested core client not found in order to allow extensions to act as core clients also.
+
++-  core_clients/phpterm > fc/customcallback/phpterm* 
+
++- core_clients/bgb_cmdline/aateau/* > core_clients/bgb_cmdline/installers/aateau
+
+++ core_clients/bgb_cmdline/installers/mamcwes/*
+
++ tmpl/cssedit/editor/toolbox_about.html * removed documentation link because sourceforge erased their wiki system when everyone was having a holiday.
+
++ core_clients/bgb_cmdline/installers/vars.php * added aateau and mamcwes
+

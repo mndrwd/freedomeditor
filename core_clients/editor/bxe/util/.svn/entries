@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="255"
+   name=""
+   committed-date="2003-09-18T13:13:00.000000Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/util"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="255"
+   name="jsdoc"
+   text-time="2004-04-27T09:22:45.000000Z"
+   committed-date="2003-09-18T13:13:00.000000Z"
+   checksum="758e7b40073e9b3de5a4f25c46bdc180"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:45.000000Z"/>
+<entry
+   committed-rev="23"
+   name="Doxyfile"
+   text-time="2004-04-27T09:22:45.000000Z"
+   committed-date="2003-08-05T06:14:58.000000Z"
+   checksum="f782ec4c7749c915702390b049f9cbb0"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:45.000000Z"/>
+<entry
+   committed-rev="23"
+   name="JsUnit.css"
+   text-time="2004-04-27T09:22:45.000000Z"
+   committed-date="2003-08-05T06:14:58.000000Z"
+   checksum="f6378f086c0ccfa9e4f4689a308eafbf"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:45.000000Z"/>
+<entry
+   committed-rev="23"
+   name="JsUnitHeader.html"
+   text-time="2004-04-27T09:22:45.000000Z"
+   committed-date="2003-08-05T06:14:58.000000Z"
+   checksum="bedb6a0404c9ac2c8022b193033e2497"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:45.000000Z"/>
+<entry
+   committed-rev="23"
+   name="js2doxy.pl"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2003-08-05T06:14:58.000000Z"
+   checksum="173be667b637ba31ad39b1e327300acc"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="23"
+   name="JsUnitFooter.html"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2003-08-05T06:14:58.000000Z"
+   checksum="8010763910dfdb7a4e4a65d7b548f960"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+</wc-entries>

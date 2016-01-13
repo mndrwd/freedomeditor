@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1655"
+   name=""
+   committed-date="2007-03-15T10:44:18.274437Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/kupu"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="778"
+   name="sarissa.js"
+   text-time="2004-09-01T01:30:13.000000Z"
+   committed-date="2004-08-31T15:32:22.658799Z"
+   checksum="0993f82542dd0777abbeb7e6155bcbcd"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-01T01:30:13.000000Z"/>
+<entry
+   committed-rev="778"
+   name="kupuhelpers.js"
+   text-time="2004-09-01T01:30:13.000000Z"
+   committed-date="2004-08-31T15:32:22.658799Z"
+   checksum="5437e46698c843e77b2239ed1538d28d"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-01T01:30:13.000000Z"/>
+<entry
+   committed-rev="778"
+   name="kupudrawertool.js"
+   text-time="2004-09-01T01:30:13.000000Z"
+   committed-date="2004-08-31T15:32:22.658799Z"
+   checksum="5404f25c156a64813fb32fcb3cb5b149"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-01T01:30:13.000000Z"/>
+<entry
+   committed-rev="1655"
+   name="kupudrawers.js"
+   text-time="2007-05-04T09:06:03.000000Z"
+   committed-date="2007-03-15T10:44:18.274437Z"
+   checksum="9b7e3c2cf5b510d06e59fb33559b0fa9"
+   last-author="chregu"
+   kind="file"
+   prop-time="2007-05-04T09:06:03.000000Z"/>
+<entry
+   committed-rev="810"
+   name="kupulibrarydrawer.js"
+   text-time="2004-09-15T01:30:14.000000Z"
+   committed-date="2004-09-14T11:49:42.482183Z"
+   checksum="f3a3d2555946ea04ee482c990fea8f1d"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-15T01:30:14.000000Z"/>
+<entry
+   committed-rev="778"
+   name="kupubasetools.js"
+   text-time="2004-09-01T01:30:13.000000Z"
+   committed-date="2004-08-31T15:32:22.658799Z"
+   checksum="496f9337493caa51eeb7582a0117845f"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-01T01:30:13.000000Z"/>
+<entry
+   name="kupudrawers"
+   kind="dir"/>
+</wc-entries>

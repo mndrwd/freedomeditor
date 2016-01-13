@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="600"
+   name=""
+   committed-date="2004-02-20T15:06:48.000000Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/uni/css"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="600"
+   name="content-bxeng.css"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-02-20T15:06:48.000000Z"
+   checksum="fe7946f9e1c6e6a474f8f56d413182ce"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+<entry
+   committed-rev="600"
+   name="main.css"
+   text-time="2004-04-27T09:22:46.000000Z"
+   committed-date="2004-02-20T15:06:48.000000Z"
+   checksum="fe7946f9e1c6e6a474f8f56d413182ce"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T09:22:46.000000Z"/>
+</wc-entries>

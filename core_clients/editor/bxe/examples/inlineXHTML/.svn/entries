@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1312"
+   name=""
+   committed-date="2005-05-25T08:46:15.126800Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/examples/inlineXHTML"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="784"
+   name="relaxng.xml"
+   text-time="2004-09-01T08:12:56.000000Z"
+   committed-date="2004-09-01T06:14:15.683999Z"
+   checksum="15e1258505bbfd8efd28a2a0231b29fd"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-09-01T08:12:56.000000Z"/>
+<entry
+   name="schema"
+   kind="dir"/>
+<entry
+   committed-rev="1039"
+   name="config.xml"
+   text-time="2004-12-16T02:30:14.000000Z"
+   committed-date="2004-12-15T13:48:11.138235Z"
+   checksum="229cf9ce7c5afdc9f8b6becd81317691"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-12-16T02:30:14.000000Z"/>
+<entry
+   committed-rev="687"
+   name="images.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="e78b5b6006a962c5b7d778291d900b0b"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="709"
+   name="inline.css"
+   text-time="2004-05-17T09:07:17.000000Z"
+   committed-date="2004-05-13T08:47:33.513023Z"
+   checksum="9fc9e0ef44362aeb25f476881fe5f7ea"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-05-17T09:07:17.000000Z"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   committed-rev="1312"
+   name="index.html"
+   text-time="2005-05-26T01:30:12.000000Z"
+   committed-date="2005-05-25T08:46:15.126800Z"
+   checksum="cfc2448024791f4e79b745e8c12cb162"
+   last-author="chregu"
+   kind="file"
+   prop-time="2005-05-26T01:30:12.000000Z"/>
+<entry
+   committed-rev="672"
+   name="main.css"
+   text-time="2004-04-27T10:03:30.000000Z"
+   committed-date="2004-04-27T09:54:22.013802Z"
+   checksum="d9ba72c6460f8c2338fdd2bb7c1a4b84"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-27T10:03:30.000000Z"/>
+<entry
+   committed-rev="687"
+   name="libraries.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="c96df892b1e099de712611ac115b27f7"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="687"
+   name="pictures.xml"
+   text-time="2004-04-29T08:47:15.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="9591cd7cf61420513bf8864fd8d26b62"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:15.000000Z"/>
+<entry
+   committed-rev="784"
+   name="inline.xml"
+   text-time="2004-09-01T08:12:56.000000Z"
+   committed-date="2004-09-01T06:14:15.683999Z"
+   checksum="12aa408b7cea4954ef7ba39392584513"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-09-01T08:12:56.000000Z"/>
+<entry
+   name="pictures"
+   kind="dir"/>
+</wc-entries>

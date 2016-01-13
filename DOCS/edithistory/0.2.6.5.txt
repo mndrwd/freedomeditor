@@ -1,0 +1,15 @@
+++ = new files
++ = file updated
++- = moved file
+
+
+
+
++ tmpl/cssedit/editor/js/global.js > added close_wysiwyg_markup() function, 
+		+ Fix for switchtab function which caused to always load html javascript file for example when switching to a .php or .js tab
+		+ fixed undefined function error
+		+ fixed current_ext manipulation to convert current loaded file ext to lowercase
+		+ added keyboard shortcut for going root folder and afterwards, back to previous.
+
++ tmpl/cssedit/editor/index.html > mentioned above shortcuts @ structure menu
++ tmpl/cssedit/editor/js/(x)html-content.js > silly bug fixes in ineedtocheckforhtmltag functions, xhtml-content was changing to html mode and html-content to xhtml mode.

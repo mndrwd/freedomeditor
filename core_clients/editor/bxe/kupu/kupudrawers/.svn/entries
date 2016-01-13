@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="814"
+   name=""
+   committed-date="2004-09-17T17:35:10.266970Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/kupu/kupudrawers"
+   last-author="bitflux"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="687"
+   name="demolibraries.xml"
+   text-time="2004-04-29T08:47:13.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="a9969957e226b2bc75563c2067988d2a"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:13.000000Z"/>
+<entry
+   committed-rev="810"
+   name="linkdrawer.xsl"
+   text-time="2004-09-15T01:30:14.000000Z"
+   committed-date="2004-09-14T11:49:42.482183Z"
+   checksum="db7ebb13b77df2473907425bfc6315de"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-15T01:30:14.000000Z"/>
+<entry
+   committed-rev="687"
+   name="demolibrary1.xml"
+   text-time="2004-04-29T08:47:13.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="633eb33796f4b4172dbfc4a220fe2ee5"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:13.000000Z"/>
+<entry
+   committed-rev="814"
+   name="assetdrawer.xsl"
+   text-time="2004-09-18T01:30:14.000000Z"
+   committed-date="2004-09-17T17:35:10.266970Z"
+   checksum="2a40344dadc040ddb15ceb06135f3a3f"
+   last-author="bitflux"
+   kind="file"
+   prop-time="2004-09-18T01:30:14.000000Z"/>
+<entry
+   committed-rev="687"
+   name="demolibrary2.xml"
+   text-time="2004-04-29T08:47:13.000000Z"
+   committed-date="2004-04-29T08:32:39.760394Z"
+   checksum="04614b582eab7b1814feb867d03e19c9"
+   last-author="chregu"
+   kind="file"
+   prop-time="2004-04-29T08:47:13.000000Z"/>
+<entry
+   committed-rev="809"
+   name="imagedrawer.xsl"
+   text-time="2004-09-15T01:30:14.000000Z"
+   committed-date="2004-09-14T11:40:51.546918Z"
+   checksum="f0584d3574ffc6326f0b75c0c7c719c7"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-15T01:30:14.000000Z"/>
+<entry
+   committed-rev="809"
+   name="librarydrawer.xsl"
+   text-time="2004-09-15T01:30:14.000000Z"
+   committed-date="2004-09-14T11:40:51.546918Z"
+   checksum="34165150f6daffea3a33e0f5c75bff4c"
+   last-author="silvan"
+   kind="file"
+   prop-time="2004-09-15T01:30:14.000000Z"/>
+</wc-entries>

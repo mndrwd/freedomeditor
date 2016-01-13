@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1451"
+   name=""
+   committed-date="2006-01-31T13:44:53.294729Z"
+   url="http://svn.bitflux.ch/repos/bxe/trunk/plugins/Drawer"
+   last-author="chregu"
+   kind="dir"
+   uuid="7e49d481-a7d8-0310-bbc4-96d0c2794ec3"
+   revision="1850"/>
+<entry
+   committed-rev="1451"
+   name="classes.js"
+   text-time="2006-02-01T02:30:07.000000Z"
+   committed-date="2006-01-31T13:44:53.294729Z"
+   checksum="880fcba8ae8b928e73f05f681c638533"
+   last-author="chregu"
+   kind="file"
+   prop-time="2006-02-01T02:30:07.000000Z"/>
+</wc-entries>

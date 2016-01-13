@@ -1,0 +1,97 @@
+Developers
+
+	* Bart Bosma
+		'Owner', founder, project manager and code maintainer, debugger..
+
+
+3rd party  CREDITS:
+
+	* Gerlof van Ek www.vanekcreative.com
+		Suggesting preview mode
+
+	* Kees Bekkema
+		Suggesting a lot of things, like initial creation of freedomeditor
+
+	* Christophe Dolivet
+		javascript EditArea - the code editor in a textarea (all please donate to Christophe so he will finish the autocomplete function :)
+	
+	* Moxiecode
+		TinyMCE WYSIWYG editor
+	
+	* Hu Cheng
+		Web CSS Editor for Internet Explorer
+		
+	* Ross Shannon
+		Javascript Cookie create & erase functions
+		
+	* Liip agile web development http://www.liip.ch/fr/contact/
+		http://www.bitfluxeditor.org
+		
+	
+	* John Resig and the jQuery team http://jquery.com
+		Jquery and Jquery form plugin: http://www.malsup.com/jquery/form/#download
+
+	* Tzury Bar Yochay
+		Jquery Hotkeys Plugin: http://code.google.com/p/js-hotkeys/
+		
+	* Steven Wittens
+		Farbtastic jQuery plugin: http://acko.net/dev
+		
+	* Daemach 
+			Frameready jQuery plugin: http://ideamill.synaptrixgroup.com/?p=6
+
+	* Mark Frawley at gmail dot com
+		Memcache.php ( http://www.php.net/memcache) might be of use in fc/client experimental functions someday
+
+	* Sitepoint.com
+		for the nice ajax examples
+
+	* Javascriptkit.com
+		javascript load/unload js file functions
+
+	* Bzrudi
+		phpterm @ http://phpterm.sourceforge.net/
+	
+	* Kenneth Hunt
+		Recursive Find Text String In Files @ windows shell
+		http://kennethhunt.com/archives/000173.html
+		
+	* DEV-PHP: Pierre Fauconnier, Urs Mader, Leonardo Garcia http://devphp.sourceforge.net/ php editor for windows
+
+	*	strstr for javascript: http://www.phpjs.org Kevin van Zonneveld (http://kevin.vanzonneveld.net)+ bugfixed by: Onno Marsman		
+	
+	* Renato Coelho 
+		html2fpdf http://html2fpdf.sourceforge.net/ *removed from 0.2.7.0, replaced with domPDF
+
+	* Authors of DomPDF: http://code.google.com/p/dompdf/   http://digitaljunkies.ca/dompdf/
+	  * myself for little domPDF mods to fit in freedomeditor
+
+	* Benj Arriola & RonnieSan 
+		jquery ajaxfileuploader 	* http://www.uploadify.com/ 
+
+	* Jonathan Maron
+		LivedocX http://www.PHPLivedocx.com
+
+	* Will Bontrager
+		http://www.willmaster.com/blog/css/show-hide-floating-div.php
+
+	* Leandro Vieira Pinho
+		lightbox jquery plugin : http://leandrovieira.com/projects/jquery/lightbox/ 
+		*** NOTE no GPL but creative commons sharealike license: http://creativecommons.org/licenses/by-sa/2.5/br/
+	*	Sunimal Kaluarachchi: modified lightbox version with auto max-img width/height 
+
+	* Contributors at www.PHPJS.org
+		rawurlencode function : http://phpjs.org/functions/rawurlencode:501
+	
+	* Peter Frueh www.peterfrueh.com www.ajaxprogrammer.com http://code.google.com/p/ajaximageeditor/
+
+
+	*	Thanks to alot of folks at http://www.php.net , google and numerous relevant development sites from my research results,  for their reliable services. (last but not least)
+	*	Thanks to authors of alot of other software, (like operating systems and such)  making this all possible.	
+	*	Thanks to alot of musicians
+	*	Thanks to my cars
+	*	Thanks to my parents
+	*	Thanks to life
+
+
+Should anyone be missing from this list, please contact B. Bosma via www.freedomeditor.com

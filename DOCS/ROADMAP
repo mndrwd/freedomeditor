@@ -1,0 +1,53 @@
+
+------------ suggestions welcome: email to  'bart at bartbosma.eu' -----------------
+------------------------------------------------------------------------------------
+
+
+----------------------------
+high prior:
+-----------
+
+add ACE Ajax.org Cloud9 Editor
+add codemirror 2
+
+
+
+
+
+
+
+----------------------------
+medium prior:
+-------------
+
+
+toolbox > bgb - find issue @ freebsd
+editor > tabs - buggy
+
+
+settings > switch between php file system write operations (ftp wrapper too?)and native OS terminal
+settings > configure keyboard shortcuts
+
+setting for treat editor > preview iframe as parent javascript container (isolated DOM object), disable preview iframe accidently using freedomeditor javascript (and vice versa)
+
+cookies config subfolder 
+
+source: replace javascript escape with encodeURI
+
+*0.2.6-0.2.8: Current basic tabbed browsing has limits: probably can't open multiple css elements from files with identical filename (Oldest tab dissapears). Also, must change manually through edit-type mode (css/html/php/xml etc). Might be able to fix using #curr_filename.
+
+structure > Add folder Tabs exploring maybe.
+
+Settings > redesign
+
+
+
+-------------------------
+low prior:
+----------
+javascript code cleanup: sendText, sendText2 css/php cleanup colormemoboxes 
+
+
+
+
+

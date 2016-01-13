@@ -1,0 +1,22 @@
+main index.php ---including----
+
+
+
+compat/php6.*
+
+fc/dependencys.fc.*
+
+fc/client/init.*
+
+fc/parser/init.*
+
+fc/global.*
+
+$thecwd/cfg['global']['default_parser']/init.*
+
+$__the_cwd/$_cfg['folders']['inputhandler']$_cfg['global']['default_input_handler']/init.*
+
+$__the_cwd/$_cfg['folders']['gui']/$_cfg['global']['default_gui']/init.*
+
+
+
