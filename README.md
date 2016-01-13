@@ -10,6 +10,4 @@ until browser development would start to stabilize.
 
 Anyone interested in commiting or discussing project future is welcome to contact me.
 
-
-
-
+Current status: not secure for installation in a production environment, unless using .htaccess folder protection
