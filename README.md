@@ -1,5 +1,5 @@
 # freedomeditor
-# http://www.bartbosma.eu/freedomeditor/
+# http://www.bosmaheerenveen.nl/bart/freedomeditor/
 
 php/javascript alternative 4 dreamweaver
 Freedomeditor is targeted to be a fully browser based file manager + website editing interface.
